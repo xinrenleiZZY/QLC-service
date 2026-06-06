@@ -1,0 +1,1626 @@
+[
+  {
+    "time": "2026-06-05T10:04:15.533Z",
+    "step_name": "广告",
+    "page_url": "https://huizhixin.lingxing.com/erp/muser/downloadCenter",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "a",
+      "id": null,
+      "class": null,
+      "text": "广告",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9d3272d0": ""
+      },
+      "css_selector": "#app > div.contain > div.sideBar.collapse-side-bar:nth-child(1) > div.sideBar-container:nth-child(1) > ul > li.is_active:nth-child(2) > a",
+      "xpath_short": "///*[@id=\"app\"]/div/div[1]/div[1]/ul/li[2]/a",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "playwright_selector": "page.getByText(\"广告\", { exact: true })",
+      "rect": {
+        "x": 4,
+        "y": 128,
+        "width": 48,
+        "height": 48,
+        "top": 128,
+        "right": 52,
+        "bottom": 176,
+        "left": 4
+      },
+      "inner_text": "广告"
+    },
+    "ancestors": [
+      {
+        "tag": "li",
+        "id": null,
+        "class": "el-menu-item is_active",
+        "text": "广告",
+        "role": "menuitem",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "ul",
+        "id": null,
+        "class": "el-menu",
+        "text": "销售广告客服工具设置",
+        "role": "menubar",
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页  导出中心 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "广告"
+          },
+          "description": "id=app 内 text=广告"
+        },
+        {
+          "type": "text",
+          "value": "广告"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "text",
+          "value": "广告"
+        },
+        "description": "id=app 内 text=广告"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "menuitem",
+        "menubar",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:04:32.083Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/home",
+    "page_title": "仪表盘",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "font-14",
+      "text": "体验新版",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#OpenNewAmazon > span.font-14",
+      "xpath_short": "///*[@id=\"OpenNewAmazon\"]/span",
+      "xpath_full": "/html[1]/body[1]/div[1]/header[1]/nav[1]/div[1]/div[1]/div[1]/a[1]/span[1]",
+      "playwright_selector": "page.getByText(\"体验新版\", { exact: true })",
+      "rect": {
+        "x": 1478.03125,
+        "y": 15.5,
+        "width": 72,
+        "height": 17,
+        "top": 15.5,
+        "right": 1550.03125,
+        "bottom": 32.5,
+        "left": 1478.03125
+      },
+      "inner_text": "体验新版"
+    },
+    "ancestors": [
+      {
+        "tag": "a",
+        "id": "OpenNewAmazon",
+        "class": null,
+        "text": "体验新版",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "OpenNewAmazon"
+          },
+          "target": {
+            "type": "text",
+            "value": "体验新版"
+          },
+          "description": "id=OpenNewAmazon 内 text=体验新版"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "OpenNewAmazon"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.font-14"
+          },
+          "description": "id=OpenNewAmazon 内 css=span.font-14"
+        },
+        {
+          "type": "text",
+          "value": "体验新版"
+        },
+        {
+          "type": "css",
+          "value": "span.font-14"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "OpenNewAmazon"
+        },
+        "target": {
+          "type": "text",
+          "value": "体验新版"
+        },
+        "description": "id=OpenNewAmazon 内 text=体验新版"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "OpenNewAmazon"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:04:45.867Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "下一条 ( 1 / 2 )",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-7038-60 > div.yy-dialog-content > div.dialog-footer:nth-child(2) > div.flex-row.justify-between.items-center.w-p100.relative > div:nth-child(2) > button > span",
+      "xpath_short": "///*[@id=\"el-id-7038-60\"]/div/div[2]/div/div[2]/button/span",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[1]/span[1]",
+      "playwright_selector": "page.getByText(\"下一条 ( 1 / 2 )\", { exact: true })",
+      "rect": {
+        "x": 1250.65625,
+        "y": 694.5,
+        "width": 77.34375,
+        "height": 12,
+        "top": 694.5,
+        "right": 1328,
+        "bottom": 706.5,
+        "left": 1250.65625
+      },
+      "inner_text": "下一条 ( 1 / 2 )"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-7038-60",
+        "class": "el-dialog__body",
+        "text": "优化已变更的菜单名称如下变更前变更后说明店铺数据--店铺------出单时段分析--出单时段--活动",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog yy-dialog",
+        "text": "【菜单名称】变更公告优化已变更的菜单名称如下变更前变更后说明店铺数据--店铺------出单时段分析",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "【菜单名称】变更公告优化已变更的菜单名称如下变更前变更后说明店铺数据--店铺------出单时段分析",
+        "role": "dialog",
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 ( 1 / 2 )"
+          },
+          "description": "css=.el-dialog 内 text=下一条 ( 1 / 2 )"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 ( 1 / 2 )"
+          },
+          "description": "css=.el-dialog 内 text=下一条 ( 1 / 2 )"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 ( 1 / 2 )"
+          },
+          "description": "role=dialog 内 text=下一条 ( 1 / 2 )"
+        },
+        {
+          "type": "text",
+          "value": "下一条 ( 1 / 2 )"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "下一条 ( 1 / 2 )"
+        },
+        "description": "css=.el-dialog 内 text=下一条 ( 1 / 2 )"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "el-id-7038-60",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:04:46.946Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "知道了",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-7038-60 > div.yy-dialog-content > div.dialog-footer:nth-child(2) > div.flex-row.justify-between.items-center.w-p100.relative > div:nth-child(2) > button:nth-child(2) > span",
+      "xpath_short": "///*[@id=\"el-id-7038-60\"]/div/div[2]/div/div[2]/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"知道了\", { exact: true })",
+      "rect": {
+        "x": 1292,
+        "y": 694.5,
+        "width": 36,
+        "height": 12,
+        "top": 694.5,
+        "right": 1328,
+        "bottom": 706.5,
+        "left": 1292
+      },
+      "inner_text": "知道了"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-7038-60",
+        "class": "el-dialog__body",
+        "text": "优化已变更的表头名称如下变更前变更后说明销售额广告销售额--直接成交销售额直接销售额广告引流后，购买",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog yy-dialog",
+        "text": "【表头】变更公告优化已变更的表头名称如下变更前变更后说明销售额广告销售额--直接成交销售额直接销售额",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "【表头】变更公告优化已变更的表头名称如下变更前变更后说明销售额广告销售额--直接成交销售额直接销售额",
+        "role": "dialog",
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "知道了"
+          },
+          "description": "css=.el-dialog 内 text=知道了"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "知道了"
+          },
+          "description": "css=.el-dialog 内 text=知道了"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "知道了"
+          },
+          "description": "role=dialog 内 text=知道了"
+        },
+        {
+          "type": "text",
+          "value": "知道了"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "知道了"
+        },
+        "description": "css=.el-dialog 内 text=知道了"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "el-id-7038-60",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:30.354Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "dashboard-chunk flex-col",
+      "text": "广告效果天周月广告花费$37,344.27$37,540.06-0.52%广告销售额$128,522.59$134,687.66-4.58%ACOS29.06%27.87%4.27%$0$5,750$",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9981dc8d": "",
+        "data-v-473af04c": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.chunk-wrapper:nth-child(2) > div.dashboard-chunk.flex-col:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[2]/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]",
+      "playwright_selector": "page.getByText(\"广告效果天周月广告花费$37,344.27$37,540.06-0.52%广告销售额$128,522\", { exact: true })",
+      "rect": {
+        "x": 72,
+        "y": 96,
+        "width": 907,
+        "height": 410,
+        "top": 96,
+        "right": 979,
+        "bottom": 506,
+        "left": 72
+      },
+      "inner_text": "广告效果\n天\n周\n月\n\n广告花费\n\n$37,344.27\n$37,540.06\n-0.52%\n\n广告销售额\n\n$128,522.59\n$134,687.66\n-"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家店铺产品广告组合广告活动-USD广告效果天周月广告花费$37,344.27$37,54",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘美西：2026-06-05 03:05虾掌柜返回店铺仪表盘国家店",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=app 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        },
+        "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:31.843Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "dashboard-chunk flex-col",
+      "text": "曝光点击天周月曝光10,358,8529,311,37111.25%点击70,11671,577-2.04%CTR0.68%0.77%-11.69%0410.0K820.0K1.2M1.6M0%1%2",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9981dc8d": "",
+        "data-v-473af04c": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.chunk-wrapper:nth-child(2) > div.dashboard-chunk.flex-col:nth-child(2)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[2]/div[2]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[2]",
+      "playwright_selector": "page.getByText(\"曝光点击天周月曝光10,358,8529,311,37111.25%点击70,11671,577-2\", { exact: true })",
+      "rect": {
+        "x": 991,
+        "y": 96,
+        "width": 907,
+        "height": 410,
+        "top": 96,
+        "right": 1898,
+        "bottom": 506,
+        "left": 991
+      },
+      "inner_text": "曝光点击\n天\n周\n月\n\n曝光\n\n10,358,852\n9,311,371\n11.25%\n\n点击\n\n70,116\n71,577\n-2.04%\n\nCTR\n\n0.68"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家店铺产品广告组合广告活动-USD广告效果天周月广告花费$37,344.27$37,54",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘美西：2026-06-05 03:05虾掌柜返回店铺仪表盘国家店",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=app 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        },
+        "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:33.945Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "dashboard-chunk flex-col",
+      "text": "广告转化天周月CPC$0.53$0.521.92%CVR9.01%9.23%-2.38%SPC$1.83$1.88-2.66%$0$1$2$3$40%3%6%9%12%2026-05-292026-0",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9981dc8d": "",
+        "data-v-473af04c": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.chunk-wrapper:nth-child(2) > div.dashboard-chunk.flex-col:nth-child(3)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[2]/div[3]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[3]",
+      "playwright_selector": "page.getByText(\"广告转化天周月CPC$0.53$0.521.92%CVR9.01%9.23%-2.38%SPC$1.\", { exact: true })",
+      "rect": {
+        "x": 72,
+        "y": 518,
+        "width": 907,
+        "height": 410,
+        "top": 518,
+        "right": 979,
+        "bottom": 928,
+        "left": 72
+      },
+      "inner_text": "广告转化\n天\n周\n月\n\nCPC\n\n$0.53\n$0.52\n1.92%\n\nCVR\n\n9.01%\n9.23%\n-2.38%\n\nSPC\n\n$1.83\n$1.88\n-2"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家店铺产品广告组合广告活动-USD广告效果天周月广告花费$37,344.27$37,54",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘美西：2026-06-05 03:05虾掌柜返回店铺仪表盘国家店",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=app 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        },
+        "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:35.176Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "dashboard-chunk flex-col",
+      "text": "广告花费占比天周月店铺销售额$298,649.64$273,131.849.34%广告销售额占比43.03%49.31%-12.74%广告花费占比12.50%13.74%-9.02%$0$13.0K$",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9981dc8d": "",
+        "data-v-473af04c": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.chunk-wrapper:nth-child(2) > div.dashboard-chunk.flex-col:nth-child(4)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[2]/div[4]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[4]",
+      "playwright_selector": "page.getByText(\"广告花费占比天周月店铺销售额$298,649.64$273,131.849.34%广告销售额占比43\", { exact: true })",
+      "rect": {
+        "x": 991,
+        "y": 518,
+        "width": 907,
+        "height": 410,
+        "top": 518,
+        "right": 1898,
+        "bottom": 928,
+        "left": 991
+      },
+      "inner_text": "广告花费占比\n天\n周\n月\n\n店铺销售额\n\n$298,649.64\n$273,131.84\n9.34%\n\n广告销售额占比\n\n43.03%\n49.31%\n-12.7"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家店铺产品广告组合广告活动-USD广告效果天周月广告花费$37,344.27$37,54",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘美西：2026-06-05 03:05虾掌柜返回店铺仪表盘国家店",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.dashboard-chunk.flex-col"
+          },
+          "description": "id=app 内 css=div.dashboard-chunk.flex-col"
+        },
+        {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.dashboard-chunk.flex-col"
+        },
+        "description": "id=yy-layout-content 内 css=div.dashboard-chunk.flex-col"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:40.824Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default items-center yy-select-show-width",
+      "text": "国家",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-23049df3": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > span:nth-child(1) > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/span[1]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/div[1]",
+      "playwright_selector": "page.getByText(\"国家\", { exact: true })",
+      "rect": {
+        "x": 1236.65625,
+        "y": 44.5,
+        "width": 62,
+        "height": 28,
+        "top": 44.5,
+        "right": 1298.65625,
+        "bottom": 72.5,
+        "left": 1236.65625
+      },
+      "inner_text": "国家"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家全选美洲欧洲阿联酋印度日本澳大利亚沙特新加坡土耳其埃及按住Shift可快速多选取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "国家"
+          },
+          "description": "id=yy-layout-content 内 text=国家"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+          },
+          "description": "id=yy-layout-content 内 css=div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        },
+        {
+          "type": "text",
+          "value": "国家"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "国家"
+        },
+        "description": "id=yy-layout-content 内 text=国家"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": [
+          "items-center"
+        ]
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:42.546Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default items-center yy-select-show-width",
+      "text": "店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > span:nth-child(2) > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/span[2]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[2]/div[1]",
+      "playwright_selector": "page.getByText(\"店铺\", { exact: true })",
+      "rect": {
+        "x": 1306.65625,
+        "y": 44.5,
+        "width": 62,
+        "height": 28,
+        "top": 44.5,
+        "right": 1368.65625,
+        "bottom": 72.5,
+        "left": 1306.65625
+      },
+      "inner_text": "店铺"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家全选美洲欧洲阿联酋印度日本澳大利亚沙特新加坡土耳其埃及按住Shift可快速多选取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "店铺"
+          },
+          "description": "id=yy-layout-content 内 text=店铺"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+          },
+          "description": "id=yy-layout-content 内 css=div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        },
+        {
+          "type": "text",
+          "value": "店铺"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "店铺"
+        },
+        "description": "id=yy-layout-content 内 text=店铺"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": [
+          "items-center"
+        ]
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:43.912Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default items-center yy-select-show-width",
+      "text": "产品",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > span:nth-child(3) > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/span[3]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[3]/div[1]",
+      "playwright_selector": "page.getByText(\"产品\", { exact: true })",
+      "rect": {
+        "x": 1376.65625,
+        "y": 44.5,
+        "width": 62,
+        "height": 28,
+        "top": 44.5,
+        "right": 1438.65625,
+        "bottom": 72.5,
+        "left": 1376.65625
+      },
+      "inner_text": "产品"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家全选美洲欧洲阿联酋印度日本澳大利亚沙特新加坡土耳其埃及按住Shift可快速多选取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "产品"
+          },
+          "description": "id=yy-layout-content 内 text=产品"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+          },
+          "description": "id=yy-layout-content 内 css=div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        },
+        {
+          "type": "text",
+          "value": "产品"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "产品"
+        },
+        "description": "id=yy-layout-content 内 text=产品"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": [
+          "items-center"
+        ]
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:45.104Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default items-center yy-select-show-width",
+      "text": "广告组合",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > span:nth-child(4) > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/span[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[4]/div[1]",
+      "playwright_selector": "page.getByText(\"广告组合\", { exact: true })",
+      "rect": {
+        "x": 1465.65625,
+        "y": 44.5,
+        "width": 86,
+        "height": 28,
+        "top": 44.5,
+        "right": 1551.65625,
+        "bottom": 72.5,
+        "left": 1465.65625
+      },
+      "inner_text": "广告组合"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家全选美洲欧洲阿联酋印度日本澳大利亚沙特新加坡土耳其埃及按住Shift可快速多选取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "广告组合"
+          },
+          "description": "id=yy-layout-content 内 text=广告组合"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+          },
+          "description": "id=yy-layout-content 内 css=div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        },
+        {
+          "type": "text",
+          "value": "广告组合"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "广告组合"
+        },
+        "description": "id=yy-layout-content 内 text=广告组合"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": [
+          "items-center"
+        ]
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:47.259Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default items-center yy-select-show-width",
+      "text": "广告活动",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > span:nth-child(5) > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/span[5]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[5]/div[1]",
+      "playwright_selector": "page.getByText(\"广告活动\", { exact: true })",
+      "rect": {
+        "x": 1559.65625,
+        "y": 44.5,
+        "width": 86,
+        "height": 28,
+        "top": 44.5,
+        "right": 1645.65625,
+        "bottom": 72.5,
+        "left": 1559.65625
+      },
+      "inner_text": "广告活动"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家全选美洲欧洲阿联酋印度日本澳大利亚沙特新加坡土耳其埃及按住Shift可快速多选取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "广告活动"
+          },
+          "description": "id=yy-layout-content 内 text=广告活动"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+          },
+          "description": "id=yy-layout-content 内 css=div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        },
+        {
+          "type": "text",
+          "value": "广告活动"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "广告活动"
+        },
+        "description": "id=yy-layout-content 内 text=广告活动"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": [
+          "items-center"
+        ]
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:49.264Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-date-editor el-date-editor--daterange el-input__wrapper el-range-editor el-tooltip__trigger",
+      "text": "-",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > div:nth-child(3) > div.daterange-form.daterange-form-icon > div",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/div[3]/div/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"-\", { exact: true })",
+      "rect": {
+        "x": 1653.65625,
+        "y": 44.5,
+        "width": 173,
+        "height": 28,
+        "top": 44.5,
+        "right": 1826.65625,
+        "bottom": 72.5,
+        "left": 1653.65625
+      },
+      "inner_text": "-"
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "-"
+        },
+        {
+          "type": "css",
+          "value": "div.el-date-editor.el-date-editor--daterange.el-input__wrapper"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "-"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:50.990Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default yy-select-show-width",
+      "text": "USD",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.tab.common-filter:nth-child(1) > div.tab-right:nth-child(2) > div.advanced-filter-warp.advanced-filter > div.justify-between.filter-config > div.complex-filter-warp:nth-child(1) > div.yy-single-select.yy-popover-reference:nth-child(4) > span > div.yy-select-show.yy-select-show-default.yy-select-show-width",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[2]/div/div/div[1]/div[4]/span/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/span[1]/div[1]",
+      "playwright_selector": "page.getByText(\"USD\", { exact: true })",
+      "rect": {
+        "x": 1834.65625,
+        "y": 44.5,
+        "width": 63.34375,
+        "height": 28,
+        "top": 44.5,
+        "right": 1898,
+        "bottom": 72.5,
+        "left": 1834.65625
+      },
+      "inner_text": "USD"
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "USD"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default.yy-select-show-width"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "USD"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  },
+  {
+    "time": "2026-06-05T10:05:56.936Z",
+    "step_name": "广告",
+    "page_url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "page_title": "仪表盘 - 领星ERP广告",
+    "selectors": {
+      "tag": "h5",
+      "id": null,
+      "class": "pr-4 gray-900 font-700 title pointer",
+      "text": "广告效果",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9981dc8d": ""
+      },
+      "css_selector": "#yy-layout-content > div.store-performance-wrap > div.chunk-wrapper:nth-child(2) > div.dashboard-chunk.flex-col:nth-child(1) > header.h-32.justify-between.items-center.mb-11 > div.items-center.line-height-32:nth-child(1) > h5.pr-4.gray-900.font-700.title.pointer",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[2]/div[1]/header/div[1]/h5",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/header[1]/div[1]/h5[1]",
+      "playwright_selector": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/header[1]/div[1]/h5[1]",
+      "rect": {
+        "x": 92,
+        "y": 104,
+        "width": 60,
+        "height": 32,
+        "top": 104,
+        "right": 152,
+        "bottom": 136,
+        "left": 92
+      },
+      "inner_text": "广告效果"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "店铺仪表盘国家全选美洲欧洲阿联酋印度日本澳大利亚沙特新加坡土耳其埃及按住Shift可快速多选取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "广告效果"
+          },
+          "description": "id=yy-layout-content 内 text=广告效果"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "h5.pr-4.gray-900.font-700"
+          },
+          "description": "id=yy-layout-content 内 css=h5.pr-4.gray-900.font-700"
+        },
+        {
+          "type": "text",
+          "value": "广告效果"
+        },
+        {
+          "type": "css",
+          "value": "h5.pr-4.gray-900.font-700"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "广告效果"
+        },
+        "description": "id=yy-layout-content 内 text=广告效果"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  }
+]
