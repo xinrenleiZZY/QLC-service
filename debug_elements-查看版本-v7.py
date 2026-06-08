@@ -204,11 +204,12 @@ ELEMENT_PICKER_JS = r"""
         if (!document.getElementById('__pickerFallbackBtn')) {
             fallbackBtn = document.createElement('div');
             fallbackBtn.id = '__pickerFallbackBtn';
-            fallbackBtn.innerHTML = '🔍 开启拾取(F1)';
+            fallbackBtn.innerHTML = '🔍 开启拾取(F1) <span id="__pickerExitHint" style="font-size:10px;color:#888;margin-left:6px;font-weight:normal;">右键退出</span>';
             fallbackBtn.style.cssText = `position: fixed; bottom: 30px; right: 30px; z-index: 2147483647; background: #4ec9b0; color: #1e1e1e; padding: 10px 16px; border-radius: 50px; cursor: pointer; font-weight: bold; font-family: system-ui; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.2s; user-select: none; border: 2px solid #fff;`;
             fallbackBtn.onclick = function(e) { e.stopPropagation(); window.__pickerToggle(); };
             fallbackBtn.onmouseover = () => fallbackBtn.style.transform = 'scale(1.05)';
             fallbackBtn.onmouseout = () => fallbackBtn.style.transform = 'scale(1)';
+            fallbackBtn.oncontextmenu = function(e) { e.preventDefault(); e.stopPropagation(); window.__pickerExit(); };
             document.body.appendChild(fallbackBtn);
         }
 
@@ -483,9 +484,33 @@ ELEMENT_PICKER_JS = r"""
         alert(`✅ 保存成功！\n\n共导出 ${allData.length} 个元素节点\n文件已直接存入你的项目目录:\n${savedPath}`);
     };
 
-    // 退出函数
+    // 退出函数 - 使用自定义模态框代替 confirm()
     window.__pickerExit = async function() {
-        if (confirm('确定退出并关闭浏览器吗？')) {
+        // 创建自定义确认弹窗
+        const overlay = document.createElement('div');
+        overlay.id = '__pickerExitOverlay';
+        overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:system-ui,sans-serif;';
+        overlay.innerHTML = `
+            <div style="background:#1e1e1e;color:#d4d4d4;padding:24px 32px;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.5);text-align:center;border:1px solid #444;min-width:320px;">
+                <div style="font-size:18px;margin-bottom:16px;color:#ce9178;">⏹ 确认退出</div>
+                <div style="margin-bottom:20px;font-size:14px;color:#aaa;">确定退出并关闭 Playwright 驱动连接吗？</div>
+                <div style="display:flex;gap:12px;justify-content:center;">
+                    <button id="__pickerExitConfirm" style="background:#ce9178;color:#1e1e1e;border:none;padding:8px 24px;border-radius:4px;cursor:pointer;font-size:14px;font-weight:bold;">确定退出</button>
+                    <button id="__pickerExitCancel" style="background:#3a3a3a;color:#d4d4d4;border:1px solid #555;padding:8px 24px;border-radius:4px;cursor:pointer;font-size:14px;">取消</button>
+                </div>
+            </div>`;
+        document.body.appendChild(overlay);
+
+        // 等待用户选择
+        const result = await new Promise(resolve => {
+            document.getElementById('__pickerExitConfirm').onclick = () => resolve(true);
+            document.getElementById('__pickerExitCancel').onclick = () => resolve(false);
+            // 点击空白区域取消
+            overlay.onclick = (e) => { if (e.target === overlay) resolve(false); };
+        });
+
+        overlay.remove();
+        if (result) {
             await window.pySyncState("EXIT");
         }
     };
@@ -564,15 +589,13 @@ async def debug_mode(url: str = None):
                 print("\n[退出] 检测到退出信号，正在关闭...")
                 break
             await asyncio.sleep(0.5)
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, asyncio.CancelledError):
         print("\n用户终止")
     finally:
-        # channel="chrome" 不能用 context.close() 关闭（会报连接中断）
-        # 只需断开 Playwright 驱动，让浏览器保持打开或由用户自行关闭
         print("\n[关闭] 断开 Playwright 驱动连接...")
         try:
             await p.stop()
-        except Exception:
+        except (Exception, asyncio.CancelledError):
             pass
 
 
@@ -605,13 +628,13 @@ async def quick_inspect():
                 print("\n[退出] 检测到退出信号，正在关闭...")
                 break
             await asyncio.sleep(0.5)
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, asyncio.CancelledError):
         print("\n用户终止")
     finally:
         print("\n[关闭] 断开 Playwright 驱动连接...")
         try:
             await p.stop()
-        except Exception:
+        except (Exception, asyncio.CancelledError):
             pass
 
 
