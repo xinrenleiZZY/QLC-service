@@ -1,0 +1,39 @@
+# ============================================
+# 变量定义文件
+# 在 actions_config 中用 ${变量名} 引用
+# ============================================
+
+# ─── 登录凭证 ───
+ACCOUNT: "xiazhanggui"
+PASSWORD: "123amazoncom"
+
+# 重试配置
+CDP_RETRY:
+  max_retries: 5
+  base_delay: 1.0
+  backoff_factor: 2.0
+  element_timeout: 15000
+  page_timeout: 30000
+
+# 元素等待配置
+WAIT_CONFIG:
+  navigation_wait: 3000
+  action_wait: 500
+  dynamic_wait: true
+  check_interval: 200
+
+# ─── 搜索/筛选 ───
+SEARCH_KEYWORD: "US"
+SEARCH_ASIN: |
+  B0DLGJY713
+  B0FM1V2VYB
+  B09B3TFVL4
+INPUT_VALUE_KEY: "phrase\nboard"
+INPUT_VALUE_KEY_VALUE1: "1\n2\n3"
+INPUT_VALUE_KEY_VALUE2: "4\n5\n6"
+START_DATE: ""
+END_DATE: ""
+
+# ─── 通用输入 ───
+INPUT_VALUE: "V7text02"
+INPUT_VALUE_US: "美国"
