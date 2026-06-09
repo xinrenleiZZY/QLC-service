@@ -255,6 +255,41 @@ def _pick_wait_selector(strategies: list) -> str:
 
 
 # ============================================================
+#  浏览器启动（带清理+重试）
+# ============================================================
+
+def _cleanup_chrome():
+    """清理残留的 Chrome 进程"""
+    import subprocess
+    try:
+        subprocess.run('taskkill /f /im chrome.exe 2>nul',
+                       shell=True, capture_output=True, text=True)
+    except Exception:
+        pass
+
+
+async def _launch_with_retry(p, max_retries=2):
+    """启动浏览器，失败时重试"""
+    launch_kwargs = {
+        "user_data_dir": "playwright_profile",
+        "channel": "chrome",
+        "headless": False,
+        "no_viewport": True,
+        "locale": "zh-CN",
+        "args": ["--start-maximized", "--disable-blink-features=AutomationControlled"],
+    }
+    for attempt in range(1, max_retries + 1):
+        try:
+            return await p.chromium.launch_persistent_context(**launch_kwargs)
+        except Exception as e:
+            if attempt < max_retries:
+                _cleanup_chrome()
+                await asyncio.sleep(2)
+            else:
+                raise e
+
+
+# ============================================================
 #  主执行逻辑
 # ============================================================
 
@@ -292,16 +327,10 @@ async def run(json_path: str, yaml_path: str = None):
         print(f"  变量加载: {len(vars_dict)} 个变量可用")
     print(f"{'='*60}")
 
-    # ── 2. 启动浏览器 ──
+    # ── 2. 启动浏览器（先清理残留进程） ──
+    _cleanup_chrome()
     p = await async_playwright().start()
-    context = await p.chromium.launch_persistent_context(
-        user_data_dir="playwright_profile",
-        channel="chrome",
-        headless=False,
-        no_viewport=True,
-        locale="zh-CN",
-        args=["--start-maximized", "--disable-blink-features=AutomationControlled"],
-    )
+    context = await _launch_with_retry(p)
     page = await context.new_page()
     page.set_default_timeout(30000)
 

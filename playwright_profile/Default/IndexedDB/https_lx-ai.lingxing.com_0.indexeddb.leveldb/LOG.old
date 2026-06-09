@@ -1,2 +1,3 @@
-2026/06/05-18:02:34.851 bcc8 Creating DB e:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb since it was missing.
-2026/06/05-18:02:34.855 bcc8 Reusing MANIFEST e:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/09-11:19:20.597 5238 Reusing MANIFEST e:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/09-11:19:20.597 5238 Recovering log #3
+2026/06/09-11:19:20.598 5238 Reusing old log e:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/000003.log 

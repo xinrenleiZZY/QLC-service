@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAML 动作配置编辑器</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+.container { max-width: 1400px; margin: 0 auto; }
+
+/* 顶部工具栏 */
+.toolbar { background: #fff; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.toolbar h1 { font-size: 18px; color: #1a1a2e; margin-right: auto; }
+.toolbar .info { font-size: 13px; color: #666; }
+.toolbar button { padding: 8px 20px; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.btn-primary { background: #4361ee; color: #fff; }
+.btn-primary:hover { background: #3a56d4; }
+.btn-success { background: #2ec4b6; color: #fff; }
+.btn-success:hover { background: #25a99d; }
+.btn-danger { background: #e63946; color: #fff; }
+.btn-warning { background: #f77f00; color: #fff; }
+
+/* 搜索过滤 */
+.filter-bar { background: #fff; border-radius: 8px; padding: 12px 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.filter-bar input, .filter-bar select { padding: 6px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; }
+.filter-bar input[type="text"] { width: 240px; }
+.filter-bar label { font-size: 13px; color: #666; }
+
+/* 区域卡片 */
+.zone-card { background: #fff; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.08); overflow: hidden; }
+.zone-header { padding: 12px 20px; background: #f8f9fa; cursor: pointer; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #eee; user-select: none; }
+.zone-header:hover { background: #eef; }
+.zone-header .arrow { transition: transform .2s; font-size: 12px; }
+.zone-header .arrow.collapsed { transform: rotate(-90deg); }
+.zone-header .zone-name { flex: 1; font-weight: 600; font-size: 14px; }
+.zone-header .zone-badge { font-size: 12px; background: #e0e7ff; color: #4361ee; padding: 2px 10px; border-radius: 10px; }
+.zone-header .zone-url { font-size: 12px; color: #999; max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* 元素表格 */
+.element-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.element-table th { background: #fafafa; padding: 8px 12px; text-align: left; font-weight: 600; color: #555; border-bottom: 2px solid #eee; font-size: 12px; white-space: nowrap; }
+.element-table td { padding: 8px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+.element-table tr:hover { background: #f8f9ff; }
+.element-table .col-idx { width: 40px; color: #999; text-align: center; }
+.element-table .col-tag { width: 70px; }
+.element-table .col-text { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.element-table .col-action { width: 80px; }
+.element-table .col-edit { width: 60px; text-align: center; }
+
+.tag-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-family: monospace; background: #e8e8e8; }
+.tag-input { background: #d4edda; color: #155724; }
+.tag-button { background: #cce5ff; color: #004085; }
+.tag-div { background: #fff3cd; color: #856404; }
+.tag-textarea { background: #d1ecf1; color: #0c5460; }
+
+.action-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.action-click { background: #cce5ff; color: #004085; }
+.action-fill { background: #d4edda; color: #155724; }
+.action-check { background: #fff3cd; color: #856404; }
+.action-skip-badge { background: #e2e3e5; color: #383d41; }
+
+.nf-badge { font-size: 11px; padding: 1px 6px; border-radius: 3px; }
+.nf-fail { background: #f8d7da; color: #721c24; }
+.nf-skip { background: #e2e3e5; color: #383d41; }
+
+.if-badge { font-size: 11px; padding: 1px 6px; border-radius: 3px; background: #e8daef; color: #6c3483; margin-left: 4px; }
+
+/* 编辑弹窗 */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.4); z-index: 1000; justify-content: center; align-items: center; }
+.modal-overlay.active { display: flex; }
+.modal { background: #fff; border-radius: 12px; width: 640px; max-width: 95vw; max-height: 90vh; overflow-y: auto; box-shadow: 0 10px 40px rgba(0,0,0,.2); }
+.modal-header { padding: 16px 24px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; }
+.modal-header h2 { font-size: 16px; flex: 1; }
+.modal-header .close-btn { cursor: pointer; font-size: 20px; color: #999; background: none; border: none; }
+.modal-body { padding: 20px 24px; }
+.modal-footer { padding: 16px 24px; border-top: 1px solid #eee; display: flex; gap: 10px; justify-content: flex-end; }
+
+.form-group { margin-bottom: 14px; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; color: #555; margin-bottom: 4px; }
+.form-group .hint { font-size: 12px; color: #999; margin-top: 2px; }
+.form-row { display: flex; gap: 12px; }
+.form-row .form-group { flex: 1; }
+.form-group select, .form-group input { width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 13px; }
+.form-group textarea { width: 100%; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 13px; min-height: 60px; resize: vertical; }
+.form-group .checkbox-label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal; }
+.form-group input[type="checkbox"] { width: auto; }
+
+/* IF 条件区域 */
+.if-section { background: #f4f0f8; border: 1px solid #d5c8e0; border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+.if-section h4 { font-size: 13px; color: #6c3483; margin-bottom: 10px; }
+.if-section .form-row { margin-bottom: 0; }
+
+/* 状态提示 */
+.toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); padding: 12px 24px; border-radius: 8px; color: #fff; font-size: 14px; z-index: 2000; display: none; box-shadow: 0 4px 12px rgba(0,0,0,.2); }
+.toast.show { display: block; }
+.toast-success { background: #2ec4b6; }
+.toast-error { background: #e63946; }
+.toast-info { background: #4361ee; }
+
+/* 空状态 */
+.empty-state { text-align: center; padding: 60px 20px; color: #999; }
+.empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- 工具栏 -->
+  <div class="toolbar">
+    <h1>📋 动作配置编辑器</h1>
+    <span class="info" id="statusInfo">未加载数据</span>
+    <button class="btn-primary" onclick="loadJson()">📂 加载 JSON</button>
+    <button class="btn-warning" onclick="loadYaml()">📥 加载 YAML</button>
+    <button class="btn-success" onclick="exportYaml()">💾 导出 YAML</button>
+  </div>
+
+  <!-- 过滤栏 -->
+  <div class="filter-bar" id="filterBar" style="display:none">
+    <label>🔍 搜索:</label>
+    <input type="text" id="searchInput" placeholder="元素文本、标签、步骤名..." oninput="renderAll()">
+    <label>标签:</label>
+    <select id="tagFilter" onchange="renderAll()">
+      <option value="">全部</option>
+      <option value="input">input</option>
+      <option value="button">button</option>
+      <option value="textarea">textarea</option>
+      <option value="div">div</option>
+      <option value="span">span</option>
+      <option value="li">li</option>
+    </select>
+    <label>状态:</label>
+    <select id="statusFilter" onchange="renderAll()">
+      <option value="">全部</option>
+      <option value="configured">已配置</option>
+      <option value="unconfigured">未配置</option>
+    </select>
+    <label style="margin-left:auto;font-size:12px" id="countInfo"></label>
+  </div>
+
+  <!-- 区域列表 -->
+  <div id="zoneList"></div>
+</div>
+
+<!-- 编辑弹窗 -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">编辑元素</h2>
+      <button class="close-btn" onclick="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-footer">
+      <button class="btn-danger" onclick="deleteAction()">🗑️ 清除配置</button>
+      <button class="btn-primary" onclick="saveAction()">💾 保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ============================================================
+//  全局状态
+// ============================================================
+let elements = [];       // 原始 cleaned JSON
+let actions = {};        // { index: action_config }
+let editingIdx = -1;     // 正在编辑的元素索引
+let groups = {};         // { step_name: [indices] }
+let groupOrder = [];     // 有序的 step_name 列表
+let hasChanges = false;
+
+// ============================================================
+//  加载数据
+// ============================================================
+function loadJson() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+      if (!Array.isArray(data)) throw new Error('JSON 必须是数组');
+      
+      elements = data;
+      _buildGroups();
+      checkAutoLoadYaml(file.name);
+      renderAll();
+      setStatus(`已加载 ${elements.length} 个元素，${Object.keys(groups).length} 个区域`);
+      document.getElementById('filterBar').style.display = 'flex';
+      hasChanges = false;
+    } catch (err) {
+      toast(`加载失败: ${err.message}`, 'error');
+    }
+  };
+  input.click();
+}
+
+function checkAutoLoadYaml(jsonName) {
+  // 尝试自动加载同名的 YAML
+  const yamlName = jsonName.replace(/\.json$/i, '').replace(/_cleaned$/, '') + '.yaml';
+  const cleanedName = 'actions_config_' + jsonName.replace(/\.json$/i, '').replace(/^.*[\\/]/, '') + '.yaml';
+  // 不自动加载，让用户手动点
+}
+
+function loadYaml() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.yaml,.yml';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const parsed = parseSimpleYaml(text);
+      if (parsed.actions) {
+        actions = parsed.actions;
+      }
+      if (parsed.page_url !== undefined) {
+        // 可选的全局设置
+      }
+      renderAll();
+      setStatus(`已加载 YAML: ${file.name}，${Object.keys(actions).length} 个动作配置`);
+      toast(`已加载 ${Object.keys(actions).length} 个动作配置`, 'success');
+      hasChanges = false;
+    } catch (err) {
+      toast(`YAML 加载失败: ${err.message}`, 'error');
+    }
+  };
+  input.click();
+}
+
+// ============================================================
+//  简易 YAML 解析器（纯前端，无需依赖）
+// ============================================================
+function parseSimpleYaml(text) {
+  const result = { actions: {}, page_url: '', close_browser: true };
+  const lines = text.split('\n');
+  
+  let currentAction = null;
+  let currentIdx = null;
+  let inAction = false;
+  let inIf = false;
+  
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    
+    // page_url
+    const puMatch = trimmed.match(/^page_url:\s*"(.+)"$/);
+    if (puMatch) { result.page_url = puMatch[1]; continue; }
+    
+    // close_browser
+    const cbMatch = trimmed.match(/^close_browser:\s*(.+)$/);
+    if (cbMatch) { result.close_browser = cbMatch[1].trim() === 'true'; continue; }
+    
+    // actions:
+    if (trimmed === 'actions:') { continue; }
+    
+    // - index: N
+    const idxMatch = trimmed.match(/^- index:\s*(\d+)$/);
+    if (idxMatch) {
+      if (currentAction && currentIdx !== null) {
+        result.actions[currentIdx] = currentAction;
+      }
+      currentIdx = parseInt(idxMatch[1]);
+      currentAction = { type: 'click', on_not_found: 'fail', wait_before: 0.5, wait_after: 0.5, wait_strategy: 'timeout', wait_for_element: false };
+      inAction = false;
+      inIf = false;
+      continue;
+    }
+    
+    if (currentAction === null) continue;
+    
+    // step_name
+    const snMatch = trimmed.match(/^step_name:\s*"(.+)"$/);
+    if (snMatch) { currentAction._step_name = snMatch[1]; continue; }
+    
+    // action: (这是进入 action 子对象)
+    if (trimmed === 'action:') { inAction = true; inIf = false; continue; }
+    if (trimmed.startsWith('if:')) { 
+      inIf = true; 
+      inAction = false; 
+      currentAction.if = {};
+      continue; 
+    }
+    
+    const indent = line.search(/\S/);
+    
+    // 在 action: 内部
+    if (inAction) {
+      const m = trimmed.match(/^(\w[\w_]*):\s*(.*)$/);
+      if (!m) continue;
+      const key = m[1];
+      let val = m[2].trim();
+      // 去掉引号
+      if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
+      if (val === 'true') val = true;
+      else if (val === 'false') val = false;
+      else if (!isNaN(val) && val !== '') val = parseFloat(val);
+      currentAction[key] = val;
+      continue;
+    }
+    
+    // 在 if: 内部
+    if (inIf) {
+      const m = trimmed.match(/^(\w[\w_]*):\s*(.*)$/);
+      if (!m) continue;
+      const key = m[1];
+      let val = m[2].trim();
+      if (val.startsWith('"') && val.endsWith('"')) val = val.slice(1, -1);
+      if (val === 'true') val = true;
+      else if (val === 'false') val = false;
+      if (!currentAction.if) currentAction.if = {};
+      currentAction.if[key] = val;
+      continue;
+    }
+  }
+  
+  // 保存最后一个
+  if (currentAction && currentIdx !== null) {
+    result.actions[currentIdx] = currentAction;
+  }
+  
+  return result;
+}
+
+// ============================================================
+//  导出 YAML
+// ============================================================
+function exportYaml() {
+  if (elements.length === 0) {
+    toast('请先加载 JSON 数据', 'error');
+    return;
+  }
+  
+  const lines = [];
+  lines.push('# ============================================================');
+  lines.push('# 动作配置文件 — 由 YAML 编辑器生成');
+  lines.push(`# 生成时间: ${new Date().toLocaleString()}`);
+  lines.push('# ============================================================');
+  lines.push('');
+  
+  if (elements.length > 0 && elements[0].page_url) {
+    lines.push(`page_url: "${elements[0].page_url}"`);
+  }
+  lines.push('close_browser: true');
+  lines.push('actions:');
+  
+  // 按 index 排序输出
+  const indices = Object.keys(actions).map(Number).sort((a,b) => a - b);
+  
+  for (const idx of indices) {
+    const a = actions[idx];
+    const el = elements[idx];
+    const stepName = el ? el.step_name : `步骤${idx+1}`;
+    
+    lines.push('');
+    lines.push(`  - index: ${idx}`);
+    lines.push(`    step_name: "${stepName}"`);
+    
+    // IF 条件
+    if (a.if) {
+      lines.push('    if:');
+      if (a.if.condition) lines.push(`      condition: ${a.if.condition}`);
+      if (a.if.ref_index !== undefined) lines.push(`      ref_index: ${a.if.ref_index}`);
+      if (a.if.step_name) lines.push(`      step_name: "${a.if.step_name}"`);
+    }
+    
+    lines.push('    action:');
+    lines.push(`      type: ${a.type || 'click'}`);
+    lines.push(`      on_not_found: ${a.on_not_found || 'fail'}`);
+    
+    // wait_for_element
+    if (a.wait_for_element) {
+      lines.push('      wait_for_element: true');
+      lines.push(`      wait_timeout: ${a.wait_timeout || 10}`);
+    } else {
+      lines.push('      wait_for_element: false');
+    }
+    
+    // fill
+    if (a.type === 'fill') {
+      lines.push(`      value: "${a.value || ''}"`);
+      lines.push(`      clear_first: ${a.clear_first !== false}`);
+    }
+    
+    // screenshot
+    if (a.type === 'screenshot' && a.screenshot_name) {
+      lines.push(`      screenshot_name: "${a.screenshot_name}"`);
+    }
+    
+    // 定时参数（检测类不需要）
+    if (!['check_exists','check_visible'].includes(a.type)) {
+      lines.push(`      wait_before: ${a.wait_before !== undefined ? a.wait_before : 0.5}`);
+      lines.push(`      wait_after: ${a.wait_after !== undefined ? a.wait_after : 0.5}`);
+      lines.push(`      wait_strategy: ${a.wait_strategy || 'timeout'}`);
+    }
+  }
+  
+  // 下载
+  const blob = new Blob([lines.join('\n')], { type: 'text/yaml;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  
+  const jsonName = 'actions_config_export';
+  a.download = `${jsonName}.yaml`;
+  a.click();
+  URL.revokeObjectURL(url);
+  
+  toast(`已导出 ${indices.length} 个动作配置`, 'success');
+  hasChanges = false;
+}
+
+// ============================================================
+//  构建分组
+// ============================================================
+function _buildGroups() {
+  groups = {};
+  groupOrder = [];
+  for (let i = 0; i < elements.length; i++) {
+    const sn = elements[i].step_name;
+    if (!groups[sn]) {
+      groups[sn] = [];
+      groupOrder.push(sn);
+    }
+    groups[sn].push(i);
+  }
+}
+
+// ============================================================
+//  渲染
+// ============================================================
+function renderAll() {
+  const container = document.getElementById('zoneList');
+  const searchVal = document.getElementById('searchInput').value.toLowerCase();
+  const tagFilter = document.getElementById('tagFilter').value;
+  const statusFilter = document.getElementById('statusFilter').value;
+  
+  let totalConfigured = 0;
+  let totalUnconfigured = 0;
+  
+  let html = '';
+  
+  for (const sn of groupOrder) {
+    const indices = groups[sn];
+    const url = elements[indices[0]].page_url || '';
+    
+    // 检查该区域是否有匹配的元素
+    let visibleIndices = indices.filter(idx => {
+      const el = elements[idx];
+      const sel = el.selectors || {};
+      const tag = (sel.tag || '').toLowerCase();
+      const text = (sel.text || '');
+      const ph = (sel.placeholder || '');
+      const searchText = `${tag} ${text} ${ph} ${sn}`.toLowerCase();
+      
+      if (searchVal && !searchText.includes(searchVal)) return false;
+      if (tagFilter && tag !== tagFilter) return false;
+      if (statusFilter === 'configured' && !actions[idx]) return false;
+      if (statusFilter === 'unconfigured' && actions[idx]) return false;
+      return true;
+    });
+    
+    if (visibleIndices.length === 0) continue;
+    
+    // 统计
+    for (const idx of indices) {
+      if (actions[idx]) totalConfigured++;
+      else totalUnconfigured++;
+    }
+    
+    const isParent = sn.includes('父元素');
+    const isPage = sn.includes('页面');
+    
+    html += `<div class="zone-card">`;
+    html += `<div class="zone-header" onclick="toggleZone(this)">`;
+    html += `<span class="arrow">▼</span>`;
+    html += `<span class="zone-name">${isParent ? '📦' : isPage ? '📄' : '📍'} ${sn}</span>`;
+    html += `<span class="zone-badge">${indices.length} 元素</span>`;
+    if (url) html += `<span class="zone-url">${url}</span>`;
+    html += `</div>`;
+    html += `<div class="zone-body">`;
+    html += `<table class="element-table">`;
+    html += `<thead><tr>
+      <th class="col-idx">#</th>
+      <th class="col-tag">标签</th>
+      <th class="col-text">文本 / placeholder</th>
+      <th>操作</th>
+      <th>找不到</th>
+      <th>等待</th>
+      <th>条件</th>
+      <th class="col-edit">编辑</th>
+    </tr></thead><tbody>`;
+    
+    for (const idx of visibleIndices) {
+      const el = elements[idx];
+      const sel = el.selectors || {};
+      const tag = sel.tag || '';
+      const text = sel.text || '';
+      const ph = sel.placeholder || '';
+      const a = actions[idx];
+      
+      const tagClass = `tag-badge tag-${tag}`;
+      const textDisplay = text || ph || '—';
+      
+      let actionHtml, nfHtml, waitHtml, ifHtml;
+      
+      if (a) {
+        const acClass = `action-badge action-${a.type === 'fill' ? 'fill' : a.type === 'click' ? 'click' : 'check'}`;
+        actionHtml = `<span class="${acClass}">${a.type}</span>`;
+        const nfClass = a.on_not_found === 'fail' ? 'nf-badge nf-fail' : 'nf-badge nf-skip';
+        nfHtml = `<span class="${nfClass}">${a.on_not_found === 'fail' ? '必须' : '跳过'}</span>`;
+        
+        if (a.type === 'fill') {
+          actionHtml += `<br><small style="color:#666">${a.value || ''}</small>`;
+        }
+        
+        waitHtml = `<small>前${a.wait_before || 0.5}s / 后${a.wait_after || 0.5}s</small>`;
+        
+        if (a.if && a.if.condition) {
+          const condLabel = a.if.condition === 'element_exists' ? '存在' : 
+                            a.if.condition === 'element_not_exists' ? '不存在' : a.if.condition;
+          ifHtml = `<span class="if-badge">IF #${a.if.ref_index} ${condLabel}</span>`;
+        } else {
+          ifHtml = '—';
+        }
+      } else {
+        actionHtml = `<span class="action-badge action-skip-badge">未配置</span>`;
+        nfHtml = '—';
+        waitHtml = '—';
+        ifHtml = '—';
+      }
+      
+      html += `<tr>
+        <td class="col-idx">${idx}</td>
+        <td class="col-tag"><span class="${tagClass}">${tag || '?'}</span></td>
+        <td class="col-text" title="${textDisplay}">${textDisplay.substring(0, 40)}</td>
+        <td>${actionHtml}</td>
+        <td>${nfHtml}</td>
+        <td>${waitHtml}</td>
+        <td>${ifHtml}</td>
+        <td class="col-edit"><button class="btn-primary" style="padding:4px 12px;font-size:12px" onclick="editAction(${idx})">编辑</button></td>
+      </tr>`;
+    }
+    
+    html += `</tbody></table></div></div>`;
+  }
+  
+  container.innerHTML = html;
+  
+  // 更新计数
+  const total = totalConfigured + totalUnconfigured;
+  document.getElementById('countInfo').textContent = `已配置 ${totalConfigured}/${total} · 未配置 ${totalUnconfigured}`;
+}
+
+function toggleZone(header) {
+  const arrow = header.querySelector('.arrow');
+  const body = header.nextElementSibling;
+  if (body.style.display === 'none') {
+    body.style.display = '';
+    arrow.classList.remove('collapsed');
+  } else {
+    body.style.display = 'none';
+    arrow.classList.add('collapsed');
+  }
+}
+
+// ============================================================
+//  编辑弹窗
+// ============================================================
+function editAction(idx) {
+  editingIdx = idx;
+  const el = elements[idx];
+  const sel = el.selectors || {};
+  const a = actions[idx] || {};
+  
+  const tag = sel.tag || '';
+  const text = sel.text || '';
+  const ph = sel.placeholder || '';
+  
+  document.getElementById('modalTitle').textContent = `编辑元素 #${idx} — ${(text || ph || '').substring(0, 40)}`;
+  
+  const html = `
+    <div class="form-group">
+      <label>元素信息</label>
+      <div style="background:#f8f9fa;padding:10px;border-radius:6px;font-size:13px">
+        <div>标签: <strong>${tag}</strong> | 文本: ${text || '—'} | placeholder: ${ph || '—'}</div>
+        <div>步骤: ${el.step_name || ''}</div>
+        <div style="color:#999;font-size:12px;word-break:break-all">URL: ${el.page_url || ''}</div>
+      </div>
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group">
+        <label>操作类型</label>
+        <select id="edit-type">
+          <option value="click" ${(a.type||'click')==='click'?'selected':''}>点击</option>
+          <option value="fill" ${a.type==='fill'?'selected':''}>填写</option>
+          <option value="check_exists" ${a.type==='check_exists'?'selected':''}>检测存在</option>
+          <option value="check_visible" ${a.type==='check_visible'?'selected':''}>检测可见</option>
+          <option value="wait_visible" ${a.type==='wait_visible'?'selected':''}>等待出现</option>
+          <option value="hover" ${a.type==='hover'?'selected':''}>悬浮</option>
+          <option value="select" ${a.type==='select'?'selected':''}>选择下拉</option>
+          <option value="scroll_to" ${a.type==='scroll_to'?'selected':''}>滚动到此</option>
+          <option value="screenshot" ${a.type==='screenshot'?'selected':''}>截图区域</option>
+          <option value="locate_parent" ${a.type==='locate_parent'?'selected':''}>父元素容器</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>找不到时</label>
+        <select id="edit-on-not-found">
+          <option value="fail" ${(a.on_not_found||'fail')==='fail'?'selected':''}>fail — 终止流程</option>
+          <option value="skip" ${a.on_not_found==='skip'?'selected':''}>skip — 跳过继续</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="form-group" id="fill-value-group" style="${a.type==='fill'?'':'display:none'}">
+      <label>填写内容</label>
+      <input type="text" id="edit-value" value="${escapeHtml(a.value||'')}" placeholder='${"${ACCOUNT}"} 或固定文本'>
+      <div class="hint">可用 \${变量名} 引用 vars.yaml 中的变量</div>
+    </div>
+    
+    <div class="form-group" id="screenshot-name-group" style="${a.type==='screenshot'?'':'display:none'}">
+      <label>截图文件名</label>
+      <input type="text" id="edit-screenshot-name" value="${escapeHtml(a.screenshot_name||'')}" placeholder="step_xx">
+    </div>
+    
+    <div class="form-row">
+      <div class="form-group">
+        <label>操作前等待 (秒)</label>
+        <input type="number" id="edit-wait-before" value="${a.wait_before!==undefined?a.wait_before:0.5}" step="0.1" min="0">
+      </div>
+      <div class="form-group">
+        <label>操作后等待 (秒)</label>
+        <input type="number" id="edit-wait-after" value="${a.wait_after!==undefined?a.wait_after:0.5}" step="0.1" min="0">
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label>点击后等待策略</label>
+      <select id="edit-wait-strategy">
+        <option value="timeout" ${(a.wait_strategy||'timeout')==='timeout'?'selected':''}>timeout — 固定等待</option>
+        <option value="navigation" ${a.wait_strategy==='navigation'?'selected':''}>navigation — 等页面加载</option>
+        <option value="element_appear" ${a.wait_strategy==='element_appear'?'selected':''}>element_appear — 等元素出现</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input type="checkbox" id="edit-wait-for-element" ${a.wait_for_element?'checked':''}>
+        等待元素出现后再操作（动态弹窗等场景）
+      </label>
+    </div>
+    <div class="form-group" id="wait-timeout-group" style="${a.wait_for_element?'':'display:none'}">
+      <label>最长等待 (秒)</label>
+      <input type="number" id="edit-wait-timeout" value="${a.wait_timeout||10}" min="1" max="120">
+    </div>
+    
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input type="checkbox" id="edit-clear-first" ${a.clear_first!==false?'checked':''}>
+        填写前清空已有内容
+      </label>
+    </div>
+    
+    <!-- IF 条件 -->
+    <div class="if-section">
+      <h4>🔗 条件执行（IF）</h4>
+      <div class="form-row">
+        <div class="form-group">
+          <label>条件类型</label>
+          <select id="edit-if-condition">
+            <option value="" ${!a.if||!a.if.condition?'selected':''}>无条件</option>
+            <option value="element_exists" ${a.if&&a.if.condition==='element_exists'?'selected':''}>元素存在时执行</option>
+            <option value="element_not_exists" ${a.if&&a.if.condition==='element_not_exists'?'selected':''}>元素不存在时执行</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>引用元素索引</label>
+          <input type="number" id="edit-if-ref-index" value="${a.if&&a.if.ref_index!==undefined?a.if.ref_index:''}" placeholder="元素编号" min="0">
+          <div class="hint">输入元素 # 编号，如 5 表示参考 index=5 的元素</div>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  document.getElementById('modalBody').innerHTML = html;
+  document.getElementById('modalOverlay').classList.add('active');
+  
+  // 联动: 操作类型切换时显示/隐藏相关字段
+  document.getElementById('edit-type').onchange = function() {
+    const t = this.value;
+    document.getElementById('fill-value-group').style.display = t === 'fill' ? '' : 'none';
+    document.getElementById('screenshot-name-group').style.display = t === 'screenshot' ? '' : 'none';
+  };
+  document.getElementById('edit-wait-for-element').onchange = function() {
+    document.getElementById('wait-timeout-group').style.display = this.checked ? '' : 'none';
+  };
+}
+
+function saveAction() {
+  const idx = editingIdx;
+  if (idx < 0) return;
+  
+  const a = actions[idx] || {};
+  a.type = document.getElementById('edit-type').value;
+  a.on_not_found = document.getElementById('edit-on-not-found').value;
+  a.wait_before = parseFloat(document.getElementById('edit-wait-before').value) || 0.5;
+  a.wait_after = parseFloat(document.getElementById('edit-wait-after').value) || 0.5;
+  a.wait_strategy = document.getElementById('edit-wait-strategy').value;
+  a.wait_for_element = document.getElementById('edit-wait-for-element').checked;
+  a.wait_timeout = parseInt(document.getElementById('edit-wait-timeout').value) || 10;
+  a.clear_first = document.getElementById('edit-clear-first').checked;
+  
+  // fill 的值
+  if (a.type === 'fill') {
+    a.value = document.getElementById('edit-value').value;
+  } else {
+    delete a.value;
+  }
+  
+  if (a.type === 'screenshot') {
+    a.screenshot_name = document.getElementById('edit-screenshot-name').value;
+  } else {
+    delete a.screenshot_name;
+  }
+  
+  // IF 条件
+  const ifCondition = document.getElementById('edit-if-condition').value;
+  if (ifCondition) {
+    a.if = {
+      condition: ifCondition,
+      ref_index: parseInt(document.getElementById('edit-if-ref-index').value) || 0,
+    };
+  } else {
+    delete a.if;
+  }
+  
+  // 检测类不需要定时参数
+  if (['check_exists', 'check_visible', 'locate_parent'].includes(a.type)) {
+    delete a.wait_before;
+    delete a.wait_after;
+    delete a.wait_strategy;
+  }
+  
+  actions[idx] = a;
+  hasChanges = true;
+  closeModal();
+  renderAll();
+  toast('已保存', 'success');
+}
+
+function deleteAction() {
+  if (editingIdx < 0) return;
+  delete actions[editingIdx];
+  hasChanges = true;
+  closeModal();
+  renderAll();
+  toast('已清除配置', 'info');
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
+  editingIdx = -1;
+}
+
+// 点击遮罩关闭
+document.getElementById('modalOverlay').onclick = function(e) {
+  if (e.target === this) closeModal();
+};
+
+// ============================================================
+//  工具函数
+// ============================================================
+function setStatus(msg) {
+  document.getElementById('statusInfo').textContent = msg;
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function toast(msg, type = 'info') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `toast toast-${type} show`;
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// 键盘快捷键
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+  if (e.key === 'Enter' && document.getElementById('modalOverlay').classList.contains('active')) {
+    // 防止在输入框中误触
+    if (e.target.tagName !== 'TEXTAREA') saveAction();
+  }
+});
+</script>
+</body>
+</html>
