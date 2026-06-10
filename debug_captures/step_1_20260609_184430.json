@@ -1,0 +1,20 @@
+{
+  "step_index": 1,
+  "step_name": "请输入ASIN或标题",
+  "page_state": {
+    "title": "词库 - 领星ERP广告",
+    "url": "https://ads.lingxing.com/amazon/word-stock",
+    "dom_size": 6744,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1413,\"h\":721}"
+    }
+  },
+  "strategies": [],
+  "action": {
+    "type": "fill",
+    "value": "${INPUT_VALUE}",
+    "clear_first": true,
+    "on_not_found": "skip"
+  }
+}

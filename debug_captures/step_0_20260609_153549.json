@@ -1,0 +1,55 @@
+{
+  "step_index": 0,
+  "step_name": "批量创建关键词流程-登录",
+  "page_state": {
+    "title": "领星ERP - 跨境电商管理系统",
+    "url": "https://huizhixin.lingxing.com/erp/home",
+    "dom_size": 14566,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1685,\"h\":713}"
+    }
+  },
+  "strategies": [
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "id",
+        "value": "app"
+      },
+      "target": {
+        "type": "text",
+        "value": "账号登录"
+      },
+      "description": "id=app 内 text=账号登录"
+    },
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "id",
+        "value": "app"
+      },
+      "target": {
+        "type": "css",
+        "value": "div.tab_item.active"
+      },
+      "description": "id=app 内 css=div.tab_item.active"
+    },
+    {
+      "type": "text",
+      "value": "账号登录"
+    },
+    {
+      "type": "css",
+      "value": "div.tab_item.active"
+    }
+  ],
+  "action": {
+    "type": "click",
+    "on_not_found": "skip",
+    "wait_for_element": false,
+    "wait_before": 0.5,
+    "wait_after": 3,
+    "wait_strategy": "navigation"
+  }
+}

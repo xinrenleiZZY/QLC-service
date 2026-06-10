@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-09T17:14:33.896652",
+    "total_count": 7,
+    "step_name": "12",
+    "cdp_url": null
+  },
+  "elements": [
+    {
+      "time": "2026-06-09T09:11:26.357Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=D1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "section",
+        "id": null,
+        "class": "prompt-container",
+        "text": "仓库采购FBAFBM海外仓1前置信息录入必做添加仓库导航栏【设置-仓库设置】，支持添加基础仓库信息，包括本地仓和海外仓，用于后续库存管理。导入初始化库存导航栏【仓库-库存明细】，点击「导入库存初始值」",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#init-prompt > section.prompt-container",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/section[1]",
+        "inner_text": "仓库\n采购\nFBA\nFBM\n海外仓\n1\n前置信息录入\n必做\n添加仓库\n导航栏【设置-仓库设置】，支持添加基础仓库信息，包括本地仓和海外仓，用于后续库存管理。\n导"
+      },
+      "step_name": ""
+    },
+    {
+      "time": "2026-06-09T09:11:26.957Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=D1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "div",
+        "id": null,
+        "class": "steps-item ak-align-center",
+        "text": "产品信息维护已完成录入本地产品并配对平台商品，实现数据匹配",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#init-prompt > div.prompt-head > section.steps-container > div:nth-child(3) > div.steps-item.ak-align-center",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/div[1]/section[1]/div[3]/div[1]",
+        "inner_text": "产品信息维护\n已完成\n录入本地产品并配对平台商品，实现数据匹配"
+      },
+      "step_name": ""
+    },
+    {
+      "time": "2026-06-09T09:11:28.117Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=C1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "section",
+        "id": "done-container",
+        "class": null,
+        "text": "操作成功 已进行配对，进入  Lsiting  页面可进行更多管理操作",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#done-container",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/section[1]/section[1]/div[2]/section[1]/section[2]",
+        "inner_text": "操作成功\n已进行配对，进入 Lsiting 页面可进行更多管理操作"
+      },
+      "step_name": ""
+    },
+    {
+      "time": "2026-06-09T09:11:29.574Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=C1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "section",
+        "id": null,
+        "class": "base-card card ak-flex-column",
+        "text": "3商品管理店铺授权后，系统将自动同步线上商品数据，在【销售】模块可实现对商品的统一管理。分配负责人将线上商品分配至对应的负责人账号，实现权限管理，并支持按负责人统计业绩添加标签支持根据公司需要自定义商",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#init-prompt > section.prompt-container > section.base-config > div.ak-flex-1.ak-flex:nth-child(3) > section.base-card.card.ak-flex-column",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/section[1]/section[1]/div[3]/section[1]",
+        "inner_text": "3\n商品管理\n店铺授权后，系统将自动同步线上商品数据，在【销售】模块可实现对商品的统一管理。\n分配负责人\n将线上商品分配至对应的负责人账号，实现权限管理，并支持"
+      },
+      "step_name": ""
+    },
+    {
+      "time": "2026-06-09T09:11:30.333Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=C1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "div",
+        "id": null,
+        "class": "base-title ak-align-center",
+        "text": "3商品管理",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#init-prompt > section.prompt-container > section.base-config > div.ak-flex-1.ak-flex:nth-child(3) > section.base-card.card.ak-flex-column > section.header-info.ak-flex-column:nth-child(1) > div.base-title.ak-align-center:nth-child(1)",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/section[1]/section[1]/div[3]/section[1]/section[1]/div[1]",
+        "inner_text": "3\n商品管理"
+      },
+      "step_name": ""
+    },
+    {
+      "time": "2026-06-09T09:11:35.062Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=C1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "section",
+        "id": null,
+        "class": "base-card card ak-flex-column",
+        "text": "3商品管理店铺授权后，系统将自动同步线上商品数据，在【销售】模块可实现对商品的统一管理。分配负责人将线上商品分配至对应的负责人账号，实现权限管理，并支持按负责人统计业绩添加标签支持根据公司需要自定义商",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#init-prompt > section.prompt-container > section.base-config > div.ak-flex-1.ak-flex:nth-child(3) > section.base-card.card.ak-flex-column",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/section[1]/section[1]/div[3]/section[1]",
+        "inner_text": "3\n商品管理\n店铺授权后，系统将自动同步线上商品数据，在【销售】模块可实现对商品的统一管理。\n分配负责人\n将线上商品分配至对应的负责人账号，实现权限管理，并支持"
+      },
+      "step_name": ""
+    },
+    {
+      "time": "2026-06-09T09:11:35.630Z",
+      "page_url": "https://huizhixin.lingxing.com/erp/InitPrompt?code=C1",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "div",
+        "id": null,
+        "class": "header-descript ak-flex-column",
+        "text": "店铺授权后，系统将自动同步线上商品数据，在【销售】模块可实现对商品的统一管理。分配负责人将线上商品分配至对应的负责人账号，实现权限管理，并支持按负责人统计业绩添加标签支持根据公司需要自定义商品标签，用",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "href": null,
+        "value": null,
+        "css_selector": "#init-prompt > section.prompt-container > section.base-config > div.ak-flex-1.ak-flex:nth-child(3) > section.base-card.card.ak-flex-column > section.header-info.ak-flex-column:nth-child(1) > div.header-descript.ak-flex-column:nth-child(2)",
+        "xpath": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/section[1]/section[1]/div[3]/section[1]/section[1]/div[2]",
+        "inner_text": "店铺授权后，系统将自动同步线上商品数据，在【销售】模块可实现对商品的统一管理。\n分配负责人\n将线上商品分配至对应的负责人账号，实现权限管理，并支持按负责人统计业"
+      },
+      "step_name": ""
+    }
+  ]
+}

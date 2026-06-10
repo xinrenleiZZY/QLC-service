@@ -1,0 +1,85 @@
+[
+  {
+    "metadata": {
+      "timestamp": "2026-06-09T18:11:59.187342",
+      "total_count": 6,
+      "step_name": "确认",
+      "cdp_url": null
+    },
+    "elements": [
+      {
+        "time": "2026-06-09T10:11:52.840Z",
+        "step_name": "确认",
+        "page_url": "https://ads.lingxing.com/amazon/word-stock",
+        "page_title": "词库 - 领星ERP广告",
+        "selectors": {
+          "tag": "span",
+          "id": null,
+          "class": null,
+          "text": "确定",
+          "placeholder": null,
+          "type": null,
+          "name": null,
+          "data-*": null,
+          "css_selector": "div:nth-child(4) > div > div.add-word-stock-dialog > footer > div > button > span",
+          "xpath_short": "/div[4]/div/div/footer/div/button/span",
+          "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]/div[1]/button[1]/span[1]",
+          "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+          "rect": {
+            "x": 1533,
+            "y": 794.5,
+            "width": 24,
+            "height": 12,
+            "top": 794.5,
+            "right": 1557,
+            "bottom": 806.5,
+            "left": 1533
+          },
+          "inner_text": "确定"
+        },
+        "ancestors": [
+          {
+            "tag": "footer",
+            "id": null,
+            "class": "dialog__footer",
+            "text": "取消确定",
+            "role": null,
+            "aria_label": null,
+            "depth": 3,
+            "is_stable_anchor": true
+          },
+          {
+            "tag": "div",
+            "id": null,
+            "class": "el-dialog add-word-stock-dialog",
+            "text": "新建词库词库名称8 / 50国家美国美国请选择国家共享方式共享给所有用户不共享共享给所有用户共享给指",
+            "role": null,
+            "aria_label": null,
+            "depth": 4,
+            "is_stable_anchor": true
+          },
+          {
+            "tag": "div",
+            "id": null,
+            "class": "el-overlay-dialog",
+            "text": "新建词库词库名称8 / 50国家美国美国请选择国家共享方式共享给所有用户不共享共享给所有用户共享给指",
+            "role": "dialog",
+            "aria_label": "新建词库",
+            "depth": 5,
+            "is_stable_anchor": true
+          }
+        ]
+      }
+    ],
+    "cleaned": {
+      "strategies": [],
+      "best_strategy": null,
+      "reliability": "low",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  }
+]

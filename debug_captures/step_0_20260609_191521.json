@@ -1,0 +1,22 @@
+{
+  "step_index": 0,
+  "step_name": "词库",
+  "page_state": {
+    "title": "词库 - 领星ERP广告",
+    "url": "https://ads.lingxing.com/amazon/word-stock",
+    "dom_size": 6487,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1413,\"h\":721}"
+    }
+  },
+  "strategies": [],
+  "action": {
+    "type": "click",
+    "on_not_found": "skip",
+    "wait_for_element": false,
+    "wait_before": 0.5,
+    "wait_after": 2.0,
+    "wait_strategy": "timeout"
+  }
+}

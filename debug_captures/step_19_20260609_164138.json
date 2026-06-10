@@ -1,0 +1,63 @@
+{
+  "step_index": 19,
+  "step_name": "批量创建关键词流程-词库页面-处理广告",
+  "page_state": {
+    "title": "词库 - 领星ERP广告",
+    "url": "https://ads.lingxing.com/amazon/word-stock",
+    "dom_size": 7916,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1718,\"h\":777}"
+    }
+  },
+  "strategies": [
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "css",
+        "value": ".el-dialog"
+      },
+      "target": {
+        "type": "css",
+        "value": "span.el-checkbox__inner"
+      },
+      "description": "css=.el-dialog 内 css=span.el-checkbox__inner"
+    },
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "css",
+        "value": ".el-dialog"
+      },
+      "target": {
+        "type": "css",
+        "value": "span.el-checkbox__inner"
+      },
+      "description": "css=.el-dialog 内 css=span.el-checkbox__inner"
+    },
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "role",
+        "value": "dialog"
+      },
+      "target": {
+        "type": "css",
+        "value": "span.el-checkbox__inner"
+      },
+      "description": "role=dialog 内 css=span.el-checkbox__inner"
+    },
+    {
+      "type": "css",
+      "value": "span.el-checkbox__inner"
+    }
+  ],
+  "action": {
+    "type": "click",
+    "on_not_found": "skip",
+    "wait_for_element": false,
+    "wait_before": 0.5,
+    "wait_after": 2,
+    "wait_strategy": "timeout"
+  }
+}

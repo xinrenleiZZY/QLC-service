@@ -1,0 +1,72 @@
+{
+  "step_index": 14,
+  "step_name": "批量创建关键词流程-词库页面-处理广告",
+  "page_state": {
+    "title": "词库 - 领星ERP广告",
+    "url": "https://ads.lingxing.com/amazon/word-stock",
+    "dom_size": 7903,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1718,\"h\":777}"
+    }
+  },
+  "strategies": [
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "css",
+        "value": ".el-dialog"
+      },
+      "target": {
+        "type": "text",
+        "value": "【词库】功能升级公告"
+      },
+      "description": "css=.el-dialog 内 text=【词库】功能升级公告"
+    },
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "css",
+        "value": ".el-dialog"
+      },
+      "target": {
+        "type": "text",
+        "value": "【词库】功能升级公告"
+      },
+      "description": "css=.el-dialog 内 text=【词库】功能升级公告"
+    },
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "role",
+        "value": "dialog"
+      },
+      "target": {
+        "type": "text",
+        "value": "【词库】功能升级公告"
+      },
+      "description": "role=dialog 内 text=【词库】功能升级公告"
+    },
+    {
+      "type": "anchored",
+      "anchor": {
+        "type": "id",
+        "value": "yy-layout-content"
+      },
+      "target": {
+        "type": "text",
+        "value": "【词库】功能升级公告"
+      },
+      "description": "id=yy-layout-content 内 text=【词库】功能升级公告"
+    },
+    {
+      "type": "text",
+      "value": "【词库】功能升级公告"
+    }
+  ],
+  "action": {
+    "type": "check_exists",
+    "on_not_found": "skip",
+    "wait_for_element": false
+  }
+}

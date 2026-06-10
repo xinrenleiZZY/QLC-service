@@ -1,0 +1,18 @@
+{
+  "step_index": 0,
+  "step_name": "确认",
+  "page_state": {
+    "title": "词库 - 领星ERP广告",
+    "url": "https://ads.lingxing.com/amazon/word-stock",
+    "dom_size": 6792,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1413,\"h\":721}"
+    }
+  },
+  "strategies": [],
+  "action": {
+    "type": "click",
+    "on_not_found": "skip"
+  }
+}

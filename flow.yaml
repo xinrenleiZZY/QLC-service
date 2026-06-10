@@ -1,0 +1,10 @@
+name: 批量创建关键词
+modules:
+  - name: 登录
+    json: lingxing_elements-登录界面_cleaned.json
+    yaml: actions_config_登录界面.yaml
+  - name: 创建词库
+    json: lingxing_elements-批量创建关键词流程_cleaned.json
+    yaml: actions_config_批量创建关键词流程.yaml
+  - name: 词库V10
+    json: lingxing_elements-词库V10_cleaned.json
