@@ -1,3 +1,6 @@
-2026/06/09-11:19:20.597 5238 Reusing MANIFEST e:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/MANIFEST-000001
-2026/06/09-11:19:20.597 5238 Recovering log #3
-2026/06/09-11:19:20.598 5238 Reusing old log e:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/000003.log 
+2026/06/09-17:11:00.766 2758 Reusing MANIFEST E:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/06/09-17:11:00.767 2758 Recovering log #3
+2026/06/09-17:11:00.776 2758 Reusing old log E:\ZY2026\全流程V1\playwright_profile\Default\IndexedDB\https_lx-ai.lingxing.com_0.indexeddb.leveldb/000003.log 
+2026/06/09-17:14:40.311 2758 Level-0 table #5: started
+2026/06/09-17:14:40.319 2758 Level-0 table #5: 541846 bytes OK
+2026/06/09-17:14:40.321 2758 Delete type=0 #3

@@ -318,7 +318,11 @@ def clean_file(input_path: str, output_path: str = None, inplace: bool = False):
     with open(input_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    if isinstance(data, dict):
+    # 兼容 V10 格式: {metadata: ..., elements: [...]}
+    if isinstance(data, dict) and "elements" in data:
+        data = data["elements"]
+        print(f"  ℹ️  检测到 V10 格式，已提取 {len(data)} 个元素")
+    elif isinstance(data, dict):
         data = [data]
 
     for item in data:

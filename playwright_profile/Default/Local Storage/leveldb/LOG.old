@@ -1,3 +1,8 @@
-2026/06/06-15:07:19.939 10c9c Reusing MANIFEST e:\ZY2026\全流程V1\playwright_profile\Default\Local Storage\leveldb/MANIFEST-000001
-2026/06/06-15:07:19.946 10c9c Recovering log #3
-2026/06/06-15:07:19.948 10c9c Reusing old log e:\ZY2026\全流程V1\playwright_profile\Default\Local Storage\leveldb/000003.log 
+2026/06/09-17:10:30.916 18c4 Reusing MANIFEST E:\ZY2026\全流程V1\playwright_profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/06/09-17:10:30.924 18c4 Recovering log #3
+2026/06/09-17:10:30.924 18c4 Level-0 table #3: started
+2026/06/09-17:10:30.928 18c4 Level-0 table #3: 16567 bytes OK
+2026/06/09-17:10:30.928 18c4 Recovering log #4
+2026/06/09-17:10:30.930 18c4 Reusing old log E:\ZY2026\全流程V1\playwright_profile\Default\Local Storage\leveldb/000004.log 
+2026/06/09-17:10:30.931 18c4 Delete type=0 #3
+2026/06/09-17:10:30.931 18c4 Delete type=2 #5

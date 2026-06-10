@@ -1,546 +1,377 @@
-[
-  {
-    "time": "2026-06-03T09:01:49.386Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "input",
-      "id": null,
-      "class": "el-input__inner full-width-input",
-      "text": null,
-      "placeholder": "手机号/用户名/邮箱",
-      "type": "text",
-      "name": "account",
-      "data-*": {
-        "data-gtm-form-interact-field-id": "0"
-      },
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.is-required:nth-child(1) > div > div > input.full-width-input",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div/input",
-      "playwright_selector": "page.getByPlaceholder(\"手机号/用户名/邮箱\")",
-      "rect": {
-        "x": 1100.796875,
-        "y": 322.75,
-        "width": 400,
-        "height": 50,
-        "top": 322.75,
-        "right": 1500.796875,
-        "bottom": 372.75,
-        "left": 1100.796875
-      },
-      "inner_text": null
-    }
+{
+  "metadata": {
+    "timestamp": "2026-06-09T19:07:41.169764",
+    "total_count": 8,
+    "step_name": "",
+    "cdp_url": null
   },
-  {
-    "time": "2026-06-03T09:01:54.585Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "input",
-      "id": null,
-      "class": "el-input__inner full-width-input",
-      "text": null,
-      "placeholder": "密码",
-      "type": "password",
-      "name": "pwd",
-      "data-*": {
-        "data-gtm-form-interact-field-id": "1"
+  "elements": [
+    {
+      "time": "2026-06-09T10:38:24.982Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "span",
+        "id": null,
+        "class": "value-common placeholder",
+        "text": "请选择店铺",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": {
+          "data-v-11134b2e": ""
+        },
+        "css_selector": "#el-id-8099-13 > form > div.asterisk-left:nth-child(3) > div > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+        "xpath_short": "///*[@id=\"el-id-8099-13\"]/form/div[3]/div/div/div/div[1]/div[1]/div/span/div/span",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+        "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+        "rect": {
+          "x": 483,
+          "y": 227.5,
+          "width": 60,
+          "height": 30,
+          "top": 227.5,
+          "right": 543,
+          "bottom": 257.5,
+          "left": 483
+        },
+        "inner_text": "请选择店铺"
       },
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.is-required.last-form-item:nth-child(2) > div > div:nth-child(1) > input.full-width-input",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[1]/input",
-      "playwright_selector": "page.getByPlaceholder(\"密码\")",
-      "rect": {
-        "x": 1100.796875,
-        "y": 396.75,
-        "width": 400,
-        "height": 50,
-        "top": 396.75,
-        "right": 1500.796875,
-        "bottom": 446.75,
-        "left": 1100.796875
+      "ancestors": []
+    },
+    {
+      "time": "2026-06-09T10:38:28.590Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "span",
+        "id": null,
+        "class": "value-common placeholder",
+        "text": "请选择店铺",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": {
+          "data-v-11134b2e": ""
+        },
+        "css_selector": "#el-id-8099-13 > form > div.asterisk-left:nth-child(3) > div > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+        "xpath_short": "///*[@id=\"el-id-8099-13\"]/form/div[3]/div/div/div/div[1]/div[1]/div/span/div/span",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+        "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+        "rect": {
+          "x": 483,
+          "y": 227.5,
+          "width": 60,
+          "height": 30,
+          "top": 227.5,
+          "right": 543,
+          "bottom": 257.5,
+          "left": 483
+        },
+        "inner_text": "请选择店铺"
       },
-      "inner_text": null
+      "ancestors": []
+    },
+    {
+      "time": "2026-06-09T10:38:38.551Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": null,
+        "css_selector": "div:nth-child(4) > div > div.add-word-stock-dialog > footer",
+        "xpath_short": "/div[4]/div/div/footer",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "playwright_selector": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "rect": {
+          "x": 331,
+          "y": 771.5,
+          "width": 1258,
+          "height": 57,
+          "top": 771.5,
+          "right": 1589,
+          "bottom": 828.5,
+          "left": 331
+        },
+        "inner_text": "取消\n确定"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-dialog add-word-stock-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": null,
+          "aria_label": null,
+          "depth": 1,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-overlay-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": "dialog",
+          "aria_label": "新建词库",
+          "depth": 2,
+          "is_stable_anchor": true
+        }
+      ]
+    },
+    {
+      "time": "2026-06-09T10:38:46.904Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "i",
+        "id": null,
+        "class": "iconfont icon-xiaotubiao-xiala down",
+        "text": null,
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": {
+          "data-v-11134b2e": ""
+        },
+        "css_selector": "#el-id-8099-13 > form > div.asterisk-left:nth-child(3) > div > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > i.iconfont.icon-xiaotubiao-xiala.down:nth-child(2)",
+        "xpath_short": "///*[@id=\"el-id-8099-13\"]/form/div[3]/div/div/div/div[1]/div[1]/div/span/div/i[2]",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/i[2]",
+        "playwright_selector": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/i[2]",
+        "rect": {
+          "x": 547,
+          "y": 227.5,
+          "width": 16,
+          "height": 30,
+          "top": 227.5,
+          "right": 563,
+          "bottom": 257.5,
+          "left": 547
+        },
+        "inner_text": null
+      },
+      "ancestors": []
+    },
+    {
+      "time": "2026-06-09T10:39:27.195Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": null,
+        "css_selector": "div:nth-child(4) > div > div.add-word-stock-dialog > footer",
+        "xpath_short": "/div[4]/div/div/footer",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "playwright_selector": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "rect": {
+          "x": 331,
+          "y": 771.5,
+          "width": 1258,
+          "height": 57,
+          "top": 771.5,
+          "right": 1589,
+          "bottom": 828.5,
+          "left": 331
+        },
+        "inner_text": "取消\n确定"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-dialog add-word-stock-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": null,
+          "aria_label": null,
+          "depth": 1,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-overlay-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": "dialog",
+          "aria_label": "新建词库",
+          "depth": 2,
+          "is_stable_anchor": true
+        }
+      ]
+    },
+    {
+      "time": "2026-06-09T10:41:01.933Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": null,
+        "css_selector": "div:nth-child(4) > div > div.add-word-stock-dialog > footer",
+        "xpath_short": "/div[4]/div/div/footer",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "playwright_selector": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "rect": {
+          "x": 33,
+          "y": 500,
+          "width": 1258,
+          "height": 57,
+          "top": 500,
+          "right": 1291,
+          "bottom": 557,
+          "left": 33
+        },
+        "inner_text": "取消\n确定"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-dialog add-word-stock-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": null,
+          "aria_label": null,
+          "depth": 1,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-overlay-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": "dialog",
+          "aria_label": "新建词库",
+          "depth": 2,
+          "is_stable_anchor": true
+        }
+      ]
+    },
+    {
+      "time": "2026-06-09T10:41:04.381Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": null,
+        "css_selector": "div:nth-child(4) > div > div.add-word-stock-dialog > footer",
+        "xpath_short": "/div[4]/div/div/footer",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "playwright_selector": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "rect": {
+          "x": 33,
+          "y": 500,
+          "width": 1258,
+          "height": 57,
+          "top": 500,
+          "right": 1291,
+          "bottom": 557,
+          "left": 33
+        },
+        "inner_text": "取消\n确定"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-dialog add-word-stock-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": null,
+          "aria_label": null,
+          "depth": 1,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-overlay-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": "dialog",
+          "aria_label": "新建词库",
+          "depth": 2,
+          "is_stable_anchor": true
+        }
+      ]
+    },
+    {
+      "time": "2026-06-09T10:41:09.541Z",
+      "step_name": "",
+      "page_url": "https://ads.lingxing.com/amazon/word-stock",
+      "page_title": "词库 - 领星ERP广告",
+      "selectors": {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": null,
+        "css_selector": "div:nth-child(4) > div > div.add-word-stock-dialog > footer",
+        "xpath_short": "/div[4]/div/div/footer",
+        "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "playwright_selector": "/html[1]/body[1]/div[4]/div[1]/div[1]/footer[1]",
+        "rect": {
+          "x": 33,
+          "y": 500,
+          "width": 1258,
+          "height": 57,
+          "top": 500,
+          "right": 1291,
+          "bottom": 557,
+          "left": 33
+        },
+        "inner_text": "取消\n确定"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-dialog add-word-stock-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": null,
+          "aria_label": null,
+          "depth": 1,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": null,
+          "class": "el-overlay-dialog",
+          "text": "新建词库词库名称0 / 50国家请选择美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+          "role": "dialog",
+          "aria_label": "新建词库",
+          "depth": 2,
+          "is_stable_anchor": true
+        }
+      ]
     }
-  },
-  {
-    "time": "2026-06-03T09:02:06.280Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "div",
-      "id": null,
-      "class": "tab_item active",
-      "text": "账号登录",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": {
-        "data-v-c02e9296": ""
-      },
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > div.tab_list > div.tab_item.active:nth-child(1)",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/div/div[1]",
-      "playwright_selector": "page.getByText(\"账号登录\", { exact: true })",
-      "rect": {
-        "x": 1204.796875,
-        "y": 239.75,
-        "width": 80,
-        "height": 28,
-        "top": 239.75,
-        "right": 1284.796875,
-        "bottom": 267.75,
-        "left": 1204.796875
-      },
-      "inner_text": "账号登录"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:07.776Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "span",
-      "id": null,
-      "class": "el-checkbox__inner",
-      "text": null,
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.autoLogin:nth-child(3) > label > span:nth-child(1) > span",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/span",
-      "playwright_selector": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/span",
-      "rect": {
-        "x": 1101.796875,
-        "y": 462.75,
-        "width": 14,
-        "height": 14,
-        "top": 462.75,
-        "right": 1115.796875,
-        "bottom": 476.75,
-        "left": 1101.796875
-      },
-      "inner_text": null
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:07.787Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "input",
-      "id": null,
-      "class": "el-checkbox__original",
-      "text": null,
-      "placeholder": null,
-      "type": "checkbox",
-      "name": "autoLogin",
-      "data-*": null,
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.autoLogin:nth-child(3) > label > span.is-focus:nth-child(1) > input",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/input",
-      "playwright_selector": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/input",
-      "rect": {
-        "x": 1108.796875,
-        "y": 469.75,
-        "width": 0,
-        "height": 0,
-        "top": 469.75,
-        "right": 1108.796875,
-        "bottom": 469.75,
-        "left": 1108.796875
-      },
-      "inner_text": null
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:08.944Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "span",
-      "id": null,
-      "class": "el-checkbox__inner",
-      "text": null,
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.autoLogin:nth-child(3) > label > span:nth-child(1) > span",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/span",
-      "playwright_selector": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/span",
-      "rect": {
-        "x": 1101.796875,
-        "y": 462.75,
-        "width": 14,
-        "height": 14,
-        "top": 462.75,
-        "right": 1115.796875,
-        "bottom": 476.75,
-        "left": 1101.796875
-      },
-      "inner_text": null
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:08.949Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "input",
-      "id": null,
-      "class": "el-checkbox__original",
-      "text": null,
-      "placeholder": null,
-      "type": "checkbox",
-      "name": "autoLogin",
-      "data-*": {
-        "data-gtm-form-interact-field-id": "2"
-      },
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.autoLogin:nth-child(3) > label > span.is-focus:nth-child(1) > input",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/input",
-      "playwright_selector": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[3]/label/span[1]/input",
-      "rect": {
-        "x": 1108.796875,
-        "y": 469.75,
-        "width": 0,
-        "height": 0,
-        "top": 469.75,
-        "right": 1108.796875,
-        "bottom": 469.75,
-        "left": 1108.796875
-      },
-      "inner_text": null
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:11.152Z",
-    "page_url": "https://huizhixin.lingxing.com/login",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "button",
-      "id": null,
-      "class": "el-button loginBtn el-button--primary el-button--large is-round",
-      "text": "登录",
-      "placeholder": null,
-      "type": "button",
-      "name": null,
-      "data-*": {
-        "data-v-c02e9296": "",
-        "data-auth": "auth-button"
-      },
-      "css_selector": "#app > div.contain > div.center:nth-child(1) > div.box > div.right-container:nth-child(2) > div.loginForm:nth-child(2) > form > div.login-item:nth-child(4) > div > button.loginBtn.is-round",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div/div[2]/div[2]/form/div[4]/div/button",
-      "playwright_selector": "page.getByText(\"登录\", { exact: true })",
-      "rect": {
-        "x": 1100.796875,
-        "y": 544.75,
-        "width": 400,
-        "height": 50,
-        "top": 544.75,
-        "right": 1500.796875,
-        "bottom": 594.75,
-        "left": 1100.796875
-      },
-      "inner_text": "登录"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:37.904Z",
-    "page_url": "https://huizhixin.lingxing.com/erp/home",
-    "page_title": "领星ERP - 跨境电商管理系统",
-    "selectors": {
-      "tag": "i",
-      "id": null,
-      "class": "iconfont lx_nav_advertisement",
-      "text": null,
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": {
-        "data-v-27f1a574": ""
-      },
-      "css_selector": "#app > div.contain > div.sideBar.collapse-side-bar:nth-child(1) > div.sideBar-container:nth-child(1) > ul > li.is_active:nth-child(2) > a > i.iconfont.lx_nav_advertisement",
-      "xpath": "///*[@id=\"app\"]/div/div[1]/div[1]/ul/li[2]/a/i",
-      "playwright_selector": "///*[@id=\"app\"]/div/div[1]/div[1]/ul/li[2]/a/i",
-      "rect": {
-        "x": 19,
-        "y": 132,
-        "width": 18,
-        "height": 20,
-        "top": 132,
-        "right": 37,
-        "bottom": 152,
-        "left": 19
-      },
-      "inner_text": null
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:45.451Z",
-    "page_url": "https://ads.lingxing.com/home",
-    "page_title": "仪表盘",
-    "selectors": {
-      "tag": "span",
-      "id": null,
-      "class": "text-wrap",
-      "text": "下一条 (1/2)",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "#app > div.dashboard_container:nth-child(1) > div:nth-child(8) > div.update-notice > div:nth-child(3) > div.notice-footer > div:nth-child(2) > button.is-round > span.text-wrap",
-      "xpath": "///*[@id=\"app\"]/div[1]/div[8]/div/div[3]/div/div[2]/button/span",
-      "playwright_selector": "page.getByText(\"下一条 (1/2)\", { exact: true })",
-      "rect": {
-        "x": 1251.171875,
-        "y": 676,
-        "width": 71.828125,
-        "height": 12,
-        "top": 676,
-        "right": 1323,
-        "bottom": 688,
-        "left": 1251.171875
-      },
-      "inner_text": "下一条 (1/2)"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:46.184Z",
-    "page_url": "https://ads.lingxing.com/home",
-    "page_title": "仪表盘",
-    "selectors": {
-      "tag": "button",
-      "id": null,
-      "class": "el-button el-button--primary el-button--small is-round",
-      "text": "知道了",
-      "placeholder": null,
-      "type": "button",
-      "name": null,
-      "data-*": null,
-      "css_selector": "#app > div.dashboard_container:nth-child(1) > div:nth-child(8) > div.update-notice > div:nth-child(3) > div.notice-footer > div:nth-child(2) > button.is-round:nth-child(2)",
-      "xpath": "///*[@id=\"app\"]/div[1]/div[8]/div/div[3]/div/div[2]/button[2]",
-      "playwright_selector": "page.getByText(\"知道了\", { exact: true })",
-      "rect": {
-        "x": 1274,
-        "y": 666,
-        "width": 62,
-        "height": 32,
-        "top": 666,
-        "right": 1336,
-        "bottom": 698,
-        "left": 1274
-      },
-      "inner_text": "知道了"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:54.497Z",
-    "page_url": "https://ads.lingxing.com/home",
-    "page_title": "仪表盘",
-    "selectors": {
-      "tag": "a",
-      "id": null,
-      "class": "menu-hover",
-      "text": "词 词",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "div.wrapper:nth-child(1) > aside.main-sidebar > div.slimScrollDiv:nth-child(1) > section.sidebar > ul.sidebar-menu > li.treeview:nth-child(4) > a.menu-hover",
-      "xpath": "/div[1]/aside/div[1]/section/ul/li[4]/a",
-      "playwright_selector": "page.getByText(\"词 词\", { exact: true })",
-      "rect": {
-        "x": 0,
-        "y": 178,
-        "width": 56,
-        "height": 65,
-        "top": 178,
-        "right": 56,
-        "bottom": 243,
-        "left": 0
-      },
-      "inner_text": "词\n词"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:55.809Z",
-    "page_url": "https://ads.lingxing.com/home",
-    "page_title": "仪表盘",
-    "selectors": {
-      "tag": "a",
-      "id": null,
-      "class": "not-root",
-      "text": "词库",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "div.wrapper:nth-child(1) > aside.main-sidebar > section.sub-sidebar > ul.treeview-menu > li > a.not-root",
-      "xpath": "/div[1]/aside/section/ul/li/a",
-      "playwright_selector": "page.getByText(\"词库\", { exact: true })",
-      "rect": {
-        "x": 56,
-        "y": 84,
-        "width": 200,
-        "height": 35,
-        "top": 84,
-        "right": 256,
-        "bottom": 119,
-        "left": 56
-      },
-      "inner_text": "词库"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:57.337Z",
-    "page_url": "https://ads.lingxing.com/word_stock/report/index/index?profile_id=225395658378431",
-    "page_title": "词库",
-    "selectors": {
-      "tag": "div",
-      "id": null,
-      "class": "left-drawer-bar btn-info",
-      "text": "展开",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "div.wrapper:nth-child(1) > div.content-wrapper > section.content-container:nth-child(2) > section.content-left:nth-child(1) > div.left-drawer-container > div.left-drawer-bar.btn-info:nth-child(2)",
-      "xpath": "/div[1]/div/section[2]/section[1]/div/div[2]",
-      "playwright_selector": "page.getByText(\"展开\", { exact: true })",
-      "rect": {
-        "x": 56,
-        "y": 488,
-        "width": 24,
-        "height": 104,
-        "top": 488,
-        "right": 80,
-        "bottom": 592,
-        "left": 56
-      },
-      "inner_text": "展开"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:57.772Z",
-    "page_url": "https://ads.lingxing.com/word_stock/report/index/index?profile_id=225395658378431",
-    "page_title": "词库",
-    "selectors": {
-      "tag": "div",
-      "id": null,
-      "class": "tree-node-header",
-      "text": "ASIN 产品名-美国",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": {
-        "data-type": "lib",
-        "data-tag_name": "ASIN 产品名",
-        "data-lib-uuid": "125704497132850176"
-      },
-      "css_selector": "#treeList > div.tree-node.tree-lib:nth-child(1) > div.tree-node-header:nth-child(1)",
-      "xpath": "///*[@id=\"treeList\"]/div[1]/div[1]",
-      "playwright_selector": "page.getByText(\"ASIN 产品名-美国\", { exact: true })",
-      "rect": {
-        "x": 56,
-        "y": 207.140625,
-        "width": 193,
-        "height": 32,
-        "top": 207.140625,
-        "right": 249,
-        "bottom": 239.140625,
-        "left": 56
-      },
-      "inner_text": "ASIN 产品名-美国"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:58.455Z",
-    "page_url": "https://ads.lingxing.com/word_stock/report/index/index?profile_id=225395658378431",
-    "page_title": "词库",
-    "selectors": {
-      "tag": "button",
-      "id": "Search",
-      "class": "btn btn-info",
-      "text": "查询",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "#Search",
-      "xpath": "//*[@id=\"Search\"]",
-      "playwright_selector": "page.locator(\"#Search\")",
-      "rect": {
-        "x": 1457,
-        "y": 175.421875,
-        "width": 50,
-        "height": 32,
-        "top": 175.421875,
-        "right": 1507,
-        "bottom": 207.421875,
-        "left": 1457
-      },
-      "inner_text": "查询"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:58.466Z",
-    "page_url": "https://ads.lingxing.com/word_stock/report/index/index?profile_id=225395658378431",
-    "page_title": "词库",
-    "selectors": {
-      "tag": "div",
-      "id": null,
-      "class": "tree-node-header",
-      "text": "关键词(0)",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": {
-        "data-lib-uuid": "125704497132850176",
-        "data-type": "group",
-        "data-uuid": "125704497132938240",
-        "data-tag_name": "关键词"
-      },
-      "css_selector": "#treeList > div.tree-node.tree-lib:nth-child(1) > div.tree-node.tree-group:nth-child(2) > div.tree-node-header:nth-child(1)",
-      "xpath": "///*[@id=\"treeList\"]/div[1]/div[2]/div[1]",
-      "playwright_selector": "page.getByText(\"关键词(0)\", { exact: true })",
-      "rect": {
-        "x": 74,
-        "y": 239.140625,
-        "width": 193,
-        "height": 32,
-        "top": 239.140625,
-        "right": 267,
-        "bottom": 271.140625,
-        "left": 74
-      },
-      "inner_text": "关键词(0)"
-    }
-  },
-  {
-    "time": "2026-06-03T09:02:59.857Z",
-    "page_url": "https://ads.lingxing.com/word_stock/report/index/index?profile_id=225395658378431",
-    "page_title": "词库",
-    "selectors": {
-      "tag": "a",
-      "id": null,
-      "class": "layui-layer-btn1",
-      "text": "知道了",
-      "placeholder": null,
-      "type": null,
-      "name": null,
-      "data-*": null,
-      "css_selector": "#layui-layer1 > div.layui-layer-btn.layui-layer-btn-:nth-child(2) > a.layui-layer-btn1:nth-child(2)",
-      "xpath": "///*[@id=\"layui-layer1\"]/div[2]/a[2]",
-      "playwright_selector": "page.getByText(\"知道了\", { exact: true })",
-      "rect": {
-        "x": 972.5,
-        "y": 732.84375,
-        "width": 71,
-        "height": 32,
-        "top": 732.84375,
-        "right": 1043.5,
-        "bottom": 764.84375,
-        "left": 972.5
-      },
-      "inner_text": "知道了"
-    }
-  }
-]
+  ]
+}
