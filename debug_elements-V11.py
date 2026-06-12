@@ -6,6 +6,8 @@
   1. 作为独立工具：python debug_elements.py --cdp http://127.0.0.1:18800
   2. 作为 Python 模块：from debug_elements import ElementCollector
   3. 在你的框架中调用：collector.attach_and_collect()
+
+V11 特性：保存时自动清洗，直接输出 *_cleaned.json
 """
 # ── Windows GBK 编码兼容 ──
 import sys, io
@@ -20,7 +22,18 @@ import argparse
 import json
 from typing import Optional, List, Dict, Any
 from datetime import datetime
+from pathlib import Path
 from playwright.async_api import async_playwright, Browser
+
+# ── 导入清洗引擎 ──
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, PROJECT_ROOT)
+try:
+    from selector_cleaner import clean_element
+    HAS_CLEANER = True
+except ImportError:
+    HAS_CLEANER = False
+    print("  [!] 未找到 selector_cleaner.py，将保存原始格式")
 
 # ------------------------------------------------------------
 #  全局共享状态
@@ -624,22 +637,60 @@ class ElementCollector:
         return None
     
     async def save(self, filename: str = None) -> str:
-        """保存采集结果到文件"""
+        """保存采集结果到文件（自动清洗，输出 *_cleaned.json）"""
         output = filename or self.save_filename
-        
+
         # 确保是 JSON 文件
         if not output.endswith('.json'):
             output += '.json'
-        
+
+        # 去掉可能已有的 _cleaned 后缀（避免重复）
+        stem = output.replace('.json', '').replace('_cleaned', '')
+        raw_name = f"{stem}.json"
+        cleaned_name = f"{stem}_cleaned.json"
+
         project_dir = os.path.dirname(os.path.abspath(__file__))
-        file_path = os.path.join(project_dir, output)
-        
-        # 直接保存为平铺数组（V8 兼容格式）
-        with open(file_path, 'w', encoding='utf-8') as f:
+        docs_json = os.path.join(project_dir, "docs", "json")
+        docs_cleaned = os.path.join(project_dir, "docs", "cleaned")
+        os.makedirs(docs_json, exist_ok=True)
+        os.makedirs(docs_cleaned, exist_ok=True)
+
+        raw_path = os.path.join(docs_json, raw_name)
+        cleaned_path = os.path.join(docs_cleaned, cleaned_name)
+
+        # ── 1. 保存原始数据（到 docs/json/）──
+        with open(raw_path, 'w', encoding='utf-8') as f:
             json.dump(self.collected_items, f, ensure_ascii=False, indent=2)
-        
-        print(f"\n✅ 已保存 {len(self.collected_items)} 个元素到: {file_path}")
-        return file_path
+        print(f"\n[+] 原始数据已保存: {raw_path}")
+
+        # ── 2. 清洗并保存（到 docs/cleaned/）──
+        cleaned_items = []
+        if HAS_CLEANER and self.collected_items:
+            print(f"    正在清洗 {len(self.collected_items)} 个元素...")
+            for i, item in enumerate(self.collected_items):
+                try:
+                    # 与 selector_cleaner.clean_file() 一致：
+                    # 保留原始全部字段，新增 cleaned 字段
+                    cleaned = dict(item)  # 复制原始元素
+                    cleaned["cleaned"] = clean_element(item)
+                    cleaned_items.append(cleaned)
+                except Exception as e:
+                    print(f"    [WARN] 元素 {i} 清洗失败: {e}")
+                    cleaned_items.append(dict(item))  # 原始数据兜底
+            print(f"    [+] 清洗完成")
+        else:
+            cleaned_items = [dict(item) for item in self.collected_items]
+
+        with open(cleaned_path, 'w', encoding='utf-8') as f:
+            json.dump(cleaned_items, f, ensure_ascii=False, indent=2)
+
+        print(f"[+] 清洗后数据已保存: {cleaned_path}")
+        print(f"    [+] 共 {len(cleaned_items)} 个元素")
+        if HAS_CLEANER:
+            high = sum(1 for d in cleaned_items if d.get("cleaned", {}).get("reliability") == "high")
+            print(f"    [+] 可靠性: high={high} total={len(cleaned_items)}")
+
+        return cleaned_path
     
     def get_collected_selectors(self) -> List[Dict]:
         """获取所有采集的选择器（供自动化使用）"""

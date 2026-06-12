@@ -1,6 +1,0 @@
-name: 登录
-modules:
-  - name: lingxing_elements-批量创建关键词流程_cleaned
-    json: lingxing_elements-批量创建关键词流程_cleaned.json
-  - name: lingxing_elements-词库V10
-    json: lingxing_elements-词库V10_cleaned.json

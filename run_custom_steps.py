@@ -182,6 +182,10 @@ async def _execute_action(page, strategies: list, action: dict, vars_dict: dict)
         elif action_type == "fill":
             raw_value = action.get("value", "")
             value = _resolve_vars(raw_value, vars_dict)
+            # 先点击再输入（用于下拉搜索框等场景）
+            if action.get("click_first", False):
+                await loc.click()
+                await asyncio.sleep(0.5)
             if action.get("clear_first", True):
                 await loc.fill("")
             await loc.fill(value)

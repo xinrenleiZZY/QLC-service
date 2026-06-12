@@ -7,18 +7,17 @@ module_runner.py - 单个 JSON 模块执行器
   - 执行该 JSON 内的所有步骤
   - 返回 RunResult（成功/失败索引）
   - 完全独立，不依赖其他模块
-
-用法:
-    session = await BrowserSession.create()
-    result = await ModuleRunner.run(session, "xxx_cleaned.json")
-    print(f"成功: {result.success}, 失败: {result.fail}")
 """
+# ── Windows GBK 编码兼容 ──
+import sys, io
+if sys.stdout and sys.stdout.encoding and sys.stdout.encoding.lower() in ('gbk', 'gb2312', 'cp936'):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 import asyncio
 import json
 import os
 import re
-import sys
 from collections import OrderedDict
 from pathlib import Path
 

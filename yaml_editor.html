@@ -6,8 +6,39 @@
 <title>YAML 动作配置编辑器</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
-.container { max-width: 1400px; margin: 0 auto; }
+body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; background: #f5f5f5; color: #333; }
+
+/* ── 左右布局 ── */
+.app-layout { display: flex; height: 100vh; }
+
+/* ── 左侧边栏 ── */
+.sidebar { width: 260px; min-width: 260px; background: #1e1e2e; color: #cdd6f4; display: flex; flex-direction: column; overflow: hidden; }
+.sidebar-header { padding: 10px 12px; border-bottom: 1px solid #313244; }
+.sidebar-tab { flex: 1; padding: 6px 8px; border: 1px solid #45475a; border-radius: 6px; background: transparent; color: #a6adc8; cursor: pointer; font-size: 12px; transition: all .15s; }
+.sidebar-tab.active { background: #45475a; color: #cdd6f4; border-color: #89b4fa; }
+.sidebar-tab:hover { background: #313244; }
+.btn-vars-add { width: 100%; padding: 6px 0; border: 1px dashed #45475a; border-radius: 6px; background: transparent; color: #a6adc8; cursor: pointer; font-size: 12px; }
+.btn-vars-add:hover { background: #313244; color: #cdd6f4; }
+.sidebar-search { padding: 8px 16px; }
+.sidebar-search input { width: 100%; padding: 6px 10px; border-radius: 6px; border: 1px solid #45475a; background: #313244; color: #cdd6f4; font-size: 12px; outline: none; }
+.sidebar-search input::placeholder { color: #6c7086; }
+.sidebar-list { flex: 1; overflow-y: auto; padding: 4px 0; }
+.sidebar-item { padding: 10px 16px; cursor: pointer; display: flex; align-items: center; gap: 10px; border-left: 3px solid transparent; font-size: 13px; transition: all .15s; }
+.sidebar-item:hover { background: #313244; }
+.sidebar-item.active { background: #45475a; border-left-color: #89b4fa; }
+.sidebar-item .item-icon { font-size: 14px; opacity: .7; }
+.sidebar-item .item-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sidebar-item .item-count { font-size: 11px; color: #6c7086; background: #313244; padding: 1px 8px; border-radius: 8px; }
+.sidebar-item .item-close { width: 20px; height: 20px; border: none; background: transparent; color: #6c7086; cursor: pointer; font-size: 14px; border-radius: 4px; display: none; align-items: center; justify-content: center; }
+.sidebar-item:hover .item-close { display: flex; }
+.sidebar-item .item-close:hover { background: #45475a; color: #f38ba8; }
+.sidebar-item .item-dirty { width: 8px; height: 8px; border-radius: 50%; background: #f9e2af; display: none; }
+.sidebar-item .item-dirty.show { display: block; }
+.sidebar-footer { padding: 12px 16px; border-top: 1px solid #313244; font-size: 11px; color: #6c7086; }
+
+/* ── 右侧主内容 ── */
+.main-content { flex: 1; overflow-y: auto; padding: 20px; }
+.container { max-width: 1400px; }
 
 /* 顶部工具栏 */
 .toolbar { background: #fff; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
@@ -101,45 +132,207 @@ body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; background: #f
 /* 空状态 */
 .empty-state { text-align: center; padding: 60px 20px; color: #999; }
 .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+
+/* 导出文件名输入 */
+.export-filename-bar { background: #fff; border-radius: 8px; padding: 12px 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); display: flex; align-items: center; gap: 12px; }
+.export-filename-bar label { font-size: 13px; color: #666; white-space: nowrap; }
+.export-filename-bar input { flex: 1; padding: 6px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; font-family: monospace; }
+.export-filename-bar input:focus { border-color: #4361ee; outline: none; }
+
+/* ── Vars 编辑器 ── */
+.vars-panel { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.vars-panel h2 { font-size: 16px; color: #1a1a2e; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.vars-panel .hint { font-size: 12px; color: #999; margin-bottom: 16px; }
+.vars-table { width: 100%; border-collapse: collapse; }
+.vars-table th { background: #fafafa; padding: 8px 12px; text-align: left; font-weight: 600; color: #555; border-bottom: 2px solid #eee; font-size: 12px; }
+.vars-table td { padding: 6px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+.vars-table tr:hover { background: #f8f9ff; }
+.vars-table .v-key { font-family: monospace; font-weight: 600; color: #4361ee; font-size: 13px; white-space: nowrap; }
+.vars-table .v-val input { width: 100%; padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; font-family: monospace; }
+.vars-table .v-val input:focus { border-color: #4361ee; outline: none; }
+.vars-table .v-val textarea { width: 100%; padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; font-family: monospace; min-height: 36px; resize: vertical; }
+.vars-table .v-val textarea:focus { border-color: #4361ee; outline: none; }
+.vars-table .v-del { width: 40px; text-align: center; }
+.vars-table .v-del button { width: 26px; height: 26px; border: none; border-radius: 4px; background: transparent; color: #e63946; cursor: pointer; font-size: 16px; display: none; align-items: center; justify-content: center; }
+.vars-table tr:hover .v-del button { display: flex; }
+.vars-table .v-del button:hover { background: #fce4e4; }
+.vars-actions { margin-top: 16px; display: flex; gap: 10px; }
+
+/* ── Flow 编排编辑器 ── */
+.flow-module-row { display: flex; align-items: center; gap: 10px; padding: 10px 20px; border-bottom: 1px solid #f0f0f0; transition: background .15s; }
+.flow-module-row:hover { background: #f8f9ff; }
+.flow-module-row .fm-index { width: 28px; color: #999; font-size: 12px; text-align: center; font-weight: 600; }
+.flow-module-row .fm-name { flex: 1; font-weight: 500; font-size: 13px; }
+.flow-module-row .fm-json { font-size: 12px; color: #6c7086; font-family: monospace; max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.flow-module-row .fm-badge { font-size: 11px; padding: 2px 8px; border-radius: 4px; background: #e8e8e8; color: #555; }
+.flow-module-row .fm-actions { display: flex; gap: 4px; }
+.flow-module-row .fm-actions button { width: 26px; height: 26px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; background: transparent; color: #666; }
+.flow-module-row .fm-actions button:hover { background: #e8e8e8; }
+.flow-module-row .fm-actions .fm-del:hover { background: #fce4e4; color: #e63946; }
+.flow-module-row .fm-actions .fm-up:hover, .flow-module-row .fm-actions .fm-down:hover { background: #e0e7ff; color: #4361ee; }
+.fm-jump { display: flex; align-items: center; gap: 4px; font-size: 11px; color: #6c7086; margin-left: 8px; }
+.fm-jump select { padding: 2px 4px; border: 1px solid #ddd; border-radius: 3px; font-size: 11px; }
+.fm-jump input { width: 60px; padding: 2px 4px; border: 1px solid #ddd; border-radius: 3px; font-size: 11px; }
 </style>
 </head>
 <body>
 
-<div class="container">
-  <!-- 工具栏 -->
-  <div class="toolbar">
-    <h1>📋 动作配置编辑器</h1>
-    <span class="info" id="statusInfo">未加载数据</span>
-    <button class="btn-primary" onclick="loadJson()">📂 加载 JSON</button>
-    <button class="btn-warning" onclick="loadYaml()">📥 加载 YAML</button>
-    <button class="btn-success" onclick="exportYaml()">💾 导出 YAML</button>
+<div class="app-layout">
+  <!-- ── 左侧边栏 ── -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <div style="display:flex;gap:4px;flex:1;">
+        <button id="tabModules" class="sidebar-tab active" onclick="switchSidebarTab('modules')">📂 模块</button>
+        <button id="tabVars" class="sidebar-tab" onclick="switchSidebarTab('vars')">🔤 变量</button>
+        <button id="tabFlows" class="sidebar-tab" onclick="switchSidebarTab('flows')">📋 流程</button>
+      </div>
+    </div>
+    <!-- 模块列表 -->
+    <div id="sidebarModules">
+      <div class="sidebar-search">
+        <input type="text" id="sidebarSearch" placeholder="搜索模块名…" oninput="renderSidebar()">
+      </div>
+      <div class="sidebar-list" id="fileList"></div>
+      <div class="sidebar-footer">
+        <span id="sidebarFooterInfo">未加载任何文件</span>
+      </div>
+    </div>
+    <!-- 变量列表 -->
+    <div id="sidebarVars" style="display:none;flex:1;overflow-y:auto;">
+      <div class="sidebar-search">
+        <button class="btn-vars-add" onclick="addVar()" title="添加新变量">＋ 添加变量</button>
+      </div>
+      <div class="sidebar-list" id="varsList"></div>
+      <div class="sidebar-footer">
+        <span id="varsFooterInfo">未加载 vars.yaml</span>
+      </div>
+    </div>
+    <!-- 流程列表 -->
+    <div id="sidebarFlows" style="display:none;flex:1;overflow-y:auto;">
+      <div class="sidebar-search">
+        <button class="btn-vars-add" onclick="loadFlowFile()" title="加载流程 YAML">📂 加载流程</button>
+      </div>
+      <div class="sidebar-list" id="flowList"></div>
+      <div class="sidebar-footer">
+        <span id="flowFooterInfo">未加载流程</span>
+      </div>
+    </div>
   </div>
 
-  <!-- 过滤栏 -->
-  <div class="filter-bar" id="filterBar" style="display:none">
-    <label>🔍 搜索:</label>
-    <input type="text" id="searchInput" placeholder="元素文本、标签、步骤名..." oninput="renderAll()">
-    <label>标签:</label>
-    <select id="tagFilter" onchange="renderAll()">
-      <option value="">全部</option>
-      <option value="input">input</option>
-      <option value="button">button</option>
-      <option value="textarea">textarea</option>
-      <option value="div">div</option>
-      <option value="span">span</option>
-      <option value="li">li</option>
-    </select>
-    <label>状态:</label>
-    <select id="statusFilter" onchange="renderAll()">
-      <option value="">全部</option>
-      <option value="configured">已配置</option>
-      <option value="unconfigured">未配置</option>
-    </select>
-    <label style="margin-left:auto;font-size:12px" id="countInfo"></label>
-  </div>
+  <!-- ── 右侧主内容 ── -->
+  <div class="main-content">
+    <div class="container">
 
-  <!-- 区域列表 -->
-  <div id="zoneList"></div>
+      <!-- 工具栏 -->
+      <div class="toolbar">
+        <h1 id="toolbarTitle">📋 动作配置编辑器</h1>
+        <span class="info" id="statusInfo">未加载数据</span>
+        <button class="btn-primary" onclick="addJsonFile()">📂 添加 JSON</button>
+        <button class="btn-warning" onclick="loadYaml()">📥 加载 YAML</button>
+        <button class="btn-success" onclick="exportYaml()">💾 导出 YAML</button>
+        <button class="btn-primary" onclick="loadVarsFile()" style="background:#6c5ce7">🔤 加载 VARS</button>
+        <button class="btn-success" onclick="saveVarsFile()" style="background:#6c5ce7">💾 保存 VARS</button>
+      </div>
+
+      <!-- 导出文件名 -->
+      <div class="export-filename-bar" id="exportBar" style="display:none">
+        <label>📄 导出文件名:</label>
+        <input type="text" id="exportFilename" spellcheck="false">
+        <button class="btn-success" onclick="exportYaml()" style="padding:6px 16px;font-size:13px;">💾 导出</button>
+      </div>
+
+      <!-- 过滤栏 -->
+      <div class="filter-bar" id="filterBar" style="display:none">
+        <label>🔍 搜索:</label>
+        <input type="text" id="searchInput" placeholder="元素文本、标签、步骤名…" oninput="renderAll()">
+        <label>标签:</label>
+        <select id="tagFilter" onchange="renderAll()">
+          <option value="">全部</option>
+          <option value="input">input</option>
+          <option value="button">button</option>
+          <option value="textarea">textarea</option>
+          <option value="div">div</option>
+          <option value="span">span</option>
+          <option value="li">li</option>
+        </select>
+        <label>状态:</label>
+        <select id="statusFilter" onchange="renderAll()">
+          <option value="">全部</option>
+          <option value="configured">已配置</option>
+          <option value="unconfigured">未配置</option>
+        </select>
+        <label style="margin-left:auto;font-size:12px" id="countInfo"></label>
+      </div>
+
+      <!-- 区域列表 -->
+      <div id="zoneList"></div>
+
+      <!-- Vars 编辑器 -->
+      <div id="varsPanel" class="vars-panel" style="display:none">
+        <h2>🔤 变量配置 <span style="font-size:12px;color:#999;font-weight:normal;" id="varsFileHint"></span></h2>
+        <div class="hint">修改变量值后点击"保存 VARS"覆盖原文件。变量在 actions YAML 中用 <code>${变量名}</code> 引用。</div>
+        <table class="vars-table">
+          <thead><tr>
+            <th style="width:200px">变量名</th>
+            <th>值</th>
+            <th class="v-del"></th>
+          </tr></thead>
+          <tbody id="varsTableBody"></tbody>
+        </table>
+        <div class="vars-actions">
+          <button class="btn-primary" onclick="addVar()" style="padding:8px 20px;">＋ 添加变量</button>
+          <button class="btn-success" onclick="saveVarsFile()" style="padding:8px 20px;">💾 保存 VARS</button>
+        </div>
+      </div>
+
+      <!-- Flow 编排编辑器 -->
+      <div id="flowPanel" style="display:none">
+        <div class="toolbar" style="margin-bottom:0;">
+          <h1 style="font-size:18px;color:#1a1a2e;margin-right:auto;">📋 流程编排</h1>
+          <span class="info" id="flowStatusInfo">未加载</span>
+          <button class="btn-primary" onclick="newFlow()">🆕 新建流程</button>
+          <button class="btn-warning" onclick="loadFlowFile()">📂 加载流程</button>
+          <button class="btn-success" onclick="saveFlow()">💾 保存流程</button>
+        </div>
+        <div class="filter-bar">
+          <label>流程名称:</label>
+          <input type="text" id="flowName" placeholder="输入流程名称" style="width:300px;font-weight:600;" oninput="flowData.name = this.value; renderFlowSidebar();">
+          <label style="margin-left:20px;">运行目录:</label>
+          <span style="font-size:12px;color:#999;">根目录 / docs/ 自动搜索</span>
+        </div>
+        <div class="export-filename-bar">
+          <label>保存文件名:</label>
+          <input type="text" id="flowFilename" value="flow_新建流程.yaml" spellcheck="false" style="font-family:monospace;">
+        </div>
+
+        <!-- 前置流程 -->
+        <div class="zone-card">
+          <div class="zone-header" onclick="toggleZone(this)">
+            <span class="arrow">▼</span>
+            <span class="zone-name">🔗 前置流程 (pre_flows)</span>
+            <span class="zone-badge" id="preFlowCount">0 个</span>
+          </div>
+          <div class="zone-body" id="preFlowList">
+            <div style="padding:12px 20px;color:#999;">暂无前置流程，运行主流程前会先执行这些流程的模块。</div>
+          </div>
+        </div>
+
+        <!-- 模块列表 -->
+        <div class="zone-card">
+          <div class="zone-header">
+            <span class="arrow" style="visibility:hidden;">▼</span>
+            <span class="zone-name">📦 模块列表</span>
+            <span class="zone-badge" id="moduleCount">0 个</span>
+            <button class="btn-primary" onclick="addModule()" style="padding:4px 14px;font-size:12px;">＋ 添加模块</button>
+          </div>
+          <div class="zone-body" id="moduleList">
+            <div style="padding:12px 20px;color:#999;">暂无模块，点击"添加模块"从 cleaned JSON 中选择。</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <!-- 编辑弹窗 -->
@@ -164,17 +357,24 @@ body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; background: #f
 // ============================================================
 //  全局状态
 // ============================================================
-let elements = [];       // 原始 cleaned JSON
-let actions = {};        // { index: action_config }
-let editingIdx = -1;     // 正在编辑的元素索引
-let groups = {};         // { step_name: [indices] }
-let groupOrder = [];     // 有序的 step_name 列表
-let hasChanges = false;
+let loadedFiles = [];               // [{name, elements, actions, jsonPath, hasChanges}]
+let currentFileIdx = -1;            // -1 = none
+
+// 当前活跃数据的快捷引用（由 switchFile 更新）
+let elements = [];
+let actions = {};
+let groups = {};
+let groupOrder = [];
 
 // ============================================================
-//  加载数据
+//  文件管理
 // ============================================================
-function loadJson() {
+function currentFile() {
+  if (currentFileIdx < 0 || currentFileIdx >= loadedFiles.length) return null;
+  return loadedFiles[currentFileIdx];
+}
+
+function addJsonFile() {
   const input = document.createElement('input');
   input.type = 'file';
   input.accept = '.json';
@@ -185,14 +385,27 @@ function loadJson() {
       const text = await file.text();
       const data = JSON.parse(text);
       if (!Array.isArray(data)) throw new Error('JSON 必须是数组');
-      
-      elements = data;
-      _buildGroups();
-      checkAutoLoadYaml(file.name);
-      renderAll();
-      setStatus(`已加载 ${elements.length} 个元素，${Object.keys(groups).length} 个区域`);
-      document.getElementById('filterBar').style.display = 'flex';
-      hasChanges = false;
+
+      // 计算默认模块名
+      const baseName = file.name.replace(/\.json$/i, '');
+      const moduleName = baseName.replace(/_cleaned$/, '');
+
+      // 检查是否已加载
+      if (loadedFiles.some(f => f.jsonPath === file.name)) {
+        toast(`"${file.name}" 已在列表中`, 'info');
+        return;
+      }
+
+      loadedFiles.push({
+        name: moduleName,
+        elements: data,
+        actions: {},
+        jsonPath: file.name,
+        hasChanges: false
+      });
+      currentFileIdx = loadedFiles.length - 1;
+      activateFile(currentFileIdx);
+      toast(`已加载: ${file.name}`, 'success');
     } catch (err) {
       toast(`加载失败: ${err.message}`, 'error');
     }
@@ -200,14 +413,115 @@ function loadJson() {
   input.click();
 }
 
-function checkAutoLoadYaml(jsonName) {
-  // 尝试自动加载同名的 YAML
-  const yamlName = jsonName.replace(/\.json$/i, '').replace(/_cleaned$/, '') + '.yaml';
-  const cleanedName = 'actions_config_' + jsonName.replace(/\.json$/i, '').replace(/^.*[\\/]/, '') + '.yaml';
-  // 不自动加载，让用户手动点
+function switchFile(idx) {
+  if (idx === currentFileIdx || idx < 0 || idx >= loadedFiles.length) return;
+
+  // 检查当前文件是否有未保存的更改
+  const cur = currentFile();
+  if (cur && cur.hasChanges) {
+    if (!confirm(`"${cur.name}" 有未保存的更改，确定切换吗？`)) return;
+  }
+
+  currentFileIdx = idx;
+  activateFile(idx);
 }
 
+function activateFile(idx) {
+  const f = loadedFiles[idx];
+  if (!f) return;
+
+  elements = f.elements;
+  actions = f.actions;
+  _buildGroups();
+
+  renderSidebar();
+  renderAll();
+
+  // 更新导出文件名
+  const stem = f.jsonPath.replace(/\.json$/i, '').replace(/_cleaned$/, '');
+  const defaultName = `actions_config_${stem}.yaml`;
+  document.getElementById('exportFilename').value = defaultName;
+  document.getElementById('exportBar').style.display = 'flex';
+
+  document.getElementById('filterBar').style.display = 'flex';
+  setStatus(`[${idx+1}/${loadedFiles.length}] ${f.name} — ${f.elements.length} 元素，${Object.keys(groups).length} 区域`);
+  document.getElementById('sidebarFooterInfo').textContent = `${loadedFiles.length} 个文件`;
+}
+
+function closeFile(idx) {
+  if (loadedFiles.length <= 1) {
+    toast('至少保留一个文件', 'info');
+    return;
+  }
+  const f = loadedFiles[idx];
+  if (f.hasChanges) {
+    if (!confirm(`"${f.name}" 有未保存的更改，确定关闭吗？`)) return;
+  }
+  loadedFiles.splice(idx, 1);
+
+  // 更新 currentFileIdx
+  if (idx === currentFileIdx) {
+    currentFileIdx = Math.min(idx, loadedFiles.length - 1);
+    if (currentFileIdx >= 0) activateFile(currentFileIdx);
+    else {
+      elements = [];
+      actions = {};
+      groups = {};
+      groupOrder = [];
+      renderAll();
+      renderSidebar();
+      setStatus('未加载数据');
+      document.getElementById('filterBar').style.display = 'none';
+      document.getElementById('exportBar').style.display = 'none';
+    }
+  } else if (idx < currentFileIdx) {
+    currentFileIdx--;
+  }
+  renderSidebar();
+  document.getElementById('sidebarFooterInfo').textContent = `${loadedFiles.length} 个文件`;
+}
+
+function renderSidebar() {
+  const list = document.getElementById('fileList');
+  const searchVal = document.getElementById('sidebarSearch').value.toLowerCase();
+
+  let html = '';
+  for (let i = 0; i < loadedFiles.length; i++) {
+    const f = loadedFiles[i];
+    if (searchVal && !f.name.toLowerCase().includes(searchVal)) continue;
+
+    const active = i === currentFileIdx ? 'active' : '';
+    const configured = Object.keys(f.actions).length;
+    const total = f.elements.length;
+    const needConfig = total - configured;
+
+    html += `<div class="sidebar-item ${active}" onclick="switchFile(${i})">
+      <span class="item-icon">📄</span>
+      <span class="item-name" title="${f.jsonPath}">${f.name}</span>
+      <span class="item-count" title="已配置 ${configured}/${total}">${needConfig > 0 ? `${needConfig}待配` : `${configured}✓`}</span>
+      <div class="item-dirty ${f.hasChanges ? 'show' : ''}"></div>
+      <button class="item-close" onclick="event.stopPropagation();closeFile(${i})" title="关闭">✕</button>
+    </div>`;
+  }
+
+  if (!html) {
+    html = `<div style="padding:20px;text-align:center;color:#6c7086;font-size:13px;">
+      <div style="font-size:24px;margin-bottom:8px;">📂</div>
+      <div>点击左上角 <strong>+</strong><br>添加 JSON 文件</div>
+    </div>`;
+  }
+  list.innerHTML = html;
+}
+
+// ============================================================
+//  加载 YAML 到当前文件
+// ============================================================
 function loadYaml() {
+  const cur = currentFile();
+  if (!cur) {
+    toast('请先加载一个 JSON 文件', 'error');
+    return;
+  }
   const input = document.createElement('input');
   input.type = 'file';
   input.accept = '.yaml,.yml';
@@ -218,15 +532,14 @@ function loadYaml() {
       const text = await file.text();
       const parsed = parseSimpleYaml(text);
       if (parsed.actions) {
-        actions = parsed.actions;
+        cur.actions = parsed.actions;
+        actions = cur.actions;
       }
-      if (parsed.page_url !== undefined) {
-        // 可选的全局设置
-      }
+      cur.hasChanges = true;
       renderAll();
-      setStatus(`已加载 YAML: ${file.name}，${Object.keys(actions).length} 个动作配置`);
-      toast(`已加载 ${Object.keys(actions).length} 个动作配置`, 'success');
-      hasChanges = false;
+      renderSidebar();
+      setStatus(`已加载 YAML: ${file.name}，${Object.keys(cur.actions).length} 个动作配置`);
+      toast(`已加载 ${Object.keys(cur.actions).length} 个动作配置`, 'success');
     } catch (err) {
       toast(`YAML 加载失败: ${err.message}`, 'error');
     }
@@ -240,27 +553,27 @@ function loadYaml() {
 function parseSimpleYaml(text) {
   const result = { actions: {}, page_url: '', close_browser: true };
   const lines = text.split('\n');
-  
+
   let currentAction = null;
   let currentIdx = null;
   let inAction = false;
   let inIf = false;
-  
+
   for (let line of lines) {
     const trimmed = line.trim();
     if (!trimmed || trimmed.startsWith('#')) continue;
-    
+
     // page_url
     const puMatch = trimmed.match(/^page_url:\s*"(.+)"$/);
     if (puMatch) { result.page_url = puMatch[1]; continue; }
-    
+
     // close_browser
     const cbMatch = trimmed.match(/^close_browser:\s*(.+)$/);
     if (cbMatch) { result.close_browser = cbMatch[1].trim() === 'true'; continue; }
-    
+
     // actions:
     if (trimmed === 'actions:') { continue; }
-    
+
     // - index: N
     const idxMatch = trimmed.match(/^- index:\s*(\d+)$/);
     if (idxMatch) {
@@ -273,24 +586,22 @@ function parseSimpleYaml(text) {
       inIf = false;
       continue;
     }
-    
+
     if (currentAction === null) continue;
-    
+
     // step_name
     const snMatch = trimmed.match(/^step_name:\s*"(.+)"$/);
     if (snMatch) { currentAction._step_name = snMatch[1]; continue; }
-    
+
     // action: (这是进入 action 子对象)
     if (trimmed === 'action:') { inAction = true; inIf = false; continue; }
-    if (trimmed.startsWith('if:')) { 
-      inIf = true; 
-      inAction = false; 
+    if (trimmed.startsWith('if:')) {
+      inIf = true;
+      inAction = false;
       currentAction.if = {};
-      continue; 
+      continue;
     }
-    
-    const indent = line.search(/\S/);
-    
+
     // 在 action: 内部
     if (inAction) {
       const m = trimmed.match(/^(\w[\w_]*):\s*(.*)$/);
@@ -305,7 +616,7 @@ function parseSimpleYaml(text) {
       currentAction[key] = val;
       continue;
     }
-    
+
     // 在 if: 内部
     if (inIf) {
       const m = trimmed.match(/^(\w[\w_]*):\s*(.*)$/);
@@ -320,12 +631,12 @@ function parseSimpleYaml(text) {
       continue;
     }
   }
-  
+
   // 保存最后一个
   if (currentAction && currentIdx !== null) {
     result.actions[currentIdx] = currentAction;
   }
-  
+
   return result;
 }
 
@@ -333,36 +644,38 @@ function parseSimpleYaml(text) {
 //  导出 YAML
 // ============================================================
 function exportYaml() {
-  if (elements.length === 0) {
+  const cur = currentFile();
+  if (!cur) {
     toast('请先加载 JSON 数据', 'error');
     return;
   }
-  
+
   const lines = [];
   lines.push('# ============================================================');
   lines.push('# 动作配置文件 — 由 YAML 编辑器生成');
   lines.push(`# 生成时间: ${new Date().toLocaleString()}`);
+  lines.push(`# 来源: ${cur.jsonPath}`);
   lines.push('# ============================================================');
   lines.push('');
-  
-  if (elements.length > 0 && elements[0].page_url) {
-    lines.push(`page_url: "${elements[0].page_url}"`);
+
+  if (cur.elements.length > 0 && cur.elements[0].page_url) {
+    lines.push(`page_url: "${cur.elements[0].page_url}"`);
   }
   lines.push('close_browser: true');
   lines.push('actions:');
-  
+
   // 按 index 排序输出
-  const indices = Object.keys(actions).map(Number).sort((a,b) => a - b);
-  
+  const indices = Object.keys(cur.actions).map(Number).sort((a,b) => a - b);
+
   for (const idx of indices) {
-    const a = actions[idx];
-    const el = elements[idx];
+    const a = cur.actions[idx];
+    const el = cur.elements[idx];
     const stepName = el ? el.step_name : `步骤${idx+1}`;
-    
+
     lines.push('');
     lines.push(`  - index: ${idx}`);
     lines.push(`    step_name: "${stepName}"`);
-    
+
     // IF 条件
     if (a.if) {
       lines.push('    if:');
@@ -370,11 +683,11 @@ function exportYaml() {
       if (a.if.ref_index !== undefined) lines.push(`      ref_index: ${a.if.ref_index}`);
       if (a.if.step_name) lines.push(`      step_name: "${a.if.step_name}"`);
     }
-    
+
     lines.push('    action:');
     lines.push(`      type: ${a.type || 'click'}`);
     lines.push(`      on_not_found: ${a.on_not_found || 'fail'}`);
-    
+
     // wait_for_element
     if (a.wait_for_element) {
       lines.push('      wait_for_element: true');
@@ -382,18 +695,21 @@ function exportYaml() {
     } else {
       lines.push('      wait_for_element: false');
     }
-    
+
     // fill
     if (a.type === 'fill') {
       lines.push(`      value: "${a.value || ''}"`);
       lines.push(`      clear_first: ${a.clear_first !== false}`);
+      if (a.click_first) {
+        lines.push('      click_first: true');
+      }
     }
-    
+
     // screenshot
     if (a.type === 'screenshot' && a.screenshot_name) {
       lines.push(`      screenshot_name: "${a.screenshot_name}"`);
     }
-    
+
     // 定时参数（检测类不需要）
     if (!['check_exists','check_visible'].includes(a.type)) {
       lines.push(`      wait_before: ${a.wait_before !== undefined ? a.wait_before : 0.5}`);
@@ -401,20 +717,31 @@ function exportYaml() {
       lines.push(`      wait_strategy: ${a.wait_strategy || 'timeout'}`);
     }
   }
-  
-  // 下载
+
+  // 导出
   const blob = new Blob([lines.join('\n')], { type: 'text/yaml;charset=utf-8' });
   const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  
-  const jsonName = 'actions_config_export';
-  a.download = `${jsonName}.yaml`;
-  a.click();
+  const link = document.createElement('a');
+  link.href = url;
+
+  // 文件名：使用自定义或默认
+  let exportName = document.getElementById('exportFilename').value.trim();
+  if (!exportName) {
+    const stem = cur.jsonPath.replace(/\.json$/i, '').replace(/_cleaned$/, '');
+    exportName = `actions_config_${stem}.yaml`;
+  }
+  if (!exportName.endsWith('.yaml') && !exportName.endsWith('.yml')) {
+    exportName += '.yaml';
+  }
+  link.download = exportName;
+  link.click();
   URL.revokeObjectURL(url);
-  
-  toast(`已导出 ${indices.length} 个动作配置`, 'success');
-  hasChanges = false;
+
+  // 标记已保存
+  cur.hasChanges = false;
+  renderSidebar();
+
+  toast(`已导出: ${exportName} (${indices.length} 个动作)`, 'success');
 }
 
 // ============================================================
@@ -441,16 +768,16 @@ function renderAll() {
   const searchVal = document.getElementById('searchInput').value.toLowerCase();
   const tagFilter = document.getElementById('tagFilter').value;
   const statusFilter = document.getElementById('statusFilter').value;
-  
+
   let totalConfigured = 0;
   let totalUnconfigured = 0;
-  
+
   let html = '';
-  
+
   for (const sn of groupOrder) {
     const indices = groups[sn];
     const url = elements[indices[0]].page_url || '';
-    
+
     // 检查该区域是否有匹配的元素
     let visibleIndices = indices.filter(idx => {
       const el = elements[idx];
@@ -459,25 +786,24 @@ function renderAll() {
       const text = (sel.text || '');
       const ph = (sel.placeholder || '');
       const searchText = `${tag} ${text} ${ph} ${sn}`.toLowerCase();
-      
+
       if (searchVal && !searchText.includes(searchVal)) return false;
       if (tagFilter && tag !== tagFilter) return false;
       if (statusFilter === 'configured' && !actions[idx]) return false;
       if (statusFilter === 'unconfigured' && actions[idx]) return false;
       return true;
     });
-    
+
     if (visibleIndices.length === 0) continue;
-    
-    // 统计
+
     for (const idx of indices) {
       if (actions[idx]) totalConfigured++;
       else totalUnconfigured++;
     }
-    
+
     const isParent = sn.includes('父元素');
     const isPage = sn.includes('页面');
-    
+
     html += `<div class="zone-card">`;
     html += `<div class="zone-header" onclick="toggleZone(this)">`;
     html += `<span class="arrow">▼</span>`;
@@ -497,7 +823,7 @@ function renderAll() {
       <th>条件</th>
       <th class="col-edit">编辑</th>
     </tr></thead><tbody>`;
-    
+
     for (const idx of visibleIndices) {
       const el = elements[idx];
       const sel = el.selectors || {};
@@ -505,26 +831,26 @@ function renderAll() {
       const text = sel.text || '';
       const ph = sel.placeholder || '';
       const a = actions[idx];
-      
+
       const tagClass = `tag-badge tag-${tag}`;
       const textDisplay = text || ph || '—';
-      
+
       let actionHtml, nfHtml, waitHtml, ifHtml;
-      
+
       if (a) {
         const acClass = `action-badge action-${a.type === 'fill' ? 'fill' : a.type === 'click' ? 'click' : 'check'}`;
         actionHtml = `<span class="${acClass}">${a.type}</span>`;
         const nfClass = a.on_not_found === 'fail' ? 'nf-badge nf-fail' : 'nf-badge nf-skip';
         nfHtml = `<span class="${nfClass}">${a.on_not_found === 'fail' ? '必须' : '跳过'}</span>`;
-        
+
         if (a.type === 'fill') {
           actionHtml += `<br><small style="color:#666">${a.value || ''}</small>`;
         }
-        
+
         waitHtml = `<small>前${a.wait_before || 0.5}s / 后${a.wait_after || 0.5}s</small>`;
-        
+
         if (a.if && a.if.condition) {
-          const condLabel = a.if.condition === 'element_exists' ? '存在' : 
+          const condLabel = a.if.condition === 'element_exists' ? '存在' :
                             a.if.condition === 'element_not_exists' ? '不存在' : a.if.condition;
           ifHtml = `<span class="if-badge">IF #${a.if.ref_index} ${condLabel}</span>`;
         } else {
@@ -536,11 +862,11 @@ function renderAll() {
         waitHtml = '—';
         ifHtml = '—';
       }
-      
+
       html += `<tr>
         <td class="col-idx">${idx}</td>
         <td class="col-tag"><span class="${tagClass}">${tag || '?'}</span></td>
-        <td class="col-text" title="${textDisplay}">${textDisplay.substring(0, 40)}</td>
+        <td class="col-text" title="${escapeHtml(textDisplay)}">${escapeHtml(textDisplay.substring(0, 40))}</td>
         <td>${actionHtml}</td>
         <td>${nfHtml}</td>
         <td>${waitHtml}</td>
@@ -548,15 +874,17 @@ function renderAll() {
         <td class="col-edit"><button class="btn-primary" style="padding:4px 12px;font-size:12px" onclick="editAction(${idx})">编辑</button></td>
       </tr>`;
     }
-    
+
     html += `</tbody></table></div></div>`;
   }
-  
-  container.innerHTML = html;
-  
+
+  container.innerHTML = html || '<div class="empty-state"><div class="icon">📭</div><div>没有匹配的元素</div></div>';
+
   // 更新计数
   const total = totalConfigured + totalUnconfigured;
-  document.getElementById('countInfo').textContent = `已配置 ${totalConfigured}/${total} · 未配置 ${totalUnconfigured}`;
+  document.getElementById('countInfo').textContent = elements.length > 0
+    ? `已配置 ${totalConfigured}/${total} · 未配置 ${totalUnconfigured}`
+    : '';
 }
 
 function toggleZone(header) {
@@ -575,27 +903,30 @@ function toggleZone(header) {
 //  编辑弹窗
 // ============================================================
 function editAction(idx) {
+  const cur = currentFile();
+  if (!cur) return;
+
   editingIdx = idx;
   const el = elements[idx];
   const sel = el.selectors || {};
   const a = actions[idx] || {};
-  
+
   const tag = sel.tag || '';
   const text = sel.text || '';
   const ph = sel.placeholder || '';
-  
+
   document.getElementById('modalTitle').textContent = `编辑元素 #${idx} — ${(text || ph || '').substring(0, 40)}`;
-  
+
   const html = `
     <div class="form-group">
       <label>元素信息</label>
       <div style="background:#f8f9fa;padding:10px;border-radius:6px;font-size:13px">
-        <div>标签: <strong>${tag}</strong> | 文本: ${text || '—'} | placeholder: ${ph || '—'}</div>
-        <div>步骤: ${el.step_name || ''}</div>
-        <div style="color:#999;font-size:12px;word-break:break-all">URL: ${el.page_url || ''}</div>
+        <div>标签: <strong>${escapeHtml(tag)}</strong> | 文本: ${escapeHtml(text) || '—'} | placeholder: ${escapeHtml(ph) || '—'}</div>
+        <div>步骤: ${escapeHtml(el.step_name || '')}</div>
+        <div style="color:#999;font-size:12px;word-break:break-all">URL: ${escapeHtml(el.page_url || '')}</div>
       </div>
     </div>
-    
+
     <div class="form-row">
       <div class="form-group">
         <label>操作类型</label>
@@ -620,18 +951,25 @@ function editAction(idx) {
         </select>
       </div>
     </div>
-    
+
     <div class="form-group" id="fill-value-group" style="${a.type==='fill'?'':'display:none'}">
       <label>填写内容</label>
       <input type="text" id="edit-value" value="${escapeHtml(a.value||'')}" placeholder='${"${ACCOUNT}"} 或固定文本'>
       <div class="hint">可用 \${变量名} 引用 vars.yaml 中的变量</div>
     </div>
-    
+
+    <div class="form-group" id="click-first-group" style="${a.type==='fill'?'':'display:none'}">
+      <label class="checkbox-label">
+        <input type="checkbox" id="edit-click-first" ${a.click_first?'checked':''}>
+        先点击再输入（用于下拉搜索框、span点击后弹出输入框等场景）
+      </label>
+    </div>
+
     <div class="form-group" id="screenshot-name-group" style="${a.type==='screenshot'?'':'display:none'}">
       <label>截图文件名</label>
       <input type="text" id="edit-screenshot-name" value="${escapeHtml(a.screenshot_name||'')}" placeholder="step_xx">
     </div>
-    
+
     <div class="form-row">
       <div class="form-group">
         <label>操作前等待 (秒)</label>
@@ -642,7 +980,7 @@ function editAction(idx) {
         <input type="number" id="edit-wait-after" value="${a.wait_after!==undefined?a.wait_after:0.5}" step="0.1" min="0">
       </div>
     </div>
-    
+
     <div class="form-group">
       <label>点击后等待策略</label>
       <select id="edit-wait-strategy">
@@ -651,7 +989,7 @@ function editAction(idx) {
         <option value="element_appear" ${a.wait_strategy==='element_appear'?'selected':''}>element_appear — 等元素出现</option>
       </select>
     </div>
-    
+
     <div class="form-group">
       <label class="checkbox-label">
         <input type="checkbox" id="edit-wait-for-element" ${a.wait_for_element?'checked':''}>
@@ -662,14 +1000,14 @@ function editAction(idx) {
       <label>最长等待 (秒)</label>
       <input type="number" id="edit-wait-timeout" value="${a.wait_timeout||10}" min="1" max="120">
     </div>
-    
+
     <div class="form-group">
       <label class="checkbox-label">
         <input type="checkbox" id="edit-clear-first" ${a.clear_first!==false?'checked':''}>
         填写前清空已有内容
       </label>
     </div>
-    
+
     <!-- IF 条件 -->
     <div class="if-section">
       <h4>🔗 条件执行（IF）</h4>
@@ -690,10 +1028,10 @@ function editAction(idx) {
       </div>
     </div>
   `;
-  
+
   document.getElementById('modalBody').innerHTML = html;
   document.getElementById('modalOverlay').classList.add('active');
-  
+
   // 联动: 操作类型切换时显示/隐藏相关字段
   document.getElementById('edit-type').onchange = function() {
     const t = this.value;
@@ -705,10 +1043,12 @@ function editAction(idx) {
   };
 }
 
+let editingIdx = -1;
+
 function saveAction() {
   const idx = editingIdx;
   if (idx < 0) return;
-  
+
   const a = actions[idx] || {};
   a.type = document.getElementById('edit-type').value;
   a.on_not_found = document.getElementById('edit-on-not-found').value;
@@ -718,20 +1058,22 @@ function saveAction() {
   a.wait_for_element = document.getElementById('edit-wait-for-element').checked;
   a.wait_timeout = parseInt(document.getElementById('edit-wait-timeout').value) || 10;
   a.clear_first = document.getElementById('edit-clear-first').checked;
-  
+
   // fill 的值
   if (a.type === 'fill') {
     a.value = document.getElementById('edit-value').value;
+    a.click_first = document.getElementById('edit-click-first').checked;
   } else {
     delete a.value;
+    delete a.click_first;
   }
-  
+
   if (a.type === 'screenshot') {
     a.screenshot_name = document.getElementById('edit-screenshot-name').value;
   } else {
     delete a.screenshot_name;
   }
-  
+
   // IF 条件
   const ifCondition = document.getElementById('edit-if-condition').value;
   if (ifCondition) {
@@ -742,27 +1084,32 @@ function saveAction() {
   } else {
     delete a.if;
   }
-  
+
   // 检测类不需要定时参数
   if (['check_exists', 'check_visible', 'locate_parent'].includes(a.type)) {
     delete a.wait_before;
     delete a.wait_after;
     delete a.wait_strategy;
   }
-  
+
   actions[idx] = a;
-  hasChanges = true;
+  const cur = currentFile();
+  if (cur) cur.hasChanges = true;
+
   closeModal();
   renderAll();
+  renderSidebar();
   toast('已保存', 'success');
 }
 
 function deleteAction() {
   if (editingIdx < 0) return;
   delete actions[editingIdx];
-  hasChanges = true;
+  const cur = currentFile();
+  if (cur) cur.hasChanges = true;
   closeModal();
   renderAll();
+  renderSidebar();
   toast('已清除配置', 'info');
 }
 
@@ -794,6 +1141,602 @@ function toast(msg, type = 'info') {
   t.className = `toast toast-${type} show`;
   clearTimeout(t._timer);
   t._timer = setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ============================================================
+//  Vars 编辑器
+// ============================================================
+let varsData = {};           // { name: value }
+let varsKeys = [];           // 有序 key 列表
+let varsFilePath = '';       // 源文件名
+
+function switchSidebarTab(tab) {
+  document.getElementById('sidebarModules').style.display = tab === 'modules' ? '' : 'none';
+  document.getElementById('sidebarVars').style.display = tab === 'vars' ? '' : 'none';
+  document.getElementById('sidebarFlows').style.display = tab === 'flows' ? '' : 'none';
+  document.getElementById('tabModules').className = 'sidebar-tab' + (tab === 'modules' ? ' active' : '');
+  document.getElementById('tabVars').className = 'sidebar-tab' + (tab === 'vars' ? ' active' : '');
+  document.getElementById('tabFlows').className = 'sidebar-tab' + (tab === 'flows' ? ' active' : '');
+  document.getElementById('varsPanel').style.display = tab === 'vars' ? '' : 'none';
+  document.getElementById('flowPanel').style.display = tab === 'flows' ? '' : 'none';
+  document.getElementById('zoneList').style.display = tab === 'modules' ? '' : 'none';
+  document.getElementById('filterBar').style.display = tab === 'modules' ? '' : 'none';
+  document.getElementById('exportBar').style.display = tab === 'modules' ? '' : 'none';
+  const titles = { modules: '📋 动作配置编辑器', vars: '🔤 变量编辑器', flows: '📋 流程编排编辑器' };
+  document.getElementById('toolbarTitle').textContent = titles[tab] || '📋 动作配置编辑器';
+}
+
+function loadVarsFile() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.yaml,.yml';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      varsFilePath = file.name;
+      parseVarsYaml(text);
+      renderVars();
+      switchSidebarTab('vars');
+      document.getElementById('varsFooterInfo').textContent = `已加载: ${file.name}`;
+      document.getElementById('varsFileHint').textContent = `(${file.name})`;
+      toast(`已加载 ${Object.keys(varsData).length} 个变量`, 'success');
+    } catch (err) {
+      toast(`加载失败: ${err.message}`, 'error');
+    }
+  };
+  input.click();
+}
+
+function parseVarsYaml(text) {
+  varsData = {};
+  varsKeys = [];
+  const lines = text.split('\n');
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const m = trimmed.match(/^(\w[\w_]*):\s*(.*)$/);
+    if (m) {
+      const key = m[1];
+      let val = m[2].trim();
+      // 去掉引号
+      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        val = val.slice(1, -1);
+      }
+      // 多行值（| 符号）
+      if (val === '|') {
+        // 收集后续行
+        const valLines = [];
+        let idx = lines.indexOf(line) + 1;
+        while (idx < lines.length) {
+          const nextLine = lines[idx];
+          if (nextLine.trim() === '' || nextLine.match(/^\w/)) break;
+          // 以空格开头的续行
+          if (nextLine.startsWith('  ') || nextLine.startsWith('\t')) {
+            valLines.push(nextLine.trim());
+          } else break;
+          idx++;
+        }
+        val = valLines.join('\n');
+      }
+      varsData[key] = val;
+      if (!varsKeys.includes(key)) varsKeys.push(key);
+    }
+  }
+}
+
+function renderVars() {
+  const tbody = document.getElementById('varsTableBody');
+  let html = '';
+  for (const key of varsKeys) {
+    let val = varsData[key] || '';
+    // 多行用 textarea
+    const isMultiline = val.includes('\n') || val.length > 60;
+    const valInput = isMultiline
+      ? `<textarea data-key="${key}" oninput="updateVarValue('${key}', this.value)">${escapeHtml(val)}</textarea>`
+      : `<input type="text" data-key="${key}" value="${escapeHtml(val)}" oninput="updateVarValue('${key}', this.value)">`;
+    html += `<tr>
+      <td class="v-key">${key}</td>
+      <td class="v-val">${valInput}</td>
+      <td class="v-del"><button onclick="deleteVar('${key}')" title="删除">✕</button></td>
+    </tr>`;
+  }
+  tbody.innerHTML = html || '<tr><td colspan="3" style="text-align:center;color:#999;padding:20px;">暂无变量，点击"添加变量"</td></tr>';
+  document.getElementById('varsFooterInfo').textContent = `共 ${varsKeys.length} 个变量`;
+}
+
+function updateVarValue(key, val) {
+  varsData[key] = val;
+}
+
+function addVar() {
+  const baseName = 'NEW_VAR';
+  let idx = 1;
+  let name = baseName;
+  while (varsKeys.includes(name)) {
+    name = `${baseName}_${idx}`;
+    idx++;
+  }
+  varsKeys.push(name);
+  varsData[name] = '';
+  renderVars();
+  // 聚焦新输入框
+  const inputs = document.querySelectorAll('#varsTableBody input, #varsTableBody textarea');
+  if (inputs.length > 0) {
+    inputs[inputs.length - 1].focus();
+  }
+  toast(`已添加变量 ${name}`, 'info');
+}
+
+function deleteVar(key) {
+  if (!confirm(`确定删除变量 "${key}"？`)) return;
+  varsKeys = varsKeys.filter(k => k !== key);
+  delete varsData[key];
+  renderVars();
+  toast(`已删除 ${key}`, 'info');
+}
+
+function saveVarsFile() {
+  if (varsKeys.length === 0) {
+    toast('没有变量可保存', 'error');
+    return;
+  }
+  // 验证：值不能是 YAML 对象（嵌套结构）
+  for (const key of varsKeys) {
+    const val = varsData[key];
+    if (val && (val.trim().startsWith('{') || val.trim().startsWith('-'))) {
+      if (!confirm(`变量 "${key}" 的值可能是 YAML 对象格式，保存后可能不兼容。\n确定继续？`)) {
+        return;
+      }
+    }
+  }
+
+  const lines = [];
+  lines.push('# ============================================');
+  lines.push(`# 变量定义文件 — 由 YAML 编辑器保存`);
+  lines.push(`# 保存时间: ${new Date().toLocaleString()}`);
+  lines.push('# 在 actions_config 中用 ${变量名} 引用');
+  lines.push('# ============================================');
+  lines.push('');
+
+  for (const key of varsKeys) {
+    let val = varsData[key] || '';
+    if (val.includes('\n')) {
+      // 多行值 → YAML 块标量 |
+      lines.push(`${key}: |`);
+      for (const vLine of val.split('\n')) {
+        lines.push(`  ${vLine}`);
+      }
+    } else if (typeof val === 'string' && (val.includes(':') || val.includes('#') || val === '')) {
+      // 含特殊字符或空值加引号
+      lines.push(`${key}: "${val}"`);
+    } else {
+      lines.push(`${key}: ${val}`);
+    }
+  }
+
+  const blob = new Blob([lines.join('\n')], { type: 'text/yaml;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = varsFilePath || 'vars.yaml';
+  link.click();
+  URL.revokeObjectURL(url);
+  toast(`已保存 ${varsKeys.length} 个变量到 ${link.download}`, 'success');
+}
+
+// ============================================================
+//  Flow 编排编辑器
+// ============================================================
+let flowData = { name: '', pre_flows: [], modules: [] };
+let flowFilePath = '';
+
+function newFlow() {
+  flowData = { name: '新建流程', pre_flows: [], modules: [] };
+  flowFilePath = '';
+  document.getElementById('flowName').value = '新建流程';
+  document.getElementById('flowFilename').value = 'flow_新建流程.yaml';
+  renderFlow();
+  switchSidebarTab('flows');
+  toast('已创建空白流程', 'success');
+}
+
+function loadFlowFile() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.yaml,.yml';
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      flowFilePath = file.name;
+      const parsed = parseFlowYaml(text);
+      flowData = parsed;
+      document.getElementById('flowName').value = parsed.name || '';
+      const stem = file.name.replace(/\.(yaml|yml)$/i, '');
+      document.getElementById('flowFilename').value = file.name;
+      renderFlow();
+      switchSidebarTab('flows');
+      document.getElementById('flowFooterInfo').textContent = `已加载: ${file.name}`;
+
+      // 自动加载模块中用到的 JSON 文件到「模块」标签页
+      const flowDir = file.name.includes('/') || file.name.includes('\\')
+        ? file.name.substring(0, Math.max(file.name.lastIndexOf('/'), file.name.lastIndexOf('\\')) + 1) : '';
+      let autoLoaded = 0;
+      for (const mod of parsed.modules) {
+        if (!mod.json) continue;
+        // 跳过已经加载的
+        if (loadedFiles.some(f => f.jsonPath === mod.json || f.jsonPath.endsWith('/' + mod.json))) continue;
+        try {
+          // 尝试 fetch 加载 JSON（适用于本地文件）
+          const resp = await fetch(mod.json);
+          if (!resp.ok) {
+            // 尝试带 docs/cleaned/ 前缀
+            const resp2 = await fetch('docs/cleaned/' + mod.json);
+            if (!resp2.ok) {
+              // 尝试带 docs/json/ 前缀
+              const resp3 = await fetch('docs/json/' + mod.json);
+              if (!resp3.ok) continue;
+              const data = await resp3.json();
+              _addJsonToLoaded(mod.json, data);
+            } else {
+              const data = await resp2.json();
+              _addJsonToLoaded(mod.json, data);
+            }
+          } else {
+            const data = await resp.json();
+            _addJsonToLoaded(mod.json, data);
+          }
+          autoLoaded++;
+        } catch (e) {
+          // 加载失败，跳过（用户可手动加载）
+        }
+      }
+      if (autoLoaded > 0) {
+        toast(`已加载流程 + 自动导入 ${autoLoaded} 个 JSON 模块`, 'success');
+      } else {
+        toast(`已加载流程: ${parsed.name || file.name}`, 'success');
+      }
+    } catch (err) {
+      toast(`加载失败: ${err.message}`, 'error');
+    }
+  };
+  input.click();
+}
+
+function _addJsonToLoaded(jsonPath, data) {
+  // 检查是否已存在
+  if (loadedFiles.some(f => f.jsonPath === jsonPath)) return;
+  const baseName = jsonPath.replace(/\.json$/i, '');
+  const moduleName = baseName.replace(/_cleaned$/, '');
+  loadedFiles.push({
+    name: moduleName,
+    elements: Array.isArray(data) ? data : (data.elements || []),
+    actions: {},
+    jsonPath: jsonPath,
+    hasChanges: false
+  });
+  renderSidebar();
+}
+
+function parseFlowYaml(text) {
+  const result = { name: '', pre_flows: [], modules: [] };
+  const lines = text.split('\n');
+  let currentModule = null;
+  let inModule = false;
+  let inAction = false;
+  let inIf = false;
+  let inOnSuccess = false;
+  let inOnFailure = false;
+
+  for (let line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+
+    // name: XXX
+    const nameMatch = trimmed.match(/^name:\s*(.+)$/);
+    if (nameMatch) { result.name = nameMatch[1].replace(/^"(.*)"$/, '$1').replace(/^'(.*)'$/, '$1'); continue; }
+
+    // pre_flows:
+    if (trimmed === 'pre_flows:') { continue; }
+
+    // - flow_xxx.yaml (pre_flows entry)
+    const pfMatch = trimmed.match(/^-\s+(.+\.yaml)$/);
+    if (pfMatch && !trimmed.startsWith('- name:')) {
+      result.pre_flows.push(pfMatch[1]);
+      continue;
+    }
+
+    // - name: XXX (module start)
+    const modMatch = trimmed.match(/^- name:\s*"?(.+?)"?$/);
+    if (modMatch && !trimmed.startsWith('- flow_')) {
+      if (currentModule) result.modules.push(currentModule);
+      currentModule = { name: modMatch[1], json: '', yaml: '' };
+      inModule = true; inAction = false; inIf = false; inOnSuccess = false; inOnFailure = false;
+      continue;
+    }
+
+    if (!currentModule) continue;
+
+    // json: XXX
+    const jsonMatch = trimmed.match(/^json:\s*"?(.+?)"?$/);
+    if (jsonMatch) { currentModule.json = jsonMatch[1]; continue; }
+
+    // yaml: XXX
+    const yamlMatch = trimmed.match(/^yaml:\s*"?(.+?)"?$/);
+    if (yamlMatch) { currentModule.yaml = yamlMatch[1]; continue; }
+
+    // on_success: / on_failure:
+    if (trimmed === 'on_success:') { inOnSuccess = true; inOnFailure = false; currentModule.on_success = {}; continue; }
+    if (trimmed === 'on_failure:') { inOnFailure = true; inOnSuccess = false; currentModule.on_failure = {}; continue; }
+
+    // action: / if:
+    if (trimmed === 'action:') { inAction = true; continue; }
+    if (trimmed.startsWith('if:')) { inIf = true; continue; }
+
+    if (inOnSuccess || inOnFailure) {
+      const m = trimmed.match(/^(\w[\w_]*):\s*(.*)$/);
+      if (m) {
+        let val = m[2].trim();
+        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) val = val.slice(1, -1);
+        const target = inOnSuccess ? currentModule.on_success : currentModule.on_failure;
+        target[m[1]] = isNaN(val) ? val : parseFloat(val);
+      }
+      if (trimmed.startsWith('action:') || trimmed.startsWith('if:')) {
+        inOnSuccess = false; inOnFailure = false; inAction = trimmed.startsWith('action:'); inIf = trimmed.startsWith('if:');
+      }
+      continue;
+    }
+  }
+  if (currentModule) result.modules.push(currentModule);
+  return result;
+}
+
+function renderFlow() {
+  // Pre-flows
+  const preFlowList = document.getElementById('preFlowList');
+  document.getElementById('preFlowCount').textContent = `${flowData.pre_flows.length} 个`;
+  if (flowData.pre_flows.length === 0) {
+    preFlowList.innerHTML = '<div style="padding:12px 20px;color:#999;">暂无前置流程。点击下方"添加前置流程"。' +
+      '<button class="btn-primary" onclick="addPreFlow()" style="margin-left:12px;padding:2px 10px;font-size:11px;">＋ 添加</button></div>';
+  } else {
+    let html = '';
+    for (let i = 0; i < flowData.pre_flows.length; i++) {
+      html += `<div class="flow-module-row">
+        <span class="fm-index">#${i+1}</span>
+        <span class="fm-name">🔗 ${flowData.pre_flows[i]}</span>
+        <span class="fm-badge">前置流程</span>
+        <div class="fm-actions">
+          <button class="fm-del" onclick="removePreFlow(${i})" title="移除">✕</button>
+        </div>
+      </div>`;
+    }
+    html += `<div style="padding:8px 20px;"><button class="btn-primary" onclick="addPreFlow()" style="padding:2px 12px;font-size:11px;">＋ 添加前置流程</button></div>`;
+    preFlowList.innerHTML = html;
+  }
+
+  // Modules
+  const moduleList = document.getElementById('moduleList');
+  document.getElementById('moduleCount').textContent = `${flowData.modules.length} 个`;
+  if (flowData.modules.length === 0) {
+    moduleList.innerHTML = '<div style="padding:12px 20px;color:#999;">暂无模块，点击上方"添加模块"。';
+  } else {
+    let html = '';
+    for (let i = 0; i < flowData.modules.length; i++) {
+      const m = flowData.modules[i];
+      const hasJump = m.on_success || m.on_failure;
+      html += `<div class="flow-module-row" id="fm-${i}">
+        <span class="fm-index">${i + 1}</span>
+        <span class="fm-name">📄 ${m.name}</span>
+        <span class="fm-json" title="${m.json}">${m.json}</span>
+        ${m.yaml ? `<span class="fm-badge">⚙️</span>` : ''}
+        ${hasJump ? `<span class="fm-badge">🔀</span>` : ''}
+        <div class="fm-actions">
+          <button class="fm-up" onclick="moveModule(${i}, -1)" title="上移">↑</button>
+          <button class="fm-down" onclick="moveModule(${i}, 1)" title="下移">↓</button>
+          <button onclick="editModule(${i})" title="编辑">✏️</button>
+          <button class="fm-del" onclick="removeModule(${i})" title="删除">✕</button>
+        </div>
+      </div>`;
+    }
+    // Add inline jump editor for each module
+    for (let i = 0; i < flowData.modules.length; i++) {
+      const m = flowData.modules[i];
+      const row = document.getElementById(`fm-${i}`);
+      if (row) {
+        const jumpDiv = document.createElement('div');
+        jumpDiv.className = 'fm-jump';
+        const hasSuccess = m.on_success && m.on_success.action;
+        const hasFailure = m.on_failure && m.on_failure.action;
+        if (hasSuccess) {
+          jumpDiv.innerHTML += `✅ 成功 → ${jumpActionHtml(m.on_success, i, 'success')} `;
+        }
+        if (hasFailure) {
+          jumpDiv.innerHTML += `❌ 失败 → ${jumpActionHtml(m.on_failure, i, 'failure')} `;
+        }
+        if (!hasSuccess && !hasFailure) {
+          jumpDiv.innerHTML += `<span style="color:#ccc;">无跳转条件</span>`;
+        }
+        row.appendChild(jumpDiv);
+      }
+    }
+  }
+
+  document.getElementById('flowStatusInfo').textContent = `模块: ${flowData.modules.length} | 前置: ${flowData.pre_flows.length}`;
+  renderFlowSidebar();
+}
+
+function jumpActionHtml(jump, idx, type) {
+  const actions = ['', 'goto', 'skip_next', 'abort', 'retry_once'];
+  const sel = jump.action || '';
+  let h = `<select onchange="updateJump(${idx}, '${type}', 'action', this.value)" style="font-size:11px;">`;
+  for (const a of actions) {
+    h += `<option value="${a}" ${sel === a ? 'selected' : ''}>${a || '(无)'}</option>`;
+  }
+  h += `</select>`;
+  if (sel === 'goto') {
+    h += ` target: <input value="${jump.target || ''}" placeholder="模块名" onchange="updateJump(${idx}, '${type}', 'target', this.value)">`;
+  }
+  if (sel === 'skip_next') {
+    h += ` count: <input type="number" value="${jump.count || 1}" min="1" style="width:40px;" onchange="updateJump(${idx}, '${type}', 'count', parseInt(this.value) || 1)">`;
+  }
+  return h;
+}
+
+function updateJump(idx, type, field, val) {
+  const m = flowData.modules[idx];
+  const obj = type === 'success' ? (m.on_success || {}) : (m.on_failure || {});
+  if (field === 'action' && !val) {
+    if (type === 'success') delete m.on_success;
+    else delete m.on_failure;
+  } else {
+    obj[field] = val;
+    if (type === 'success') m.on_success = obj;
+    else m.on_failure = obj;
+  }
+}
+
+function addPreFlow() {
+  const name = prompt('输入前置流程文件名 (如 flow_检查登录态.yaml):');
+  if (name && name.trim()) {
+    let fname = name.trim();
+    if (!fname.endsWith('.yaml') && !fname.endsWith('.yml')) fname += '.yaml';
+    flowData.pre_flows.push(fname);
+    renderFlow();
+  }
+}
+
+function removePreFlow(idx) {
+  flowData.pre_flows.splice(idx, 1);
+  renderFlow();
+}
+
+function addModule() {
+  // Build a list of available cleaned JSONs from loadedFiles
+  let options = loadedFiles.map((f, i) => ({ name: f.name, json: f.jsonPath, hasYaml: Object.keys(f.actions).length > 0 }));
+  if (options.length === 0) {
+    toast('请先在「模块」标签页加载一些 JSON 文件', 'info');
+    return;
+  }
+  let choices = options.map((o, i) => `${i+1}. ${o.name} ${o.hasYaml ? '(有配置)' : ''}`).join('\n');
+  const choice = prompt(`选择要添加的模块 (输入编号):\n${choices}\n\n或输入自定义模块名:`);
+  if (!choice) return;
+  const idx = parseInt(choice) - 1;
+  if (!isNaN(idx) && idx >= 0 && idx < options.length) {
+    const o = options[idx];
+    const stem = o.name.replace(/_cleaned$/, '');
+    flowData.modules.push({
+      name: stem || o.name,
+      json: o.json,
+      yaml: o.hasYaml ? `actions_config_${stem}.yaml` : ''
+    });
+  } else if (choice.trim()) {
+    flowData.modules.push({ name: choice.trim(), json: '', yaml: '' });
+  }
+  renderFlow();
+}
+
+function editModule(idx) {
+  const m = flowData.modules[idx];
+  const name = prompt('模块名称:', m.name);
+  if (name) m.name = name;
+  const json = prompt('JSON 文件:', m.json);
+  if (json !== null) m.json = json;
+  const yaml = prompt('YAML 文件 (可选):', m.yaml || '');
+  m.yaml = yaml || '';
+  renderFlow();
+}
+
+function removeModule(idx) {
+  if (!confirm(`确定删除模块 "${flowData.modules[idx].name}"？`)) return;
+  flowData.modules.splice(idx, 1);
+  renderFlow();
+}
+
+function moveModule(idx, dir) {
+  const newIdx = idx + dir;
+  if (newIdx < 0 || newIdx >= flowData.modules.length) return;
+  const temp = flowData.modules[idx];
+  flowData.modules[idx] = flowData.modules[newIdx];
+  flowData.modules[newIdx] = temp;
+  renderFlow();
+}
+
+function renderFlowSidebar() {
+  const list = document.getElementById('flowList');
+  const count = flowData.modules.length;
+  const pre = flowData.pre_flows.length;
+  list.innerHTML = `<div style="padding:12px 16px;font-size:13px;color:#cdd6f4;">
+    <div style="margin-bottom:8px;"><strong>${flowData.name || '(未命名)'}</strong></div>
+    <div style="font-size:12px;color:#6c7086;">模块: ${count} | 前置: ${pre}</div>
+    <div style="font-size:11px;color:#6c7086;margin-top:4px;">${flowFilePath || '未保存'}</div>
+  </div>`;
+  document.getElementById('flowFooterInfo').textContent = flowData.name || '未命名';
+}
+
+function saveFlow() {
+  const name = document.getElementById('flowName').value.trim() || '新建流程';
+  const lines = [];
+  lines.push(`# 流程定义文件 — 由 YAML 编辑器生成`);
+  lines.push(`# 生成时间: ${new Date().toLocaleString()}`);
+  lines.push(`name: ${name}`);
+  lines.push('');
+
+  // pre_flows
+  if (flowData.pre_flows.length > 0) {
+    lines.push('pre_flows:');
+    for (const pf of flowData.pre_flows) {
+      lines.push(`  - ${pf}`);
+    }
+    lines.push('');
+  }
+
+  lines.push('modules:');
+
+  for (const m of flowData.modules) {
+    lines.push('');
+    lines.push(`  - name: ${m.name}`);
+    if (m.json) lines.push(`    json: ${m.json}`);
+    if (m.yaml) lines.push(`    yaml: ${m.yaml}`);
+
+    // on_success
+    if (m.on_success && m.on_success.action) {
+      lines.push('    on_success:');
+      lines.push(`      action: ${m.on_success.action}`);
+      if (m.on_success.action === 'goto' && m.on_success.target) {
+        lines.push(`      target: ${m.on_success.target}`);
+      }
+      if (m.on_success.action === 'skip_next') {
+        lines.push(`      count: ${m.on_success.count || 1}`);
+      }
+    }
+
+    // on_failure
+    if (m.on_failure && m.on_failure.action) {
+      lines.push('    on_failure:');
+      lines.push(`      action: ${m.on_failure.action}`);
+      if (m.on_failure.action === 'goto' && m.on_failure.target) {
+        lines.push(`      target: ${m.on_failure.target}`);
+      }
+      if (m.on_failure.action === 'skip_next') {
+        lines.push(`      count: ${m.on_failure.count || 1}`);
+      }
+    }
+  }
+
+  const blob = new Blob([lines.join('\n')], { type: 'text/yaml;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  let exportName = document.getElementById('flowFilename').value.trim();
+  if (!exportName) exportName = `flow_${name}.yaml`;
+  if (!exportName.endsWith('.yaml') && !exportName.endsWith('.yml')) exportName += '.yaml';
+  link.download = exportName;
+  link.click();
+  URL.revokeObjectURL(url);
+  toast(`已保存流程: ${exportName}`, 'success');
 }
 
 // 键盘快捷键

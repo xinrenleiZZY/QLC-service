@@ -8,12 +8,13 @@ session.py - 浏览器长连接会话（独立基础设施）
   - 管理 OCR 引擎
   - 提供 page, context, cdp, ocr 给所有模块使用
   - 不关闭，直到显式调用 close()
+
+用法:
+    session = await BrowserSession.create()
+    page = session.page
+    # ... 多个模块共享同一个 page
+    await session.close()
 """
-# ── Windows GBK 编码兼容 ──
-import sys, io
-if sys.stdout and sys.stdout.encoding and sys.stdout.encoding.lower() in ('gbk', 'gb2312', 'cp936'):
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 import asyncio
 import os
@@ -66,10 +67,10 @@ class BrowserSession:
             print("  📌 复用已有浏览器会话")
             return cls._instance
 
-        # 检测端口 18800 上是否有正在运行的浏览器（OpenClaw）
+        # 检测端口 18800 上是否有正在运行的浏览器
         existing = await cls._detect_existing(port=18800)
         if existing:
-            print("  📌 检测到端口 18800 已有浏览器（OpenClaw），连接复用")
+            print("  📌 检测到端口 18800 已有浏览器，连接复用")
             return existing
 
         instance = cls()
@@ -155,11 +156,10 @@ class BrowserSession:
         self.ocr = OCREngine(self.page, self.event_bus)
 
         self._alive = True
-        status_online = "在线" if self.cdp.connected else "离线"
-        ocr_status = "就绪" if self.ocr.available else "不可用"
-        print(f"  [+] 浏览器已启动 | CDP: {status_online} | OCR: {ocr_status}")
-        print(f"  [CDP] 调试地址: http://127.0.0.1:18800")
-        print(f"        采集: python debug_elements-V10.py --cdp http://127.0.0.1:18800")
+        print(f"  ✅ 浏览器已启动 | CDP: {'在线' if self.cdp.connected else '离线'}"
+              f" | OCR: {'就绪' if self.ocr.available else '不可用'}")
+        print(f"  🔌 CDP 调试地址: http://127.0.0.1:18800")
+        print(f"     可用 debug_elements-V10.py --cdp http://127.0.0.1:18800 连接")
 
     def _cleanup_chrome(self):
         """清理残留 Chrome 进程"""

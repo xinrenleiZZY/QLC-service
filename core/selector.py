@@ -43,7 +43,15 @@ async def _locate_anchor(container, anchor: dict):
         if await loc.count() > 0:
             return loc.last
     elif atype == "id":
-        return container.locator(f'#{avalue}')
+        # 支持前缀匹配：如果尝试精确匹配失败且值不含特殊字符，尝试 [id^="xxx"]
+        loc = container.locator(f'#{avalue}')
+        if await loc.count() > 0:
+            return loc.last
+        # CSS 中 id 如果有末尾数字是动态的，尝试前缀匹配
+        if avalue.rstrip('-').isalnum() or avalue.count('-') > 0:
+            prefix_loc = container.locator(f'[id^="{avalue}"]')
+            if await prefix_loc.count() > 0:
+                return prefix_loc.last
     elif atype == "aria_label":
         return container.locator(f'[aria-label="{avalue}"]')
     elif atype == "css":

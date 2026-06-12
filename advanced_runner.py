@@ -679,6 +679,10 @@ class StepRunner:
             elif action_type == "fill":
                 raw = action.get("value", "")
                 val = self._resolve(raw)
+                # 先点击再输入（用于下拉搜索框等场景）
+                if action.get("click_first", False):
+                    await loc.click()
+                    await asyncio.sleep(0.5)
                 if action.get("clear_first", True):
                     await loc.fill("")
                 await loc.fill(val)
@@ -1096,7 +1100,7 @@ class FlowEngine:
             "args": [
                 "--start-maximized",
                 "--disable-blink-features=AutomationControlled",
-                "--remote-debugging-port=9222",
+                "--remote-debugging-port=18800",
             ],
         }
         self._context = await self._pw.chromium.launch_persistent_context(**launch_kwargs)
@@ -1107,7 +1111,7 @@ class FlowEngine:
         await self.cdp.connect(self.page)
 
         print(f"  浏览器已启动 | CDP: {'在线' if self.cdp.connected else '离线'}")
-        print(f"  🔌 CDP 调试: http://127.0.0.1:9222")
+        print(f"  🔌 CDP 调试: http://127.0.0.1:18800")
 
     def _cleanup_chrome(self):
         """清理残留进程"""
