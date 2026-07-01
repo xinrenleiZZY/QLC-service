@@ -1,0 +1,309 @@
+[
+  {
+    "time": "2026-06-09T10:04:26.082Z",
+    "step_name": "词库",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "a",
+      "id": null,
+      "class": null,
+      "text": "词库",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-path": "wordStock"
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.tab.common-filter:nth-child(1) > div.tab-left:nth-child(1) > div.child-menu:nth-child(2) > div.menu-item.active-menu:nth-child(2) > a",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[1]/div[2]/div[2]/a",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+      "playwright_selector": "page.getByText(\"词库\", { exact: true })",
+      "rect": {
+        "x": 110,
+        "y": 38,
+        "width": 46,
+        "height": 41,
+        "top": 38,
+        "right": 156,
+        "bottom": 79,
+        "left": 110
+      },
+      "inner_text": "词库"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "词库"
+          },
+          "description": "id=yy-layout-content 内 text=词库"
+        },
+        {
+          "type": "text",
+          "value": "词库"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "词库"
+        },
+        "description": "id=yy-layout-content 内 text=词库"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-09T10:04:26.087Z",
+    "step_name": "词库",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "a",
+      "id": null,
+      "class": null,
+      "text": "词库",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-path": "wordStock"
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.tab.common-filter:nth-child(1) > div.tab-left:nth-child(1) > div.child-menu:nth-child(2) > div.menu-item.active-menu:nth-child(2) > a",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[1]/div[1]/div[2]/div[2]/a",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/a[1]",
+      "playwright_selector": "page.getByText(\"词库\", { exact: true })",
+      "rect": {
+        "x": 110,
+        "y": 38,
+        "width": 46,
+        "height": 41,
+        "top": 38,
+        "right": 156,
+        "bottom": 79,
+        "left": 110
+      },
+      "inner_text": "词库"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "词库"
+          },
+          "description": "id=yy-layout-content 内 text=词库"
+        },
+        {
+          "type": "text",
+          "value": "词库"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "词库"
+        },
+        "description": "id=yy-layout-content 内 text=词库"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-09T10:04:49.413Z",
+    "step_name": "词库",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "top",
+      "text": "词库管理新建词库",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.top:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"词库管理新建词库\", { exact: true })",
+      "rect": {
+        "x": 68,
+        "y": 90,
+        "width": 302,
+        "height": 24,
+        "top": 90,
+        "right": 370,
+        "bottom": 114,
+        "left": 68
+      },
+      "inner_text": "词库管理\n新建词库"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "词库管理新建词库"
+          },
+          "description": "id=yy-layout-content 内 text=词库管理新建词库"
+        },
+        {
+          "type": "text",
+          "value": "词库管理新建词库"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "词库管理新建词库"
+        },
+        "description": "id=yy-layout-content 内 text=词库管理新建词库"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": [
+          "top"
+        ]
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-09T10:05:03.702Z",
+    "step_name": "词库",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "新建词库",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.top:nth-child(1) > button.is-text > span",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[1]/button/span",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]/span[1]",
+      "playwright_selector": "page.getByText(\"新建词库\", { exact: true })",
+      "rect": {
+        "x": 152,
+        "y": 94,
+        "width": 68,
+        "height": 16,
+        "top": 94,
+        "right": 220,
+        "bottom": 110,
+        "left": 152
+      },
+      "inner_text": "新建词库"
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "新建词库"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "新建词库"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  }
+]

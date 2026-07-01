@@ -1,0 +1,605 @@
+[
+  {
+    "time": "2026-06-12T03:31:08.867Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "tree__item__info",
+      "text": "关键词（5）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(2) > div.is-expanded.is-current.is-focusable:nth-child(1) > div:nth-child(1) > div.tree__item > div.tree__item__info:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div[1]/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"关键词（5）\", { exact: true })",
+      "rect": {
+        "x": 112,
+        "y": 281,
+        "width": 220,
+        "height": 42,
+        "top": 281,
+        "right": 332,
+        "bottom": 323,
+        "left": 112
+      },
+      "inner_text": "关键词\n\n（5）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-current is-focusable",
+        "text": "关键词（5）核心关键词（3）12（1）32（1）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "关键词（5）核心关键词（3）12（1）32（1）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "group",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "ASIN 产品名-美国关键词（5）核心关键词（3）12（1）32（1）否定词（0）投放ASIN（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "ASIN 产品名-美国关键词（5）核心关键词（3）12（1）32（1）否定词（0）投放ASIN（0）",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "关键词（5）"
+        },
+        {
+          "type": "css",
+          "value": "div.tree__item__info"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "关键词（5）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "group",
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-12T03:31:09.380Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "p",
+      "id": null,
+      "class": null,
+      "text": "(创建人运营-何紫欣)",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-focusable:nth-child(3) > div > div.tree__item > div.tree__item__info:nth-child(1) > p:nth-child(2)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div/div/div[1]/p[2]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/p[2]",
+      "playwright_selector": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[1]/p[2]",
+      "rect": {
+        "x": 194,
+        "y": 483,
+        "width": 108,
+        "height": 40,
+        "top": 483,
+        "right": 302,
+        "bottom": 523,
+        "left": 194
+      },
+      "inner_text": "(创建人运营-何紫欣)"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-focusable",
+        "text": "圣诞车库磁贴-美国(创建人运营-何紫欣)",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "ASIN 产品名-美国关键词（5）核心关键词（3）12（1）32（1）否定词（0）投放ASIN（0）",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "(创建人运营-何紫欣)"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "(创建人运营-何紫欣)"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-12T03:31:09.969Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "tree__item__info",
+      "text": "否定词（0）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(3) > div:nth-child(2) > div.is-focusable:nth-child(2) > div > div.tree__item > div.tree__item__info:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[3]/div[2]/div[2]/div/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[3]/div[2]/div[2]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"否定词（0）\", { exact: true })",
+      "rect": {
+        "x": 112,
+        "y": 441,
+        "width": 220,
+        "height": 42,
+        "top": 441,
+        "right": 332,
+        "bottom": 483,
+        "left": 112
+      },
+      "inner_text": "否定词\n\n（0）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-focusable",
+        "text": "否定词（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "关键词（55）核心关键词（55）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "group",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "圣诞车库磁贴-美国(创建人运营-何紫欣)关键词（55）核心关键词（55）否定词（0）投放ASIN（0",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "ASIN 产品名-美国关键词（5）核心关键词（3）12（1）32（1）否定词（0）投放ASIN（0）",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "否定词（0）"
+        },
+        {
+          "type": "css",
+          "value": "div.tree__item__info"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "否定词（0）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "group",
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-12T03:31:10.335Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "asin-list__bd",
+      "text": "21PCS Christmas Garage Door Decorations Magnets - Santa Merry Xmas Holiday Refrigerator Fridge Kitch",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-f3cffdea": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-right.some-width:nth-child(2) > div.content > div.content-wrap > div.asin-list:nth-child(1) > div.asin-list__bd:nth-child(2)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[2]/div/div/div[1]/div[2]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]",
+      "playwright_selector": "page.getByText(\"21PCS Christmas Garage Door Decorations Magnets - \", { exact: true })",
+      "rect": {
+        "x": 394,
+        "y": 136,
+        "width": 1032,
+        "height": 320,
+        "top": 136,
+        "right": 1426,
+        "bottom": 456,
+        "left": 394
+      },
+      "inner_text": "21PCS Christmas Garage Door Decorations Magnets - Santa Merry Xmas Holiday Refri"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家按词库名称包含查询的词库(35) ASIN 产品名-美国关键词（5）核心关",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.asin-list__bd"
+          },
+          "description": "id=yy-layout-content 内 css=div.asin-list__bd"
+        },
+        {
+          "type": "css",
+          "value": "div.asin-list__bd"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.asin-list__bd"
+        },
+        "description": "id=yy-layout-content 内 css=div.asin-list__bd"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-12T03:31:10.935Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "asin__item",
+      "text": "21PCS Christmas Garage Door Decorations Magnets - Santa Merry Xmas Holiday Refrigerator Fridge Kitch",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-f3cffdea": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-right.some-width:nth-child(2) > div.content > div.content-wrap > div.asin-list:nth-child(1) > div.asin-list__bd:nth-child(2) > div.asin__item:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[2]/div/div/div[1]/div[2]/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]",
+      "playwright_selector": "page.getByText(\"21PCS Christmas Garage Door Decorations Magnets - \", { exact: true })",
+      "rect": {
+        "x": 414,
+        "y": 145,
+        "width": 315.515625,
+        "height": 115,
+        "top": 145,
+        "right": 729.515625,
+        "bottom": 260,
+        "left": 414
+      },
+      "inner_text": "21PCS Christmas Garage Door Decorations Magnets - Santa Merry Xmas Holiday Refri"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家按词库名称包含查询的词库(35) ASIN 产品名-美国关键词（5）核心关",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.asin__item"
+          },
+          "description": "id=yy-layout-content 内 css=div.asin__item"
+        },
+        {
+          "type": "css",
+          "value": "div.asin__item"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.asin__item"
+        },
+        "description": "id=yy-layout-content 内 css=div.asin__item"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-12T03:31:11.252Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "yy-select-show yy-select-show-default",
+      "text": "国家",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.filter:nth-child(2) > div.filter__item:nth-child(1) > div.yy-single-select.yy-popover-reference > span > div.yy-select-show.yy-select-show-default",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[2]/div[1]/div/span/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/div[1]",
+      "playwright_selector": "page.getByText(\"国家\", { exact: true })",
+      "rect": {
+        "x": 68,
+        "y": 122,
+        "width": 300,
+        "height": 32,
+        "top": 122,
+        "right": 368,
+        "bottom": 154,
+        "left": 68
+      },
+      "inner_text": "国家"
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "国家"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-select-show.yy-select-show-default"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "国家"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  },
+  {
+    "time": "2026-06-12T03:31:11.668Z",
+    "step_name": "阿达",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "single-select-down",
+      "text": "墨西哥",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-8186-162 > div.yy-single-select-content > div.dropdown-second-btn:nth-child(2) > div.single-select-down:nth-child(3)",
+      "xpath_short": "///*[@id=\"el-id-8186-162\"]/div/div[2]/div[3]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "playwright_selector": "page.getByText(\"墨西哥\", { exact: true })",
+      "rect": {
+        "x": 77,
+        "y": 271,
+        "width": 176,
+        "height": 32,
+        "top": 271,
+        "right": 253,
+        "bottom": 303,
+        "left": 77
+      },
+      "inner_text": "墨西哥"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-8186-162",
+        "class": "el-popper is-light el-popover yy-filter-popover is-show",
+        "text": "美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": "[id^=\"el-id-8186\"]"
+          },
+          "target": {
+            "type": "text",
+            "value": "墨西哥"
+          },
+          "description": "css=[id^=\"el-id-8186\"] 内 text=墨西哥"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": "[id^=\"el-id-8186\"]"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.single-select-down"
+          },
+          "description": "css=[id^=\"el-id-8186\"] 内 css=div.single-select-down"
+        },
+        {
+          "type": "text",
+          "value": "墨西哥"
+        },
+        {
+          "type": "css",
+          "value": "div.single-select-down"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": "[id^=\"el-id-8186\"]"
+        },
+        "target": {
+          "type": "text",
+          "value": "墨西哥"
+        },
+        "description": "css=[id^=\"el-id-8186\"] 内 text=墨西哥"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "tooltip"
+      ]
+    }
+  }
+]

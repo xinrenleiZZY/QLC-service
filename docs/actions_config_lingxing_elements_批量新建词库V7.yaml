@@ -1,0 +1,421 @@
+# ============================================================
+# 动作配置文件  —  由 configure_actions.py 自动生成
+# 来源: lingxing_elements_批量新建词库V7_cleaned.json
+# 生成时间: 2026-06-06 16:30:39
+# ============================================================
+
+page_url: "https://ads.lingxing.com/amazon/word-stock"
+close_browser: true
+actions:
+  - index: 0
+    step_name: "批量新建词库V7-词库广告"
+    action:
+      type: check_exists
+      on_not_found: skip
+      wait_for_element: false
+
+  - index: 1
+    step_name: "批量新建词库V7-词库广告"
+    action:
+      type: click
+      on_not_found: skip
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 1.0
+      wait_strategy: timeout
+
+  - index: 2
+    step_name: "批量新建词库V7-词库广告"
+    action:
+      type: click
+      on_not_found: skip
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 1.0
+      wait_strategy: timeout
+
+  - index: 3
+    step_name: "批量新建词库V7-词库广告"
+    action:
+      type: click
+      on_not_found: skip
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 4
+    step_name: "批量新建词库V7-新建词库按钮"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 5
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${INPUT_VALUE}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 6
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 7
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${INPUT_VALUE_US}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 8
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 9
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 10
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 11
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 12
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${SEARCH_KEYWORD}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 13
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 14
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: skip
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 15
+    step_name: "批量新建词库V7-新建词库界面"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 16
+    step_name: "批量新建词库V7-新建词库界面-下架关闭按钮"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 17
+    step_name: "批量新建词库V7-新建词库界面-请选择状态"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 18
+    step_name: "批量新建词库V7-新建词库界面-请选择状态"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 20
+    step_name: "批量新建词库V7-新建词库界面-搜索"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 21
+    step_name: "批量新建词库V7-新建词库界面-搜索"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${SEARCH_ASIN}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 22
+    step_name: "批量新建词库V7-新建词库界面-搜索"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 3.0
+      wait_strategy: navigation
+
+  - index: 23
+    step_name: "批量新建词库V7-新建词库界面-添加全部"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 24
+    step_name: "批量新建词库V7-新建词库界面-确定"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 25
+    step_name: "批量新建词库V7-搜索框"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${INPUT_VALUE}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 26
+    step_name: "批量新建词库V7-d点击树结构头1"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 27
+    step_name: "批量新建词库V7-d点击树结构头1"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 28
+    step_name: "批量新建词库V7-d点击树结构头2"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 29
+    step_name: "批量新建词库V7-d点击树结构头2"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 30
+    step_name: "批量新建词库V7-d点击树结构头3"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 31
+    step_name: "批量新建词库V7-d点击树结构头3"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${INPUT_VALUE_KEY}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 32
+    step_name: "批量新建词库V7-d点击树结构头3"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 33
+    step_name: "批量新建词库V7-d点击树结构头4"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 34
+    step_name: "批量新建词库V7-d点击树结构头4"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 35
+    step_name: "批量新建词库V7-d点击树结构头4"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${INPUT_VALUE_KEY_VALUE_VALUE1}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 36
+    step_name: "批量新建词库V7-d点击树结构头4"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 37
+    step_name: "批量新建词库V7-d点击树结构头5"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 38
+    step_name: "批量新建词库V7-d点击树结构头5"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout
+
+  - index: 39
+    step_name: "批量新建词库V7-d点击树结构头5"
+    action:
+      type: fill
+      on_not_found: skip
+      wait_for_element: false
+      value: "${INPUT_VALUE_KEY_VALUE_VALUE2}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 40
+    step_name: "批量新建词库V7-d点击树结构头5"
+    action:
+      type: click
+      on_not_found: fail
+      wait_for_element: false
+      wait_before: 0.5
+      wait_after: 2.0
+      wait_strategy: timeout

@@ -1,0 +1,240 @@
+[
+  {
+    "time": "2026-06-09T10:09:56.040Z",
+    "step_name": "店铺",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-5062-150 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-5062-150\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[41]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[41]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 492,
+        "y": 321,
+        "width": 0,
+        "height": 0,
+        "top": 321,
+        "right": 492,
+        "bottom": 321,
+        "left": 492
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-5062-150",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-5062",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popper-container-5062"
+          },
+          "target": {
+            "type": "css",
+            "value": "input.el-checkbox__original"
+          },
+          "description": "id=el-popper-container-5062 内 css=input.el-checkbox__original"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popper-container-5062"
+          },
+          "target": {
+            "type": "css",
+            "value": "input[type=\"checkbox\"]"
+          },
+          "description": "id=el-popper-container-5062 内 css=input[type=\"checkbox\"]"
+        },
+        {
+          "type": "css",
+          "value": "input.el-checkbox__original"
+        },
+        {
+          "type": "css",
+          "value": "input[type=\"checkbox\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "el-popper-container-5062"
+        },
+        "target": {
+          "type": "css",
+          "value": "input.el-checkbox__original"
+        },
+        "description": "id=el-popper-container-5062 内 css=input.el-checkbox__original"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "tooltip",
+        "el-popper-container-5062"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-09T10:10:06.564Z",
+    "step_name": "店铺",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--primary el-button--small",
+      "text": "确定",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-5062-150 > div.footer-warp.justify-end.items-center.pt-8:nth-child(2) > button:nth-child(2)",
+      "xpath_short": "///*[@id=\"el-id-5062-150\"]/div[2]/button[2]",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[41]/div[2]/button[2]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 689,
+        "y": 677,
+        "width": 50,
+        "height": 24,
+        "top": 677,
+        "right": 739,
+        "bottom": 701,
+        "left": 689
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-5062-150",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-5062",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popper-container-5062"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "id=el-popper-container-5062 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popper-container-5062"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary.el-button--small"
+          },
+          "description": "id=el-popper-container-5062 内 css=button.el-button.el-button--primary.el-button--small"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popper-container-5062"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "id=el-popper-container-5062 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "text",
+          "value": "确定"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.el-button--primary.el-button--small"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "el-popper-container-5062"
+        },
+        "target": {
+          "type": "text",
+          "value": "确定"
+        },
+        "description": "id=el-popper-container-5062 内 text=确定"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "tooltip",
+        "el-popper-container-5062"
+      ]
+    }
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "time": "2026-07-01T02:01:13.277Z",
+    "step_name": "首页转新版",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "tags-view",
+      "text": "首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-199a568a": "",
+        "data-v-7159b55b": ""
+      },
+      "css_selector": "#app > div.contain > div.right-contain.collapse-right-contain:nth-child(2) > div.topNav:nth-child(1) > div.tags-view:nth-child(1)",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[1]/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面\", { exact: true })",
+      "rect": {
+        "x": 56,
+        "y": 0,
+        "width": 861.734375,
+        "height": 38,
+        "top": 0,
+        "right": 917.734375,
+        "bottom": 38,
+        "left": 56
+      },
+      "inner_text": "首页"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面"
+          },
+          "description": "id=app 内 text=首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.tags-view"
+          },
+          "description": "id=app 内 css=div.tags-view"
+        },
+        {
+          "type": "text",
+          "value": "首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面"
+        },
+        {
+          "type": "css",
+          "value": "div.tags-view"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "text",
+          "value": "首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面"
+        },
+        "description": "id=app 内 text=首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-07-01T02:01:16.101Z",
+    "step_name": "首页转新版",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "a",
+      "id": null,
+      "class": null,
+      "text": "广告",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-7159b55b": ""
+      },
+      "css_selector": "#app > div.contain > div.sideBar.collapse-side-bar:nth-child(1) > div.sideBar-container:nth-child(1) > ul > li.is_active:nth-child(2) > a",
+      "xpath_short": "///*[@id=\"app\"]/div/div[1]/div[1]/ul/li[2]/a",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+      "playwright_selector": "page.getByText(\"广告\", { exact: true })",
+      "rect": {
+        "x": 9,
+        "y": 97,
+        "width": 38,
+        "height": 38,
+        "top": 97,
+        "right": 47,
+        "bottom": 135,
+        "left": 9
+      },
+      "inner_text": "广告"
+    },
+    "ancestors": [
+      {
+        "tag": "li",
+        "id": null,
+        "class": "el-menu-item is_active",
+        "text": "广告",
+        "role": "menuitem",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "ul",
+        "id": null,
+        "class": "el-menu",
+        "text": "销售广告客服工具设置",
+        "role": "menubar",
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "广告"
+          },
+          "description": "id=app 内 text=广告"
+        },
+        {
+          "type": "text",
+          "value": "广告"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "text",
+          "value": "广告"
+        },
+        "description": "id=app 内 text=广告"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "menuitem",
+        "menubar",
+        "app"
+      ]
+    }
+  }
+]

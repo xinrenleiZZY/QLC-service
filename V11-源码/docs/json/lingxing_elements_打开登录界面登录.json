@@ -1,0 +1,133 @@
+[
+  {
+    "time": "2026-07-01T01:35:45.702Z",
+    "step_name": "打开登录界面登录",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--resetting el-button--small is-round",
+      "text": "重置",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-v-5ac89ec8": "",
+        "data-auth": "auth-button"
+      },
+      "css_selector": "#new-home > div.home-header:nth-child(1) > div.ak-search-wrapper > button.is-round",
+      "xpath_short": "///*[@id=\"new-home\"]/div[1]/div/button",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/main[1]/div[1]/div[1]/button[1]",
+      "playwright_selector": "page.getByText(\"重置\", { exact: true })",
+      "rect": {
+        "x": 487.328125,
+        "y": 48,
+        "width": 48,
+        "height": 32,
+        "top": 48,
+        "right": 535.328125,
+        "bottom": 80,
+        "left": 487.328125
+      },
+      "inner_text": "重置"
+    },
+    "ancestors": [
+      {
+        "tag": "main",
+        "id": "new-home",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "main",
+        "id": "home-comp",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "root-app",
+        "class": "page-container el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "wrap",
+        "class": "wrap el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-07-01T01:35:52.334Z",
+    "step_name": "打开登录界面登录",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "router-link-exact-active router-link-active tag active home v-step-0",
+      "text": "首页",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-199a568a": ""
+      },
+      "css_selector": "#slick-list-fixed > div.slick-item.slick-item-active > span.router-link-exact-active.router-link-active.tag.active.home.v-step-0",
+      "xpath_short": "///*[@id=\"slick-list-fixed\"]/div/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"首页\", { exact: true })",
+      "rect": {
+        "x": 56,
+        "y": 6,
+        "width": 80,
+        "height": 32,
+        "top": 6,
+        "right": 136,
+        "bottom": 38,
+        "left": 56
+      },
+      "inner_text": "首页"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "slick-list-fixed",
+        "class": null,
+        "text": "首页",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  }
+]

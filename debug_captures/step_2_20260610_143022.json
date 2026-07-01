@@ -1,0 +1,27 @@
+{
+  "step_index": 2,
+  "step_name": "词库管理修复",
+  "page_state": {
+    "title": "仪表盘 - 领星ERP广告",
+    "url": "https://ads.lingxing.com/amazon/store-dashboard",
+    "dom_size": 9219,
+    "viewport": {
+      "type": "string",
+      "value": "{\"w\":1516,\"h\":721}"
+    }
+  },
+  "strategies": [
+    {
+      "type": "css",
+      "value": "i.iconfont.icon-sousuo1"
+    }
+  ],
+  "action": {
+    "type": "click",
+    "on_not_found": "fail",
+    "wait_for_element": false,
+    "wait_before": 0.5,
+    "wait_after": 0.5,
+    "wait_strategy": "timeout"
+  }
+}

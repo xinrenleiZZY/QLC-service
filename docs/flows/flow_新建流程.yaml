@@ -1,0 +1,10 @@
+name: 新建流程
+
+# 在此添加模块
+# pre_flows:
+#   - flow_检查登录态.yaml
+
+modules:
+  - name: 模块名
+    json: 模块名_cleaned.json
+    # yaml: actions_config_模块名.yaml

@@ -1,0 +1,2565 @@
+[
+  {
+    "time": "2026-06-05T10:02:48.668Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-tooltip text-wrap focusing",
+      "text": "下一条 （1/5）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#auto-height > div.is-no-footer > div:nth-child(2) > span.bottom-btn > button.is-round > span.text-wrap.focusing",
+      "xpath_short": "///*[@id=\"auto-height\"]/div/div[2]/span/button/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[2]/span[1]/button[1]/span[1]",
+      "playwright_selector": "page.getByText(\"下一条 （1/5）\", { exact: true })",
+      "rect": {
+        "x": 940.90625,
+        "y": 822.359375,
+        "width": 94.171875,
+        "height": 14,
+        "top": 822.359375,
+        "right": 1035.078125,
+        "bottom": 836.359375,
+        "left": 940.90625
+      },
+      "inner_text": "下一条\n（1/5）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog__body",
+        "text": "下一条 （1/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog is-no-footer",
+        "text": "下一条 （1/5）",
+        "role": "dialog",
+        "aria_label": "dialog",
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "auto-height",
+        "class": "el-dialog__wrapper auto-height full-height",
+        "text": "下一条 （1/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （1/5）"
+          },
+          "description": "css=.el-dialog 内 text=下一条 （1/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap.focusing"
+          },
+          "description": "css=.el-dialog 内 css=span.el-tooltip.text-wrap.focusing"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （1/5）"
+          },
+          "description": "role=dialog 内 text=下一条 （1/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap.focusing"
+          },
+          "description": "role=dialog 内 css=span.el-tooltip.text-wrap.focusing"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （1/5）"
+          },
+          "description": "id=auto-height 内 text=下一条 （1/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap.focusing"
+          },
+          "description": "id=auto-height 内 css=span.el-tooltip.text-wrap.focusing"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （1/5）"
+          },
+          "description": "id=app 内 text=下一条 （1/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap.focusing"
+          },
+          "description": "id=app 内 css=span.el-tooltip.text-wrap.focusing"
+        },
+        {
+          "type": "text",
+          "value": "下一条 （1/5）"
+        },
+        {
+          "type": "css",
+          "value": "span.el-tooltip.text-wrap.focusing"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "下一条 （1/5）"
+        },
+        "description": "css=.el-dialog 内 text=下一条 （1/5）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog",
+        "auto-height",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:02:50.708Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-tooltip text-wrap",
+      "text": "下一条 （2/5）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#auto-height > div.is-no-footer > div:nth-child(2) > span.bottom-btn > button.is-round:nth-child(2) > span.text-wrap",
+      "xpath_short": "///*[@id=\"auto-height\"]/div/div[2]/span/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[2]/span[1]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"下一条 （2/5）\", { exact: true })",
+      "rect": {
+        "x": 990.90625,
+        "y": 822.359375,
+        "width": 94.171875,
+        "height": 14,
+        "top": 822.359375,
+        "right": 1085.078125,
+        "bottom": 836.359375,
+        "left": 990.90625
+      },
+      "inner_text": "下一条\n（2/5）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog__body",
+        "text": "上一条  下一条 （2/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog is-no-footer",
+        "text": "上一条  下一条 （2/5）",
+        "role": "dialog",
+        "aria_label": "dialog",
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "auto-height",
+        "class": "el-dialog__wrapper auto-height full-height",
+        "text": "上一条  下一条 （2/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （2/5）"
+          },
+          "description": "css=.el-dialog 内 text=下一条 （2/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "css=.el-dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （2/5）"
+          },
+          "description": "role=dialog 内 text=下一条 （2/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "role=dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （2/5）"
+          },
+          "description": "id=auto-height 内 text=下一条 （2/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=auto-height 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （2/5）"
+          },
+          "description": "id=app 内 text=下一条 （2/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=app 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "text",
+          "value": "下一条 （2/5）"
+        },
+        {
+          "type": "css",
+          "value": "span.el-tooltip.text-wrap"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "下一条 （2/5）"
+        },
+        "description": "css=.el-dialog 内 text=下一条 （2/5）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog",
+        "auto-height",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:02:51.860Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-tooltip text-wrap",
+      "text": "下一条 （3/5）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#auto-height > div.is-no-footer > div:nth-child(2) > span.bottom-btn > button.is-round:nth-child(2) > span.text-wrap",
+      "xpath_short": "///*[@id=\"auto-height\"]/div/div[2]/span/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[2]/span[1]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"下一条 （3/5）\", { exact: true })",
+      "rect": {
+        "x": 990.90625,
+        "y": 822.359375,
+        "width": 94.171875,
+        "height": 14,
+        "top": 822.359375,
+        "right": 1085.078125,
+        "bottom": 836.359375,
+        "left": 990.90625
+      },
+      "inner_text": "下一条\n（3/5）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog__body",
+        "text": "上一条  下一条 （3/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog is-no-footer",
+        "text": "上一条  下一条 （3/5）",
+        "role": "dialog",
+        "aria_label": "dialog",
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "auto-height",
+        "class": "el-dialog__wrapper auto-height full-height",
+        "text": "上一条  下一条 （3/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （3/5）"
+          },
+          "description": "css=.el-dialog 内 text=下一条 （3/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "css=.el-dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （3/5）"
+          },
+          "description": "role=dialog 内 text=下一条 （3/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "role=dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （3/5）"
+          },
+          "description": "id=auto-height 内 text=下一条 （3/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=auto-height 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （3/5）"
+          },
+          "description": "id=app 内 text=下一条 （3/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=app 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "text",
+          "value": "下一条 （3/5）"
+        },
+        {
+          "type": "css",
+          "value": "span.el-tooltip.text-wrap"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "下一条 （3/5）"
+        },
+        "description": "css=.el-dialog 内 text=下一条 （3/5）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog",
+        "auto-height",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:02:52.636Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-tooltip text-wrap",
+      "text": "下一条 （4/5）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#auto-height > div.is-no-footer > div:nth-child(2) > span.bottom-btn > button.is-round:nth-child(2) > span.text-wrap",
+      "xpath_short": "///*[@id=\"auto-height\"]/div/div[2]/span/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[2]/span[1]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"下一条 （4/5）\", { exact: true })",
+      "rect": {
+        "x": 990.90625,
+        "y": 822.359375,
+        "width": 94.171875,
+        "height": 14,
+        "top": 822.359375,
+        "right": 1085.078125,
+        "bottom": 836.359375,
+        "left": 990.90625
+      },
+      "inner_text": "下一条\n（4/5）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog__body",
+        "text": "上一条  下一条 （4/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog is-no-footer",
+        "text": "上一条  下一条 （4/5）",
+        "role": "dialog",
+        "aria_label": "dialog",
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "auto-height",
+        "class": "el-dialog__wrapper auto-height full-height",
+        "text": "上一条  下一条 （4/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （4/5）"
+          },
+          "description": "css=.el-dialog 内 text=下一条 （4/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "css=.el-dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （4/5）"
+          },
+          "description": "role=dialog 内 text=下一条 （4/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "role=dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （4/5）"
+          },
+          "description": "id=auto-height 内 text=下一条 （4/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=auto-height 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （4/5）"
+          },
+          "description": "id=app 内 text=下一条 （4/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=app 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "text",
+          "value": "下一条 （4/5）"
+        },
+        {
+          "type": "css",
+          "value": "span.el-tooltip.text-wrap"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "下一条 （4/5）"
+        },
+        "description": "css=.el-dialog 内 text=下一条 （4/5）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog",
+        "auto-height",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:02:53.397Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-tooltip text-wrap",
+      "text": "下一条 （5/5）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#auto-height > div.is-no-footer > div:nth-child(2) > span.bottom-btn > button.is-round:nth-child(2) > span.text-wrap",
+      "xpath_short": "///*[@id=\"auto-height\"]/div/div[2]/span/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[2]/span[1]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"下一条 （5/5）\", { exact: true })",
+      "rect": {
+        "x": 990.90625,
+        "y": 822.359375,
+        "width": 94.171875,
+        "height": 14,
+        "top": 822.359375,
+        "right": 1085.078125,
+        "bottom": 836.359375,
+        "left": 990.90625
+      },
+      "inner_text": "下一条\n（5/5）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog__body",
+        "text": "上一条  下一条 （5/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog is-no-footer",
+        "text": "上一条  下一条 （5/5）",
+        "role": "dialog",
+        "aria_label": "dialog",
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "auto-height",
+        "class": "el-dialog__wrapper auto-height full-height",
+        "text": "上一条  下一条 （5/5）",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （5/5）"
+          },
+          "description": "css=.el-dialog 内 text=下一条 （5/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "css=.el-dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （5/5）"
+          },
+          "description": "role=dialog 内 text=下一条 （5/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "role=dialog 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （5/5）"
+          },
+          "description": "id=auto-height 内 text=下一条 （5/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=auto-height 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "下一条 （5/5）"
+          },
+          "description": "id=app 内 text=下一条 （5/5）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-tooltip.text-wrap"
+          },
+          "description": "id=app 内 css=span.el-tooltip.text-wrap"
+        },
+        {
+          "type": "text",
+          "value": "下一条 （5/5）"
+        },
+        {
+          "type": "css",
+          "value": "span.el-tooltip.text-wrap"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "下一条 （5/5）"
+        },
+        "description": "css=.el-dialog 内 text=下一条 （5/5）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog",
+        "auto-height",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:02:55.350Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button new-verion-btn ak-width-84 el-button--primary el-button--medium is-round",
+      "text": "关闭",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-v-4f514e59": "",
+        "data-auth": "auth-button"
+      },
+      "css_selector": "#auto-height > div.is-no-footer > div:nth-child(2) > span.bottom-btn > button.new-verion-btn.ak-width-84.is-round:nth-child(2)",
+      "xpath_short": "///*[@id=\"auto-height\"]/div/div[2]/span/button[2]",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[7]/div[1]/div[1]/div[2]/span[1]/button[2]",
+      "playwright_selector": "page.getByText(\"关闭\", { exact: true })",
+      "rect": {
+        "x": 996,
+        "y": 811.359375,
+        "width": 84,
+        "height": 36,
+        "top": 811.359375,
+        "right": 1080,
+        "bottom": 847.359375,
+        "left": 996
+      },
+      "inner_text": "关闭"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog__body",
+        "text": "上一条  关闭",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog is-no-footer",
+        "text": "上一条  关闭",
+        "role": "dialog",
+        "aria_label": "dialog",
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "auto-height",
+        "class": "el-dialog__wrapper auto-height full-height",
+        "text": "上一条  关闭",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "关闭"
+          },
+          "description": "css=.el-dialog 内 text=关闭"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.new-verion-btn.ak-width-84"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.new-verion-btn.ak-width-84"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "关闭"
+          },
+          "description": "role=dialog 内 text=关闭"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.new-verion-btn.ak-width-84"
+          },
+          "description": "role=dialog 内 css=button.el-button.new-verion-btn.ak-width-84"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "role=dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "text",
+            "value": "关闭"
+          },
+          "description": "id=auto-height 内 text=关闭"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.new-verion-btn.ak-width-84"
+          },
+          "description": "id=auto-height 内 css=button.el-button.new-verion-btn.ak-width-84"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "auto-height"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "id=auto-height 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "关闭"
+          },
+          "description": "id=app 内 text=关闭"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.new-verion-btn.ak-width-84"
+          },
+          "description": "id=app 内 css=button.el-button.new-verion-btn.ak-width-84"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "id=app 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "text",
+          "value": "关闭"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.new-verion-btn.ak-width-84"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "关闭"
+        },
+        "description": "css=.el-dialog 内 text=关闭"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog",
+        "auto-height",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:03.548Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "router-link-exact-active router-link-active tag active home v-step-0",
+      "text": "首页",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-199a568a": ""
+      },
+      "css_selector": "#slick-list-fixed > div.slick-item.slick-item-active > span.router-link-exact-active.router-link-active.tag.active.home.v-step-0",
+      "xpath_short": "///*[@id=\"slick-list-fixed\"]/div/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"首页\", { exact: true })",
+      "rect": {
+        "x": 56,
+        "y": 6,
+        "width": 80,
+        "height": 32,
+        "top": 6,
+        "right": 136,
+        "bottom": 38,
+        "left": 56
+      },
+      "inner_text": "首页"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "slick-list-fixed",
+        "class": null,
+        "text": "首页",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "slick-list-fixed"
+          },
+          "target": {
+            "type": "text",
+            "value": "首页"
+          },
+          "description": "id=slick-list-fixed 内 text=首页"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "slick-list-fixed"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.router-link-exact-active.router-link-active.tag"
+          },
+          "description": "id=slick-list-fixed 内 css=span.router-link-exact-active.router-link-active.tag"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "首页"
+          },
+          "description": "id=app 内 text=首页"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.router-link-exact-active.router-link-active.tag"
+          },
+          "description": "id=app 内 css=span.router-link-exact-active.router-link-active.tag"
+        },
+        {
+          "type": "text",
+          "value": "首页"
+        },
+        {
+          "type": "css",
+          "value": "span.router-link-exact-active.router-link-active.tag"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "slick-list-fixed"
+        },
+        "target": {
+          "type": "text",
+          "value": "首页"
+        },
+        "description": "id=slick-list-fixed 内 text=首页"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "slick-list-fixed",
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:11.187Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "ak-search-wrapper",
+      "text": "全部国家全部店铺\n        \n      \n        \n      全选\n                      Be Very Good-US\n                   ",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9003acd0": ""
+      },
+      "css_selector": "#new-home > div.home-header:nth-child(1) > div.ak-search-wrapper",
+      "xpath_short": "///*[@id=\"new-home\"]/div[1]/div",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/main[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"全部国家全部店铺\n        \n      \n        \n      全选\n       \", { exact: true })",
+      "rect": {
+        "x": 56,
+        "y": 38,
+        "width": 1864,
+        "height": 52,
+        "top": 38,
+        "right": 1920,
+        "bottom": 90,
+        "left": 56
+      },
+      "inner_text": "全部店铺\nListing负责人\nUSD\n重置\n高级\n北京\n06-05 18:03\n英国\n06-05 11:03\n美东\n06-05 06:03\n太平洋\n06-05"
+    },
+    "ancestors": [
+      {
+        "tag": "main",
+        "id": "new-home",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "main",
+        "id": "home-comp",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "root-app",
+        "class": "page-container el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "wrap",
+        "class": "wrap el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "new-home"
+          },
+          "target": {
+            "type": "text",
+            "value": "全部国家全部店铺 全选 Be Very Good-US"
+          },
+          "description": "id=new-home 内 text=全部国家全部店铺 全选 Be Very Good-US"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "new-home"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.ak-search-wrapper"
+          },
+          "description": "id=new-home 内 css=div.ak-search-wrapper"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-comp"
+          },
+          "target": {
+            "type": "text",
+            "value": "全部国家全部店铺 全选 Be Very Good-US"
+          },
+          "description": "id=home-comp 内 text=全部国家全部店铺 全选 Be Very Good-US"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-comp"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.ak-search-wrapper"
+          },
+          "description": "id=home-comp 内 css=div.ak-search-wrapper"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "root-app"
+          },
+          "target": {
+            "type": "text",
+            "value": "全部国家全部店铺 全选 Be Very Good-US"
+          },
+          "description": "id=root-app 内 text=全部国家全部店铺 全选 Be Very Good-US"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "root-app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.ak-search-wrapper"
+          },
+          "description": "id=root-app 内 css=div.ak-search-wrapper"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "wrap"
+          },
+          "target": {
+            "type": "text",
+            "value": "全部国家全部店铺 全选 Be Very Good-US"
+          },
+          "description": "id=wrap 内 text=全部国家全部店铺 全选 Be Very Good-US"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "wrap"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.ak-search-wrapper"
+          },
+          "description": "id=wrap 内 css=div.ak-search-wrapper"
+        },
+        {
+          "type": "text",
+          "value": "全部国家全部店铺 全选 Be Very Good-US"
+        },
+        {
+          "type": "css",
+          "value": "div.ak-search-wrapper"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "new-home"
+        },
+        "target": {
+          "type": "text",
+          "value": "全部国家全部店铺 全选 Be Very Good-US"
+        },
+        "description": "id=new-home 内 text=全部国家全部店铺 全选 Be Very Good-US"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "new-home",
+        "home-comp",
+        "root-app",
+        "wrap"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:13.011Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "section-header",
+      "text": "初始化引导收起",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-a83b0f34": ""
+      },
+      "css_selector": "#home-content > div.module-box.module-box:nth-child(1) > div.home-card-box.span-12.fix-module > div.section-header:nth-child(1)",
+      "xpath_short": "///*[@id=\"home-content\"]/div[1]/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/main[1]/section[1]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"初始化引导收起\", { exact: true })",
+      "rect": {
+        "x": 72,
+        "y": 106,
+        "width": 1832,
+        "height": 56,
+        "top": 106,
+        "right": 1904,
+        "bottom": 162,
+        "left": 72
+      },
+      "inner_text": "初始化引导\n收起"
+    },
+    "ancestors": [
+      {
+        "tag": "section",
+        "id": "home-content",
+        "class": null,
+        "text": "初始化引导收起基础数据授权必做授权店铺客服邮箱等信息，开启数字化管理账号权限配置分配具体账号权限，便",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "main",
+        "id": "new-home",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "main",
+        "id": "home-comp",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "root-app",
+        "class": "page-container el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "wrap",
+        "class": "wrap el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "初始化引导收起"
+          },
+          "description": "id=home-content 内 text=初始化引导收起"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.section-header"
+          },
+          "description": "id=home-content 内 css=div.section-header"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "new-home"
+          },
+          "target": {
+            "type": "text",
+            "value": "初始化引导收起"
+          },
+          "description": "id=new-home 内 text=初始化引导收起"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "new-home"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.section-header"
+          },
+          "description": "id=new-home 内 css=div.section-header"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-comp"
+          },
+          "target": {
+            "type": "text",
+            "value": "初始化引导收起"
+          },
+          "description": "id=home-comp 内 text=初始化引导收起"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-comp"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.section-header"
+          },
+          "description": "id=home-comp 内 css=div.section-header"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "root-app"
+          },
+          "target": {
+            "type": "text",
+            "value": "初始化引导收起"
+          },
+          "description": "id=root-app 内 text=初始化引导收起"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "root-app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.section-header"
+          },
+          "description": "id=root-app 内 css=div.section-header"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "wrap"
+          },
+          "target": {
+            "type": "text",
+            "value": "初始化引导收起"
+          },
+          "description": "id=wrap 内 text=初始化引导收起"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "wrap"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.section-header"
+          },
+          "description": "id=wrap 内 css=div.section-header"
+        },
+        {
+          "type": "text",
+          "value": "初始化引导收起"
+        },
+        {
+          "type": "css",
+          "value": "div.section-header"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "home-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "初始化引导收起"
+        },
+        "description": "id=home-content 内 text=初始化引导收起"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "home-content",
+        "new-home",
+        "home-comp",
+        "root-app",
+        "wrap"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:14.939Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "home-card-box span-12 fix-module",
+      "text": "初始化引导收起基础数据授权必做授权店铺客服邮箱等信息，开启数字化管理账号权限配置分配具体账号权限，便于内部员工协作产品信息维护录入本地产品并配对平台商品，实现数据匹配供应链管理各关键环节于一体，高效管",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-a83b0f34": "",
+        "data-v-65fb2e07": "",
+        "data-v-824c085a": "",
+        "data-v-7de0e1d6": ""
+      },
+      "css_selector": "#home-content > div.module-box.module-box:nth-child(1) > div.home-card-box.span-12.fix-module",
+      "xpath_short": "///*[@id=\"home-content\"]/div[1]/div",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/main[1]/main[1]/section[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"初始化引导收起基础数据授权必做授权店铺客服邮箱等信息，开启数字化管理账号权限配置分配具体账号权限，便\", { exact: true })",
+      "rect": {
+        "x": 72,
+        "y": 106,
+        "width": 1832,
+        "height": 136,
+        "top": 106,
+        "right": 1904,
+        "bottom": 242,
+        "left": 72
+      },
+      "inner_text": "初始化引导\n收起\n基础数据授权\n必做\n授权店铺客服邮箱等信息，开启数字化管理\n账号权限配置\n分配具体账号权限，便于内部员工协作\n产品信息维护\n录入本地产品并配对"
+    },
+    "ancestors": [
+      {
+        "tag": "section",
+        "id": "home-content",
+        "class": null,
+        "text": "初始化引导收起基础数据授权必做授权店铺客服邮箱等信息，开启数字化管理账号权限配置分配具体账号权限，便",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "main",
+        "id": "new-home",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "main",
+        "id": "home-comp",
+        "class": null,
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "root-app",
+        "class": "page-container el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "wrap",
+        "class": "wrap el-row",
+        "text": "全部国家全部店铺\n        \n      \n        \n      全选\n       ",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.home-card-box.span-12.fix-module"
+          },
+          "description": "id=home-content 内 css=div.home-card-box.span-12.fix-module"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "new-home"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.home-card-box.span-12.fix-module"
+          },
+          "description": "id=new-home 内 css=div.home-card-box.span-12.fix-module"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "home-comp"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.home-card-box.span-12.fix-module"
+          },
+          "description": "id=home-comp 内 css=div.home-card-box.span-12.fix-module"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "root-app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.home-card-box.span-12.fix-module"
+          },
+          "description": "id=root-app 内 css=div.home-card-box.span-12.fix-module"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "wrap"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.home-card-box.span-12.fix-module"
+          },
+          "description": "id=wrap 内 css=div.home-card-box.span-12.fix-module"
+        },
+        {
+          "type": "css",
+          "value": "div.home-card-box.span-12.fix-module"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "home-content"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.home-card-box.span-12.fix-module"
+        },
+        "description": "id=home-content 内 css=div.home-card-box.span-12.fix-module"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "home-content",
+        "new-home",
+        "home-comp",
+        "root-app",
+        "wrap"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:20.787Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button btn el-button--ordinary el-button--small is-round",
+      "text": "好的",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-v-9d3272d0": "",
+        "data-auth": "auth-button"
+      },
+      "css_selector": "#el-popover-801 > div.ak-mg-top-16.ak-justify-end:nth-child(1) > button.btn.is-round",
+      "xpath_short": "///*[@id=\"el-popover-801\"]/div[1]/button",
+      "xpath_full": "/html[1]/body[1]/div[6]/div[1]/button[1]",
+      "playwright_selector": "page.getByText(\"好的\", { exact: true })",
+      "rect": {
+        "x": 1760,
+        "y": 83,
+        "width": 46,
+        "height": 26,
+        "top": 83,
+        "right": 1806,
+        "bottom": 109,
+        "left": 1760
+      },
+      "inner_text": "好的"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-popover-801",
+        "class": "el-popover el-popper global-pop first-download-pop notice-pop is-arrow",
+        "text": "【新版本更新】内容可在这里查看哦好的",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popover-801"
+          },
+          "target": {
+            "type": "text",
+            "value": "好的"
+          },
+          "description": "id=el-popover-801 内 text=好的"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popover-801"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.btn.el-button--ordinary"
+          },
+          "description": "id=el-popover-801 内 css=button.el-button.btn.el-button--ordinary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popover-801"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "id=el-popover-801 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "text",
+          "value": "好的"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.btn.el-button--ordinary"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "el-popover-801"
+        },
+        "target": {
+          "type": "text",
+          "value": "好的"
+        },
+        "description": "id=el-popover-801 内 text=好的"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "tooltip"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:24.778Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "i",
+      "id": null,
+      "class": "iconfont lx_tab_message is-bookmark",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9d3272d0": ""
+      },
+      "css_selector": "#app > div.contain > div.right-contain.collapse-right-contain:nth-child(2) > div.topNav:nth-child(1) > div.logout-container:nth-child(2) > a.name-wrapper.li-mes.message-icon:nth-child(4) > i.iconfont.lx_tab_message.is-bookmark",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[1]/div[2]/a[4]/i",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/a[4]/i[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/a[4]/i[1]",
+      "rect": {
+        "x": 1758,
+        "y": 3,
+        "width": 32,
+        "height": 32,
+        "top": 3,
+        "right": 1790,
+        "bottom": 35,
+        "left": 1758
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "i.iconfont.lx_tab_message.is-bookmark"
+          },
+          "description": "id=app 内 css=i.iconfont.lx_tab_message.is-bookmark"
+        },
+        {
+          "type": "css",
+          "value": "i.iconfont.lx_tab_message.is-bookmark"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "css",
+          "value": "i.iconfont.lx_tab_message.is-bookmark"
+        },
+        "description": "id=app 内 css=i.iconfont.lx_tab_message.is-bookmark"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:28.074Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/home",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "i",
+      "id": null,
+      "class": "iconfont lx_tab_download is-bookmark",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9d3272d0": ""
+      },
+      "css_selector": "#app > div.contain > div.right-contain.collapse-right-contain:nth-child(2) > div.topNav:nth-child(1) > div.logout-container:nth-child(2) > a.name-wrapper.li-mes:nth-child(3) > i.iconfont.lx_tab_download.is-bookmark",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[1]/div[2]/a[3]/i",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/a[3]/i[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/a[3]/i[1]",
+      "rect": {
+        "x": 1726,
+        "y": 3,
+        "width": 32,
+        "height": 32,
+        "top": 3,
+        "right": 1758,
+        "bottom": 35,
+        "left": 1726
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "i.iconfont.lx_tab_download.is-bookmark"
+          },
+          "description": "id=app 内 css=i.iconfont.lx_tab_download.is-bookmark"
+        },
+        {
+          "type": "css",
+          "value": "i.iconfont.lx_tab_download.is-bookmark"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "css",
+          "value": "i.iconfont.lx_tab_download.is-bookmark"
+        },
+        "description": "id=app 内 css=i.iconfont.lx_tab_download.is-bookmark"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:29.924Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/muser/downloadCenter",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "i",
+      "id": null,
+      "class": "iconfont lx_close",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-bfe46394": ""
+      },
+      "css_selector": "#app > div.contain > div.right-contain.collapse-right-contain:nth-child(2) > div.module.popover-boundaries:nth-child(2) > div.message-panel.show-panel:nth-child(3) > div.ak-relative.message-tab:nth-child(1) > div.icon:nth-child(2) > i.iconfont.lx_close",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[2]/div[3]/div[1]/div[2]/i",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]/i[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]/i[1]",
+      "rect": {
+        "x": 1884,
+        "y": 46,
+        "width": 20,
+        "height": 20,
+        "top": 46,
+        "right": 1904,
+        "bottom": 66,
+        "left": 1884
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页  导出中心 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "i.iconfont.lx_close"
+          },
+          "description": "id=app 内 css=i.iconfont.lx_close"
+        },
+        {
+          "type": "css",
+          "value": "i.iconfont.lx_close"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "css",
+          "value": "i.iconfont.lx_close"
+        },
+        "description": "id=app 内 css=i.iconfont.lx_close"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:36.882Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/muser/downloadCenter",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "i",
+      "id": null,
+      "class": "ak-mg-left-2 iconfont lx_arrow_down_rev",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-239e6584": ""
+      },
+      "css_selector": "#app > div.contain > div.right-contain.collapse-right-contain:nth-child(2) > div.topNav:nth-child(1) > div.logout-container:nth-child(2) > span:nth-child(1) > span > span.focusing > span > div.current-platform > i.ak-mg-left-2.iconfont.lx_arrow_down_rev:nth-child(2)",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[1]/div[2]/span[1]/span/span/span/div/i[2]",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/span[1]/span[1]/span[1]/span[1]/div[1]/i[2]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/span[1]/span[1]/span[1]/span[1]/div[1]/i[2]",
+      "rect": {
+        "x": 1557,
+        "y": 11,
+        "width": 16,
+        "height": 16,
+        "top": 11,
+        "right": 1573,
+        "bottom": 27,
+        "left": 1557
+      },
+      "inner_text": null
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "css",
+          "value": "i.ak-mg-left-2.iconfont.lx_arrow_down_rev"
+        }
+      ],
+      "best_strategy": {
+        "type": "css",
+        "value": "i.ak-mg-left-2.iconfont.lx_arrow_down_rev"
+      },
+      "reliability": "medium",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  },
+  {
+    "time": "2026-06-05T10:03:39.412Z",
+    "step_name": "首页",
+    "page_url": "https://huizhixin.lingxing.com/erp/muser/downloadCenter",
+    "page_title": "领星ERP - 跨境电商管理系统",
+    "selectors": {
+      "tag": "i",
+      "id": null,
+      "class": "el-icon-caret-bottom el-icon--right",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-9d3272d0": ""
+      },
+      "css_selector": "#app > div.contain > div.right-contain.collapse-right-contain:nth-child(2) > div.topNav:nth-child(1) > div.logout-container:nth-child(2) > div.logout-btn > div.focusing > i",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[1]/div[2]/div/div/i",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/i[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/i[1]",
+      "rect": {
+        "x": 1880,
+        "y": 13,
+        "width": 12,
+        "height": 12,
+        "top": 13,
+        "right": 1892,
+        "bottom": 25,
+        "left": 1880
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dropdown-link el-dropdown-selfdefine focusing",
+        "text": "虾掌柜",
+        "role": "button",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "销售广告客服工具设置 首页  导出中心 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "i.el-icon-caret-bottom.el-icon--right"
+          },
+          "description": "id=app 内 css=i.el-icon-caret-bottom.el-icon--right"
+        },
+        {
+          "type": "css",
+          "value": "i.el-icon-caret-bottom.el-icon--right"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "css",
+          "value": "i.el-icon-caret-bottom.el-icon--right"
+        },
+        "description": "id=app 内 css=i.el-icon-caret-bottom.el-icon--right"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "button",
+        "app"
+      ]
+    }
+  }
+]

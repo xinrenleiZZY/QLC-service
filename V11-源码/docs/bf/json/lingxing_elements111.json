@@ -1,0 +1,2320 @@
+[  {
+    "time": "2026-06-10T04:46:17.121Z",
+    "step_name": "店铺",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-input__prefix-inner",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.top-search:nth-child(1) > div.top-search-inner > div.top-search-input > div > span > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[1]/div/div/div/span/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]",
+      "rect": {
+        "x": 293,
+        "y": 270,
+        "width": 24,
+        "height": 30,
+        "top": 270,
+        "right": 317,
+        "bottom": 300,
+        "left": 293
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "el-popper-container-4388"
+          },
+          "target": {
+            "type": "css",
+            "value": "span.el-input__prefix-inner"
+          },
+          "description": "id=el-popper-container-4388 内 css=span.el-input__prefix-inner"
+        },
+        {
+          "type": "css",
+          "value": "span.el-input__prefix-inner"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "el-popper-container-4388"
+        },
+        "target": {
+          "type": "css",
+          "value": "span.el-input__prefix-inner"
+        },
+        "description": "id=el-popper-container-4388 内 css=span.el-input__prefix-inner"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "tooltip",
+        "el-popper-container-4388"
+      ]
+    }
+  }, 
+  {
+    "time": "2026-06-10T04:46:06.465Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:46:14.596Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-input__wrapper",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.top-search:nth-child(1) > div.top-search-inner > div.top-search-input > div",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[1]/div/div/div",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "rect": {
+        "x": 281,
+        "y": 269,
+        "width": 256,
+        "height": 32,
+        "top": 269,
+        "right": 537,
+        "bottom": 301,
+        "left": 281
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:46:17.121Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-input__prefix-inner",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.top-search:nth-child(1) > div.top-search-inner > div.top-search-input > div > span > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[1]/div/div/div/span/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/span[1]",
+      "rect": {
+        "x": 293,
+        "y": 270,
+        "width": 24,
+        "height": 30,
+        "top": 270,
+        "right": 317,
+        "bottom": 300,
+        "left": 293
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:01.680Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:48:03.766Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "全选",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span:nth-child(2) > div.flex.items-center > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[2]/div/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[2]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"全选\", { exact: true })",
+      "rect": {
+        "x": 313,
+        "y": 309,
+        "width": 24,
+        "height": 32,
+        "top": 309,
+        "right": 337,
+        "bottom": 341,
+        "left": 313
+      },
+      "inner_text": "全选"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:03.770Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 0,
+        "height": 0,
+        "top": 318,
+        "right": 290,
+        "bottom": 318,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:04.869Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-checkbox__inner",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span:nth-child(1) > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/span[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/span[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 14,
+        "height": 14,
+        "top": 318,
+        "right": 304,
+        "bottom": 332,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:04.873Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 0,
+        "height": 0,
+        "top": 318,
+        "right": 290,
+        "bottom": 318,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:06.517Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "确定",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.footer-warp.justify-end.items-center.pt-8:nth-child(2) > button:nth-child(2) > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[2]/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[2]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 500,
+        "y": 656,
+        "width": 24,
+        "height": 12,
+        "top": 656,
+        "right": 524,
+        "bottom": 668,
+        "left": 500
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:07.584Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:48:11.771Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:48:13.822Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "全选",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span:nth-child(2) > div.flex.items-center > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[2]/div/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[2]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"全选\", { exact: true })",
+      "rect": {
+        "x": 313,
+        "y": 309,
+        "width": 24,
+        "height": 32,
+        "top": 309,
+        "right": 337,
+        "bottom": 341,
+        "left": 313
+      },
+      "inner_text": "全选"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:13.826Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 0,
+        "height": 0,
+        "top": 318,
+        "right": 290,
+        "bottom": 318,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:14.891Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-checkbox__inner",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span:nth-child(1) > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/span[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/span[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 14,
+        "height": 14,
+        "top": 318,
+        "right": 304,
+        "bottom": 332,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:14.895Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 0,
+        "height": 0,
+        "top": 318,
+        "right": 290,
+        "bottom": 318,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:16.514Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "确定",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.footer-warp.justify-end.items-center.pt-8:nth-child(2) > button:nth-child(2) > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[2]/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[2]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 500,
+        "y": 656,
+        "width": 24,
+        "height": 12,
+        "top": 656,
+        "right": 524,
+        "bottom": 668,
+        "left": 500
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:48:17.530Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:02.512Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": "el-id-4388-13",
+      "class": "el-dialog__body",
+      "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享给指定部",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13",
+      "xpath_short": "//*[@id=\"el-id-4388-13\"]",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.locator(\"#el-id-4388-13\")",
+      "rect": {
+        "x": 129,
+        "y": 99,
+        "width": 1258,
+        "height": 517,
+        "top": 99,
+        "right": 1387,
+        "bottom": 616,
+        "left": 129
+      },
+      "inner_text": "词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decorations"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog add-word-stock-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": "dialog",
+        "aria_label": "新建词库",
+        "depth": 2,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:50:04.251Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:57.032Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common value",
+      "text": "下架",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > div.yy-select.yy-popover-reference.mode-select.ml-8:nth-child(1) > span > div.yy-select-show.yy-select-show-default.yy-select-show-width.yy-select-clearable > span.value-common.value",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/div[1]/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"下架\", { exact: true })",
+      "rect": {
+        "x": 387,
+        "y": 225,
+        "width": 24,
+        "height": 30,
+        "top": 225,
+        "right": 411,
+        "bottom": 255,
+        "left": 387
+      },
+      "inner_text": "下架"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:58.099Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n全选\n在售\n下架\n添加全部\n22Pcs 80s Par"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:58.492Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n全选\n在售\n下架\n添加全部\n22Pcs 80s Par"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:58.930Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:59.326Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:50:59.707Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:51:00.321Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:51:33.305Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-form-item__content",
+      "text": "共享给所有用户不共享共享给所有用户共享给指定部门",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13 > form > div:nth-child(2) > div:nth-child(2) > div.is-required.asterisk-left > div:nth-child(2)",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[2]/div[2]/div/div[2]",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[2]",
+      "playwright_selector": "page.getByText(\"共享给所有用户不共享共享给所有用户共享给指定部门\", { exact: true })",
+      "rect": {
+        "x": 562,
+        "y": 169,
+        "width": 799,
+        "height": 32,
+        "top": 169,
+        "right": 1361,
+        "bottom": 201,
+        "left": 562
+      },
+      "inner_text": "共享给所有用户"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-form-item is-required asterisk-left",
+        "text": "共享方式共享给所有用户不共享共享给所有用户共享给指定部门",
+        "role": "group",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-4388-13",
+        "class": "el-dialog__body",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog add-word-stock-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": "dialog",
+        "aria_label": "新建词库",
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:52:47.955Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-form-item__content",
+      "text": "共享给所有用户不共享共享给所有用户共享给指定部门",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13 > form > div:nth-child(2) > div:nth-child(2) > div.is-required.asterisk-left > div:nth-child(2)",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[2]/div[2]/div/div[2]",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[2]/div[2]/div[1]/div[2]",
+      "playwright_selector": "page.getByText(\"共享给所有用户不共享共享给所有用户共享给指定部门\", { exact: true })",
+      "rect": {
+        "x": 562,
+        "y": 169,
+        "width": 799,
+        "height": 32,
+        "top": 169,
+        "right": 1361,
+        "bottom": 201,
+        "left": 562
+      },
+      "inner_text": "共享给所有用户"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-form-item is-required asterisk-left",
+        "text": "共享方式共享给所有用户不共享共享给所有用户共享给指定部门",
+        "role": "group",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-4388-13",
+        "class": "el-dialog__body",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog add-word-stock-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": "dialog",
+        "aria_label": "新建词库",
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:52:52.457Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-form-item asterisk-left",
+      "text": "选择关联商品请选择店铺下架全选在售 下架 添加全部22Pcs 80s Party Decorations, Retro Disco Paper Fans, Lanterns, Honeycombs, ",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3)",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]",
+      "playwright_selector": "page.getByText(\"选择关联商品请选择店铺下架全选在售 下架 添加全部22Pcs 80s Party Decoratio\", { exact: true })",
+      "rect": {
+        "x": 149,
+        "y": 219,
+        "width": 1212,
+        "height": 512,
+        "top": 219,
+        "right": 1361,
+        "bottom": 731,
+        "left": 149
+      },
+      "inner_text": "选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decorations, Retro Disco Paper Fans, Lanter"
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-4388-13",
+        "class": "el-dialog__body",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog add-word-stock-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": "dialog",
+        "aria_label": "新建词库",
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:52:54.645Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:52:55.183Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:53:23.865Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:53:25.458Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-form-item asterisk-left",
+      "text": "选择关联商品请选择店铺下架全选在售 下架 添加全部22Pcs 80s Party Decorations, Retro Disco Paper Fans, Lanterns, Honeycombs, ",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3)",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]",
+      "playwright_selector": "page.getByText(\"选择关联商品请选择店铺下架全选在售 下架 添加全部22Pcs 80s Party Decoratio\", { exact: true })",
+      "rect": {
+        "x": 149,
+        "y": 219,
+        "width": 1212,
+        "height": 512,
+        "top": 219,
+        "right": 1361,
+        "bottom": 731,
+        "left": 149
+      },
+      "inner_text": "选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decorations, Retro Disco Paper Fans, Lanter"
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-4388-13",
+        "class": "el-dialog__body",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog add-word-stock-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": "dialog",
+        "aria_label": "新建词库",
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:53:42.705Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:53:45.188Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "全选",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span:nth-child(2) > div.flex.items-center > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[2]/div/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[2]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"全选\", { exact: true })",
+      "rect": {
+        "x": 313,
+        "y": 309,
+        "width": 24,
+        "height": 32,
+        "top": 309,
+        "right": 337,
+        "bottom": 341,
+        "left": 313
+      },
+      "inner_text": "全选"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:53:45.195Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 0,
+        "height": 0,
+        "top": 318,
+        "right": 290,
+        "bottom": 318,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:53:46.505Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "el-checkbox__inner",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span:nth-child(1) > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/span[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/span[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 14,
+        "height": 14,
+        "top": 318,
+        "right": 304,
+        "bottom": 332,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:53:46.508Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": null,
+      "class": "el-checkbox__original",
+      "text": null,
+      "placeholder": null,
+      "type": "checkbox",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.yy-select-content:nth-child(1) > div.flex-row.items-center:nth-child(2) > label.flex-1 > span.is-focus:nth-child(1) > input",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[1]/div[2]/label/span[1]/input",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "playwright_selector": "/html[1]/body[1]/div[2]/div[46]/div[1]/div[2]/label[1]/span[1]/input[1]",
+      "rect": {
+        "x": 290,
+        "y": 318,
+        "width": 0,
+        "height": 0,
+        "top": 318,
+        "right": 290,
+        "bottom": 318,
+        "left": 290
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:53:48.447Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": null,
+      "text": "确定",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-147 > div.footer-warp.justify-end.items-center.pt-8:nth-child(2) > button:nth-child(2) > span",
+      "xpath_short": "///*[@id=\"el-id-4388-147\"]/div[2]/button[2]/span",
+      "xpath_full": "/html[1]/body[1]/div[2]/div[46]/div[2]/button[2]/span[1]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 500,
+        "y": 656,
+        "width": 24,
+        "height": 12,
+        "top": 656,
+        "right": 524,
+        "bottom": 668,
+        "left": 500
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "el-id-4388-147",
+        "class": "el-popper is-light el-popover is-show",
+        "text": "全选Be Very Good-US美国仅筛选此项Bright Brilliance Store-US",
+        "role": "tooltip",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": "el-popper-container-4388",
+        "class": null,
+        "text": "仪表盘广告组合全部活动SP广告SB广告SD广告操作日志词库自动规则告警推送全局概览超级结构广告活动界",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:53:49.626Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:53:50.167Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:55:16.253Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:55:17.107Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:56:14.084Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-form-item asterisk-left",
+      "text": "选择关联商品请选择店铺下架全选在售 下架 添加全部22Pcs 80s Party Decorations, Retro Disco Paper Fans, Lanterns, Honeycombs, ",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3)",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]",
+      "playwright_selector": "page.getByText(\"选择关联商品请选择店铺下架全选在售 下架 添加全部22Pcs 80s Party Decoratio\", { exact: true })",
+      "rect": {
+        "x": 149,
+        "y": 219,
+        "width": 1212,
+        "height": 512,
+        "top": 219,
+        "right": 1361,
+        "bottom": 731,
+        "left": 149
+      },
+      "inner_text": "选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decorations, Retro Disco Paper Fans, Lanter"
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-4388-13",
+        "class": "el-dialog__body",
+        "text": "词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog add-word-stock-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿",
+        "role": "dialog",
+        "aria_label": "新建词库",
+        "depth": 4,
+        "is_stable_anchor": true
+      }
+    ]
+  },
+  {
+    "time": "2026-06-10T04:56:20.585Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:56:21.205Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "span",
+      "id": null,
+      "class": "value-common placeholder",
+      "text": "请选择店铺",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-11134b2e": ""
+      },
+      "css_selector": "#el-id-4388-13 > form > div.asterisk-left:nth-child(3) > div:nth-child(2) > div.select-view > div.main > div.left:nth-child(1) > div.top:nth-child(1) > div.product-filter > span > div.yy-select-show.yy-select-show-default.items-center.yy-select-show-width > span.value-common.placeholder",
+      "xpath_short": "///*[@id=\"el-id-4388-13\"]/form/div[3]/div[2]/div/div/div[1]/div[1]/div/span/div/span",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/form[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/div[1]/span[1]",
+      "playwright_selector": "page.getByText(\"请选择店铺\", { exact: true })",
+      "rect": {
+        "x": 281,
+        "y": 225,
+        "width": 60,
+        "height": 30,
+        "top": 225,
+        "right": 341,
+        "bottom": 255,
+        "left": 281
+      },
+      "inner_text": "请选择店铺"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:56:41.036Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:56:41.597Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:56:42.401Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  },
+  {
+    "time": "2026-06-10T04:56:43.160Z",
+    "step_name": "111",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-overlay-dialog",
+      "text": "新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰共享方式共享给所有用户不共享共享给所有用户共享",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(4) > div",
+      "xpath_short": "/div[4]/div",
+      "xpath_full": "/html[1]/body[1]/div[4]/div[1]",
+      "playwright_selector": "page.getByText(\"新建词库词库名称10 / 50国家美国美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿\", { exact: true })",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1516,
+        "height": 721,
+        "top": 0,
+        "right": 1516,
+        "bottom": 721,
+        "left": 0
+      },
+      "inner_text": "新建词库\n词库名称\n10 / 50\n国家\n美国\n共享方式\n共享给所有用户\n选择关联商品\n请选择店铺\n下架\n添加全部\n22Pcs 80s Party Decora"
+    },
+    "ancestors": []
+  }
+]

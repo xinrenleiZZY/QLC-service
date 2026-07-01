@@ -1,0 +1,2824 @@
+[
+  {
+    "time": "2026-06-10T03:37:16.491Z",
+    "step_name": "搜索词库",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "input-box",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.filter:nth-child(2) > div.filter__item:nth-child(3) > div.yy-search.yy-search-auto > div.main-content > div.main-box.main-box-hidden.main-box-hidden-batch > div.input-box:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[2]/div[3]/div/div/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]",
+      "playwright_selector": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]",
+      "rect": {
+        "x": 69,
+        "y": 203,
+        "width": 276,
+        "height": 30,
+        "top": 203,
+        "right": 345,
+        "bottom": 233,
+        "left": 69
+      },
+      "inner_text": null
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "css",
+          "value": "div.input-box"
+        }
+      ],
+      "best_strategy": {
+        "type": "css",
+        "value": "div.input-box"
+      },
+      "reliability": "medium",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  },
+  {
+    "time": "2026-06-10T03:37:20.035Z",
+    "step_name": "搜索词库",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "input",
+      "id": "el-id-1745-17",
+      "class": "el-input__inner",
+      "text": null,
+      "placeholder": "请输入",
+      "type": "text",
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-17",
+      "xpath_short": "//*[@id=\"el-id-1745-17\"]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-17\")",
+      "rect": {
+        "x": 77,
+        "y": 207,
+        "width": 260,
+        "height": 22,
+        "top": 207,
+        "right": 337,
+        "bottom": 229,
+        "left": 77
+      },
+      "inner_text": null
+    },
+    "ancestors": [],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "placeholder",
+          "value": "请输入"
+        },
+        {
+          "type": "css",
+          "value": "input.el-input__inner"
+        },
+        {
+          "type": "css",
+          "value": "input[type=\"text\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "placeholder",
+        "value": "请输入"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-17",
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  },
+  {
+    "time": "2026-06-10T03:37:53.974Z",
+    "step_name": "搜索词库_父元素",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "cnt",
+      "text": "包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]",
+      "playwright_selector": "page.getByText(\"包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASI\", { exact: true })",
+      "rect": {
+        "x": 68,
+        "y": 242,
+        "width": 302,
+        "height": 463,
+        "top": 242,
+        "right": 370,
+        "bottom": 705,
+        "left": 68
+      },
+      "inner_text": "包含查询的词库(1)\n\nsd-美国\n\n关键词\n\n（0）\n\n核心关键词\n\n（0）\n\n否定词\n\n（0）\n\n投放ASIN\n\n（0）\n\n否定ASIN\n\n（0）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比",
+        "role": null,
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "text",
+            "value": "包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）"
+          },
+          "description": "id=yy-layout-content 内 text=包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-layout-content"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.cnt"
+          },
+          "description": "id=yy-layout-content 内 css=div.cnt"
+        },
+        {
+          "type": "text",
+          "value": "包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）"
+        },
+        {
+          "type": "css",
+          "value": "div.cnt"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        "target": {
+          "type": "text",
+          "value": "包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）"
+        },
+        "description": "id=yy-layout-content 内 text=包含查询的词库(1) sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-layout-content"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:38:08.487Z",
+    "step_name": "搜索词库_父元素",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "tree__item__info",
+      "text": "sd-美国",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(1) > div.tree__item > div.tree__item__info:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div[1]/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"sd-美国\", { exact: true })",
+      "rect": {
+        "x": 94,
+        "y": 288,
+        "width": 244,
+        "height": 42,
+        "top": 288,
+        "right": 338,
+        "bottom": 330,
+        "left": 94
+      },
+      "inner_text": "sd-美国"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "sd-美国"
+        },
+        {
+          "type": "css",
+          "value": "div.tree__item__info"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "sd-美国"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:38:46.563Z",
+    "step_name": "搜索词库_关键词",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-tree-node__content",
+      "text": "关键词（0）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(2) > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"关键词（0）\", { exact: true })",
+      "rect": {
+        "x": 68,
+        "y": 329,
+        "width": 302,
+        "height": 40,
+        "top": 329,
+        "right": 370,
+        "bottom": 369,
+        "left": 68
+      },
+      "inner_text": "关键词\n\n（0）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "关键词（0）核心关键词（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "group",
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "关键词（0）"
+        },
+        {
+          "type": "css",
+          "value": "div.el-tree-node__content"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "关键词（0）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "group",
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:38:55.460Z",
+    "step_name": "搜索词库_关键词",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "i",
+      "id": null,
+      "class": "add-btn iconfont icon-tianjia",
+      "text": null,
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(2) > div.is-expanded.is-current.is-focusable:nth-child(1) > div:nth-child(1) > div.tree__item > div.tree__item__opt:nth-child(2) > i.add-btn.iconfont.icon-tianjia",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div[1]/div/div[2]/i",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/i[1]",
+      "playwright_selector": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/i[1]",
+      "rect": {
+        "x": 346,
+        "y": 340,
+        "width": 16,
+        "height": 16,
+        "top": 340,
+        "right": 362,
+        "bottom": 356,
+        "left": 346
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-current is-focusable",
+        "text": "关键词（0）核心关键词（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "group",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "sd-美国关键词（0）核心关键词（0）否定词（0）投放ASIN（0）否定ASIN（0）",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "css",
+          "value": "i.add-btn.iconfont.icon-tianjia"
+        }
+      ],
+      "best_strategy": {
+        "type": "css",
+        "value": "i.add-btn.iconfont.icon-tianjia"
+      },
+      "reliability": "medium",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "group",
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:39:11.750Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "header",
+      "id": null,
+      "class": "el-dialog__header",
+      "text": "新建分组",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(6) > div > div > header",
+      "xpath_short": "/div[6]/div/div/header",
+      "xpath_full": "/html[1]/body[1]/div[6]/div[1]/div[1]/header[1]",
+      "playwright_selector": "/html[1]/body[1]/div[6]/div[1]/div[1]/header[1]",
+      "rect": {
+        "x": 518,
+        "y": 202.5,
+        "width": 480,
+        "height": 51,
+        "top": 202.5,
+        "right": 998,
+        "bottom": 253.5,
+        "left": 518
+      },
+      "inner_text": "新建分组"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": "dialog",
+        "aria_label": "新建分组",
+        "depth": 2,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "新建分组"
+          },
+          "description": "css=.el-dialog 内 text=新建分组"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "header.el-dialog__header"
+          },
+          "description": "css=.el-dialog 内 css=header.el-dialog__header"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "新建分组"
+          },
+          "description": "role=dialog 内 text=新建分组"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "header.el-dialog__header"
+          },
+          "description": "role=dialog 内 css=header.el-dialog__header"
+        },
+        {
+          "type": "text",
+          "value": "新建分组"
+        },
+        {
+          "type": "css",
+          "value": "header.el-dialog__header"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "新建分组"
+        },
+        "description": "css=.el-dialog 内 text=新建分组"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:39:14.461Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "label",
+      "id": "el-id-1745-270",
+      "class": "el-form-item__label",
+      "text": "输入分组:",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-270",
+      "xpath_short": "//*[@id=\"el-id-1745-270\"]",
+      "xpath_full": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/form[1]/div[2]/label[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-270\")",
+      "rect": {
+        "x": 538,
+        "y": 323.5,
+        "width": 80,
+        "height": 32,
+        "top": 323.5,
+        "right": 618,
+        "bottom": 355.5,
+        "left": 538
+      },
+      "inner_text": "输入分组:"
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库:sd/关键词输入分组:",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-1745-15",
+        "class": "el-dialog__body",
+        "text": "词库:sd/关键词输入分组:",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": "dialog",
+        "aria_label": "新建分组",
+        "depth": 5,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "输入分组:"
+          },
+          "description": "css=.el-dialog 内 text=输入分组:"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "css=.el-dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "输入分组:"
+          },
+          "description": "css=.el-dialog 内 text=输入分组:"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "css=.el-dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "输入分组:"
+          },
+          "description": "role=dialog 内 text=输入分组:"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "role=dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "text",
+          "value": "输入分组:"
+        },
+        {
+          "type": "css",
+          "value": "label.el-form-item__label"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "输入分组:"
+        },
+        "description": "css=.el-dialog 内 text=输入分组:"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-270",
+        "classes": []
+      },
+      "anchors_available": [
+        "form",
+        "el-id-1745-15",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:39:14.465Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "textarea",
+      "id": "el-id-1745-271",
+      "class": "el-textarea__inner",
+      "text": null,
+      "placeholder": "请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行",
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-271",
+      "xpath_short": "//*[@id=\"el-id-1745-271\"]",
+      "xpath_full": "/html[1]/body[1]/div[6]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/textarea[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-271\")",
+      "rect": {
+        "x": 618,
+        "y": 323.5,
+        "width": 360,
+        "height": 100,
+        "top": 323.5,
+        "right": 978,
+        "bottom": 423.5,
+        "left": 618
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库:sd/关键词输入分组:",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-1745-15",
+        "class": "el-dialog__body",
+        "text": "词库:sd/关键词输入分组:",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": "dialog",
+        "aria_label": "新建分组",
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+          },
+          "description": "css=.el-dialog 内 placeholder=请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "css=.el-dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+          },
+          "description": "css=.el-dialog 内 placeholder=请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "css=.el-dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+          },
+          "description": "role=dialog 内 placeholder=请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "role=dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "placeholder",
+          "value": "请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+        },
+        {
+          "type": "css",
+          "value": "textarea.el-textarea__inner"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "placeholder",
+          "value": "请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+        },
+        "description": "css=.el-dialog 内 placeholder=请输入分组名称，一行一个，每个分组名称不超过30字符，一次输入最多不超过100行"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-271",
+        "classes": []
+      },
+      "anchors_available": [
+        "form",
+        "el-id-1745-15",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:39:36.728Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--primary",
+      "text": "确定",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": null,
+      "css_selector": "div:nth-child(6) > div > div > footer > button:nth-child(2)",
+      "xpath_short": "/div[6]/div/div/footer/button[2]",
+      "xpath_full": "/html[1]/body[1]/div[6]/div[1]/div[1]/footer[1]/button[2]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 930,
+        "y": 474.5,
+        "width": 48,
+        "height": 32,
+        "top": 474.5,
+        "right": 978,
+        "bottom": 506.5,
+        "left": 930
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "新建分组词库:sd/关键词输入分组:取消确定",
+        "role": "dialog",
+        "aria_label": "新建分组",
+        "depth": 3,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "css=.el-dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "css=.el-dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "role=dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "role=dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "role=dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "text",
+          "value": "确定"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.el-button--primary"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "确定"
+        },
+        "description": "css=.el-dialog 内 text=确定"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "footer",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:24.813Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "el-tree-node__content",
+      "text": "phrase（0）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(2) > div.is-expanded.is-current.is-focusable:nth-child(1) > div:nth-child(2) > div.is-focusable:nth-child(2) > div",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div[2]/div[2]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]",
+      "playwright_selector": "page.getByText(\"phrase（0）\", { exact: true })",
+      "rect": {
+        "x": 68,
+        "y": 409,
+        "width": 302,
+        "height": 40,
+        "top": 409,
+        "right": 370,
+        "bottom": 449,
+        "left": 68
+      },
+      "inner_text": "phrase\n\n（0）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-focusable",
+        "text": "phrase（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 1,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "核心关键词（0）phrase（0）board（0）",
+        "role": "group",
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-current is-focusable",
+        "text": "关键词（0）核心关键词（0）phrase（0）board（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "关键词（0）核心关键词（0）phrase（0）board（0）否定词（0）投放ASIN（0）否定AS",
+        "role": "group",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "sd-美国关键词（0）核心关键词（0）phrase（0）board（0）否定词（0）投放ASIN（0",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "sd-美国关键词（0）核心关键词（0）phrase（0）board（0）否定词（0）投放ASIN（0",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "phrase（0）"
+        },
+        {
+          "type": "css",
+          "value": "div.el-tree-node__content"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "phrase（0）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "group",
+        "treeitem",
+        "group",
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:29.670Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--primary",
+      "text": "手动添加",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-sensors-click": "手动添加",
+        "data-v-87bb59b2": ""
+      },
+      "css_selector": "#yy-table > div.yy-table-main > div.operation-main.operation-main-flex.small-mt:nth-child(1) > div.batch-operation-wrapper:nth-child(1) > div.batch-operation:nth-child(1) > div.relative:nth-child(1) > div.batch-main-operation > button",
+      "xpath_short": "///*[@id=\"yy-table\"]/div/div[1]/div[1]/div[1]/div[1]/div/button",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+      "playwright_selector": "page.getByText(\"手动添加\", { exact: true })",
+      "rect": {
+        "x": 414,
+        "y": 320,
+        "width": 72,
+        "height": 32,
+        "top": 320,
+        "right": 486,
+        "bottom": 352,
+        "left": 414
+      },
+      "inner_text": "手动添加"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-table",
+        "class": "yy-table yy-table-flex",
+        "text": "手动添加 添加到关键词 改标签  改词库/分组  复制关键词词标签分组ABA搜索词SP投放表现来源备",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-table"
+          },
+          "target": {
+            "type": "text",
+            "value": "手动添加"
+          },
+          "description": "id=yy-table 内 text=手动添加"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-table"
+          },
+          "target": {
+            "type": "attribute",
+            "value": "[data-sensors-click=\"手动添加\"]"
+          },
+          "description": "id=yy-table 内 attribute=[data-sensors-click=\"手动添加\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-table"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "id=yy-table 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "text",
+          "value": "手动添加"
+        },
+        {
+          "type": "attribute",
+          "value": "[data-sensors-click=\"手动添加\"]"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.el-button--primary"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-table"
+        },
+        "target": {
+          "type": "text",
+          "value": "手动添加"
+        },
+        "description": "id=yy-table 内 text=手动添加"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-table"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:31.565Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "label",
+      "id": "el-id-1745-287",
+      "class": "el-form-item__label",
+      "text": "添加词",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-287",
+      "xpath_short": "//*[@id=\"el-id-1745-287\"]",
+      "xpath_full": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/form[1]/div[2]/label[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-287\")",
+      "rect": {
+        "x": 523,
+        "y": 230.5,
+        "width": 80,
+        "height": 32,
+        "top": 230.5,
+        "right": 603,
+        "bottom": 262.5,
+        "left": 523
+      },
+      "inner_text": "添加词"
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-1745-85",
+        "class": "el-dialog__body",
+        "text": "词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "手动添加词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "手动添加词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": "dialog",
+        "aria_label": "手动添加",
+        "depth": 5,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "添加词"
+          },
+          "description": "css=.el-dialog 内 text=添加词"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "css=.el-dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "添加词"
+          },
+          "description": "css=.el-dialog 内 text=添加词"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "css=.el-dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "添加词"
+          },
+          "description": "role=dialog 内 text=添加词"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "role=dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "text",
+          "value": "添加词"
+        },
+        {
+          "type": "css",
+          "value": "label.el-form-item__label"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "添加词"
+        },
+        "description": "css=.el-dialog 内 text=添加词"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-287",
+        "classes": []
+      },
+      "anchors_available": [
+        "form",
+        "el-id-1745-85",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:31.568Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "textarea",
+      "id": "el-id-1745-292",
+      "class": "el-textarea__inner",
+      "text": null,
+      "placeholder": "手动输入，一个投放词一行，最多可输入1000条",
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-292",
+      "xpath_short": "//*[@id=\"el-id-1745-292\"]",
+      "xpath_full": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/textarea[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-292\")",
+      "rect": {
+        "x": 603,
+        "y": 230.5,
+        "width": 240,
+        "height": 136,
+        "top": 230.5,
+        "right": 843,
+        "bottom": 366.5,
+        "left": 603
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-1745-85",
+        "class": "el-dialog__body",
+        "text": "词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "手动添加词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "手动添加词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": "dialog",
+        "aria_label": "手动添加",
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "手动输入，一个投放词一行，最多可输入1000条"
+          },
+          "description": "css=.el-dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "css=.el-dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "手动输入，一个投放词一行，最多可输入1000条"
+          },
+          "description": "css=.el-dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "css=.el-dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "手动输入，一个投放词一行，最多可输入1000条"
+          },
+          "description": "role=dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "role=dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "placeholder",
+          "value": "手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "css",
+          "value": "textarea.el-textarea__inner"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "placeholder",
+          "value": "手动输入，一个投放词一行，最多可输入1000条"
+        },
+        "description": "css=.el-dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-292",
+        "classes": []
+      },
+      "anchors_available": [
+        "form",
+        "el-id-1745-85",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:38.559Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--primary",
+      "text": "确定",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-v-86847e54": ""
+      },
+      "css_selector": "div:nth-child(8) > div > div > footer > div.justify-between.items-center > div.ml-auto > button:nth-child(2)",
+      "xpath_short": "/div[8]/div/div/footer/div/div/button[2]",
+      "xpath_full": "/html[1]/body[1]/div[8]/div[1]/div[1]/footer[1]/div[1]/div[1]/button[2]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 945,
+        "y": 567.5,
+        "width": 48,
+        "height": 32,
+        "top": 567.5,
+        "right": 993,
+        "bottom": 599.5,
+        "left": 945
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "手动添加词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "手动添加词库/分组sd-关键词-phrase添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": "dialog",
+        "aria_label": "手动添加",
+        "depth": 5,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "css=.el-dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "css=.el-dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "role=dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "role=dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "role=dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "text",
+          "value": "确定"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.el-button--primary"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "确定"
+        },
+        "description": "css=.el-dialog 内 text=确定"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "footer",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:40.838Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "tree__item__info",
+      "text": "board（0）",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-aba1c4dd": ""
+      },
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1) > div.left-detail:nth-child(2) > div.sidebar > div.sidebar-wrap > div.container:nth-child(3) > div.cnt > div.tree:nth-child(2) > div > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(2) > div.is-expanded.is-focusable:nth-child(1) > div:nth-child(2) > div.is-focusable:nth-child(3) > div > div.tree__item > div.tree__item__info:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]/div[2]/div/div/div[3]/div/div[2]/div/div[1]/div[2]/div[1]/div[2]/div[3]/div/div/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"board（0）\", { exact: true })",
+      "rect": {
+        "x": 124,
+        "y": 448,
+        "width": 214,
+        "height": 42,
+        "top": 448,
+        "right": 338,
+        "bottom": 490,
+        "left": 124
+      },
+      "inner_text": "board\n\n（0）"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-focusable",
+        "text": "board（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "核心关键词（0）phrase（4）board（0）",
+        "role": "group",
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "关键词（4）核心关键词（0）phrase（4）board（0）",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node__children",
+        "text": "关键词（4）核心关键词（0）phrase（4）board（0）否定词（0）投放ASIN（0）否定AS",
+        "role": "group",
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree-node is-expanded is-focusable",
+        "text": "sd-美国关键词（4）核心关键词（0）phrase（4）board（0）否定词（0）投放ASIN（0",
+        "role": "treeitem",
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": null
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-tree el-tree--highlight-current",
+        "text": "sd-美国关键词（4）核心关键词（0）phrase（4）board（0）否定词（0）投放ASIN（0",
+        "role": "tree",
+        "aria_label": null,
+        "depth": 8,
+        "is_stable_anchor": null
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "text",
+          "value": "board（0）"
+        },
+        {
+          "type": "css",
+          "value": "div.tree__item__info"
+        }
+      ],
+      "best_strategy": {
+        "type": "text",
+        "value": "board（0）"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "treeitem",
+        "group",
+        "treeitem",
+        "group",
+        "treeitem",
+        "tree"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:45.576Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--primary",
+      "text": "手动添加",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-sensors-click": "手动添加",
+        "data-v-87bb59b2": ""
+      },
+      "css_selector": "#yy-table > div.yy-table-main > div.operation-main.operation-main-flex.small-mt:nth-child(1) > div.batch-operation-wrapper:nth-child(1) > div.batch-operation:nth-child(1) > div.relative:nth-child(1) > div.batch-main-operation > button",
+      "xpath_short": "///*[@id=\"yy-table\"]/div/div[1]/div[1]/div[1]/div[1]/div/button",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+      "playwright_selector": "page.getByText(\"手动添加\", { exact: true })",
+      "rect": {
+        "x": 414,
+        "y": 320,
+        "width": 72,
+        "height": 32,
+        "top": 320,
+        "right": 486,
+        "bottom": 352,
+        "left": 414
+      },
+      "inner_text": "手动添加"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-table",
+        "class": "yy-table yy-table-flex",
+        "text": "手动添加 添加到关键词 改标签  改词库/分组  复制关键词词标签分组ABA搜索词SP投放表现来源备",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-table"
+          },
+          "target": {
+            "type": "text",
+            "value": "手动添加"
+          },
+          "description": "id=yy-table 内 text=手动添加"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-table"
+          },
+          "target": {
+            "type": "attribute",
+            "value": "[data-sensors-click=\"手动添加\"]"
+          },
+          "description": "id=yy-table 内 attribute=[data-sensors-click=\"手动添加\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "yy-table"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "id=yy-table 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "text",
+          "value": "手动添加"
+        },
+        {
+          "type": "attribute",
+          "value": "[data-sensors-click=\"手动添加\"]"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.el-button--primary"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "yy-table"
+        },
+        "target": {
+          "type": "text",
+          "value": "手动添加"
+        },
+        "description": "id=yy-table 内 text=手动添加"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "yy-table"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:47.223Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "label",
+      "id": "el-id-1745-296",
+      "class": "el-form-item__label",
+      "text": "添加词",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-296",
+      "xpath_short": "//*[@id=\"el-id-1745-296\"]",
+      "xpath_full": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/form[1]/div[2]/label[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-296\")",
+      "rect": {
+        "x": 523,
+        "y": 230.5,
+        "width": 80,
+        "height": 32,
+        "top": 230.5,
+        "right": 603,
+        "bottom": 262.5,
+        "left": 523
+      },
+      "inner_text": "添加词"
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 2,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-1745-85",
+        "class": "el-dialog__body",
+        "text": "词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "手动添加词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "手动添加词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": "dialog",
+        "aria_label": "手动添加",
+        "depth": 5,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "添加词"
+          },
+          "description": "css=.el-dialog 内 text=添加词"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "css=.el-dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "添加词"
+          },
+          "description": "css=.el-dialog 内 text=添加词"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "css=.el-dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "添加词"
+          },
+          "description": "role=dialog 内 text=添加词"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "label.el-form-item__label"
+          },
+          "description": "role=dialog 内 css=label.el-form-item__label"
+        },
+        {
+          "type": "text",
+          "value": "添加词"
+        },
+        {
+          "type": "css",
+          "value": "label.el-form-item__label"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "添加词"
+        },
+        "description": "css=.el-dialog 内 text=添加词"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-296",
+        "classes": []
+      },
+      "anchors_available": [
+        "form",
+        "el-id-1745-85",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:47.227Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "textarea",
+      "id": "el-id-1745-301",
+      "class": "el-textarea__inner",
+      "text": null,
+      "placeholder": "手动输入，一个投放词一行，最多可输入1000条",
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#el-id-1745-301",
+      "xpath_short": "//*[@id=\"el-id-1745-301\"]",
+      "xpath_full": "/html[1]/body[1]/div[8]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/textarea[1]",
+      "playwright_selector": "page.locator(\"#el-id-1745-301\")",
+      "rect": {
+        "x": 603,
+        "y": 230.5,
+        "width": 240,
+        "height": 136,
+        "top": 230.5,
+        "right": 843,
+        "bottom": 366.5,
+        "left": 603
+      },
+      "inner_text": null
+    },
+    "ancestors": [
+      {
+        "tag": "form",
+        "id": null,
+        "class": "el-form el-form--default el-form--label-right",
+        "text": "词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "el-id-1745-85",
+        "class": "el-dialog__body",
+        "text": "词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "手动添加词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 7,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "手动添加词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": "dialog",
+        "aria_label": "手动添加",
+        "depth": 8,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "手动输入，一个投放词一行，最多可输入1000条"
+          },
+          "description": "css=.el-dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "css=.el-dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "手动输入，一个投放词一行，最多可输入1000条"
+          },
+          "description": "css=.el-dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "css=.el-dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "placeholder",
+            "value": "手动输入，一个投放词一行，最多可输入1000条"
+          },
+          "description": "role=dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "textarea.el-textarea__inner"
+          },
+          "description": "role=dialog 内 css=textarea.el-textarea__inner"
+        },
+        {
+          "type": "placeholder",
+          "value": "手动输入，一个投放词一行，最多可输入1000条"
+        },
+        {
+          "type": "css",
+          "value": "textarea.el-textarea__inner"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "placeholder",
+          "value": "手动输入，一个投放词一行，最多可输入1000条"
+        },
+        "description": "css=.el-dialog 内 placeholder=手动输入，一个投放词一行，最多可输入1000条"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": "el-id-1745-301",
+        "classes": []
+      },
+      "anchors_available": [
+        "form",
+        "el-id-1745-85",
+        "div",
+        "dialog"
+      ]
+    }
+  },
+  {
+    "time": "2026-06-10T03:40:53.328Z",
+    "step_name": "搜索词库_新建分组",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "button",
+      "id": null,
+      "class": "el-button el-button--primary",
+      "text": "确定",
+      "placeholder": null,
+      "type": "button",
+      "name": null,
+      "data-*": {
+        "data-v-86847e54": ""
+      },
+      "css_selector": "div:nth-child(8) > div > div > footer > div.justify-between.items-center > div.ml-auto > button:nth-child(2)",
+      "xpath_short": "/div[8]/div/div/footer/div/div/button[2]",
+      "xpath_full": "/html[1]/body[1]/div[8]/div[1]/div[1]/footer[1]/div[1]/div[1]/button[2]",
+      "playwright_selector": "page.getByText(\"确定\", { exact: true })",
+      "rect": {
+        "x": 945,
+        "y": 567.5,
+        "width": 48,
+        "height": 32,
+        "top": 567.5,
+        "right": 993,
+        "bottom": 599.5,
+        "left": 945
+      },
+      "inner_text": "确定"
+    },
+    "ancestors": [
+      {
+        "tag": "footer",
+        "id": null,
+        "class": "el-dialog__footer",
+        "text": "取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-dialog",
+        "text": "手动添加词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": null,
+        "aria_label": null,
+        "depth": 4,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": null,
+        "class": "el-overlay-dialog",
+        "text": "手动添加词库/分组sd-关键词-board添加词选择标签请选择添加备注0 / 300取消确定",
+        "role": "dialog",
+        "aria_label": "手动添加",
+        "depth": 5,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "css=.el-dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "css=.el-dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "css=.el-dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "css",
+            "value": ".el-dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "css=.el-dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "text",
+            "value": "确定"
+          },
+          "description": "role=dialog 内 text=确定"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button.el-button.el-button--primary"
+          },
+          "description": "role=dialog 内 css=button.el-button.el-button--primary"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "role",
+            "value": "dialog"
+          },
+          "target": {
+            "type": "css",
+            "value": "button[type=\"button\"]"
+          },
+          "description": "role=dialog 内 css=button[type=\"button\"]"
+        },
+        {
+          "type": "text",
+          "value": "确定"
+        },
+        {
+          "type": "css",
+          "value": "button.el-button.el-button--primary"
+        },
+        {
+          "type": "css",
+          "value": "button[type=\"button\"]"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "css",
+          "value": ".el-dialog"
+        },
+        "target": {
+          "type": "text",
+          "value": "确定"
+        },
+        "description": "css=.el-dialog 内 text=确定"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "footer",
+        "div",
+        "dialog"
+      ]
+    }
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "time": "2026-06-10T06:34:23.582Z",
+    "step_name": "词库管理修复父元素",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "slide-bar-left show-box",
+      "text": "词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印度沙特阿拉伯日本澳大利亚新加坡爱尔兰按词库名称按词库名称按ASIN按商品标题包含查询的词库(32) ",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content > div.target-list-wrap.max-slide-bar > div.yy-slide-bar:nth-child(3) > div.slide-bar-left.show-box:nth-child(1)",
+      "xpath_short": "///*[@id=\"yy-layout-content\"]/div/div[3]/div[1]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[3]/div[1]",
+      "playwright_selector": "page.getByText(\"词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比利时印\", { exact: true })",
+      "rect": {
+        "x": 56,
+        "y": 80,
+        "width": 326,
+        "height": 641,
+        "top": 80,
+        "right": 382,
+        "bottom": 721,
+        "left": 56
+      },
+      "inner_text": "词库管理\n新建词库\n国家\n按词库名称\n\nASIN 产品名-美国\n\n柠檬围裙-美国\n\n(创建人运营-赵玉筠)\n\n圣诞车库磁贴-美国\n\n(创建人运营-何紫欣)\n\nB"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "yy-layout-content",
+        "class": "yy-layout-content",
+        "text": "词词库词库管理新建词库国家美国加拿大墨西哥巴西英国埃及德国法国西班牙意大利荷兰瑞典波兰阿联酋土耳其比",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      },
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘词库美西：2026-06-09 23:34虾掌柜返回词词库词库管",
+        "role": null,
+        "aria_label": null,
+        "depth": 6,
+        "is_stable_anchor": true
+      }
+    ]
+  }
+]

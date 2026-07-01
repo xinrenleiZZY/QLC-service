@@ -1,0 +1,37 @@
+name: lingxing_elements_V10_领星批量创建词库
+
+# 前置流程：运行主流程前先检查登录态
+pre_flows:
+  - flow_检查登录态.yaml
+
+modules:
+  - name: lingxing_elements_V10_首页
+    json: lingxing_elements_V10_首页_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_首页.yaml
+  - name: lingxing_elements_V10_词库
+    json: lingxing_elements_V10_词库_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_词库.yaml
+  - name: lingxing_elements_V10_新建词库
+    json: lingxing_elements_V10_新建词库_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_新建词库.yaml
+  - name: lingxing_elements_V10_新建词库_2
+    json: lingxing_elements_V10_新建词库_2_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_新建词库_2.yaml
+  - name: lingxing_elements_V10_新建词库_3
+    json: lingxing_elements_V10_新建词库_3_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_新建词库_3.yaml
+  - name: lingxing_elements_V10_新建词库_4
+    json: lingxing_elements_V10_新建词库_4_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_新建词库_4.yaml
+  - name: lingxing_elements_V10_新建词库_5
+    json: lingxing_elements_V10_新建词库_5_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_新建词库_5.yaml
+  - name: lingxing_elements_V10_词库管理页面
+    json: lingxing_elements_V10_词库管理页面_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_词库管理页面.yaml
+  - name: lingxing_elements_V10_词库管理修复
+    json: lingxing_elements_V10_词库管理修复_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_词库管理修复.yaml
+  - name: lingxing_elements_V10_词库管理修复2
+    json: lingxing_elements_V10_词库管理修复2_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_词库管理修复2.yaml

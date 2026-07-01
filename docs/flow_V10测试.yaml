@@ -1,0 +1,21 @@
+name: V10测试
+modules:
+- name: lingxing_elements_V10_首页
+  json: lingxing_elements_V10_首页_cleaned.json
+  yaml: actions_config_lingxing_elements_V10_首页.yaml
+- name: lingxing_elements_V10_词库
+  json: lingxing_elements_V10_词库_cleaned.json
+  yaml: actions_config_lingxing_elements_V10_词库.yaml
+- name: lingxing_elements_V10_新建词库
+  json: lingxing_elements_V10_新建词库_cleaned.json
+  yaml: actions_config_lingxing_elements_V10_新建词库.yaml
+- name: lingxing_elements_V10_新建词库_2
+  json: lingxing_elements_V10_新建词库_2_cleaned.json
+  yaml: actions_config_lingxing_elements_V10_新建词库_2.yaml
+- name: lingxing_elements_V10_新建词库_3
+  json: lingxing_elements_V10_新建词库_3_cleaned.json
+  yaml: actions_config_lingxing_elements_V10_新建词库_3.yaml
+- name: lingxing_elements_V10_新建词库_4
+  json: lingxing_elements_V10_新建词库_4_cleaned.json
+- name: lingxing_elements_V10_新建词库_5
+  json: lingxing_elements_V10_新建词库_5_cleaned.json

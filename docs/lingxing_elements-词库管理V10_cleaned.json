@@ -1,0 +1,65 @@
+[
+  {
+    "metadata": {
+      "timestamp": "2026-06-09T17:25:38.246902",
+      "total_count": 1,
+      "step_name": "词库首页-词库管理",
+      "cdp_url": null
+    },
+    "elements": [
+      {
+        "time": "2026-06-09T09:25:37.882Z",
+        "step_name": "词库首页-词库管理",
+        "page_url": "https://ads.lingxing.com/amazon/word-stock",
+        "page_title": "词库 - 领星ERP广告",
+        "selectors": {
+          "tag": "button",
+          "id": "__pickerExitConfirm",
+          "class": null,
+          "text": "确定退出",
+          "placeholder": null,
+          "type": null,
+          "name": null,
+          "data-*": null,
+          "css_selector": "#__pickerExitConfirm",
+          "xpath_short": "//*[@id=\"__pickerExitConfirm\"]",
+          "xpath_full": "/html[1]/body[1]/div[19]/div[1]/div[3]/button[1]",
+          "playwright_selector": "page.locator(\"#__pickerExitConfirm\")",
+          "rect": {
+            "x": 863,
+            "y": 459.78125,
+            "width": 104,
+            "height": 37,
+            "top": 459.78125,
+            "right": 967,
+            "bottom": 496.78125,
+            "left": 863
+          },
+          "inner_text": "确定退出"
+        },
+        "ancestors": [
+          {
+            "tag": "div",
+            "id": "__pickerExitOverlay",
+            "class": null,
+            "text": "⏹ 确认退出工具\n                        退出工具后浏览器将保持运行，可重新",
+            "role": null,
+            "aria_label": null,
+            "depth": 3,
+            "is_stable_anchor": true
+          }
+        ]
+      }
+    ],
+    "cleaned": {
+      "strategies": [],
+      "best_strategy": null,
+      "reliability": "low",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": []
+    }
+  }
+]

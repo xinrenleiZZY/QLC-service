@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "timestamp": "2026-06-09T18:03:56.552429",
+    "total_count": 3,
+    "step_name": "首页",
+    "cdp_url": null
+  },
+  "elements": [
+    {
+      "time": "2026-06-09T10:02:31.390Z",
+      "step_name": "首页",
+      "page_url": "https://huizhixin.lingxing.com/erp/home",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "span",
+        "id": null,
+        "class": "router-link-exact-active router-link-active tag active home v-step-0",
+        "text": "首页",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": {
+          "data-v-199a568a": ""
+        },
+        "css_selector": "#slick-list-fixed > div.slick-item.slick-item-active > span.router-link-exact-active.router-link-active.tag.active.home.v-step-0",
+        "xpath_short": "///*[@id=\"slick-list-fixed\"]/div/span",
+        "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]",
+        "playwright_selector": "page.getByText(\"首页\", { exact: true })",
+        "rect": {
+          "x": 56,
+          "y": 6,
+          "width": 80,
+          "height": 32,
+          "top": 6,
+          "right": 136,
+          "bottom": 38,
+          "left": 56
+        },
+        "inner_text": "首页"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": "slick-list-fixed",
+          "class": null,
+          "text": "首页",
+          "role": null,
+          "aria_label": null,
+          "depth": 2,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": "app",
+          "class": null,
+          "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+          "role": null,
+          "aria_label": null,
+          "depth": 7,
+          "is_stable_anchor": true
+        }
+      ]
+    },
+    {
+      "time": "2026-06-09T10:02:31.392Z",
+      "step_name": "首页",
+      "page_url": "https://huizhixin.lingxing.com/erp/home",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "span",
+        "id": null,
+        "class": "router-link-exact-active router-link-active tag active home v-step-0",
+        "text": "首页",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": {
+          "data-v-199a568a": ""
+        },
+        "css_selector": "#slick-list-fixed > div.slick-item.slick-item-active > span.router-link-exact-active.router-link-active.tag.active.home.v-step-0",
+        "xpath_short": "///*[@id=\"slick-list-fixed\"]/div/span",
+        "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/span[1]",
+        "playwright_selector": "page.getByText(\"首页\", { exact: true })",
+        "rect": {
+          "x": 56,
+          "y": 6,
+          "width": 80,
+          "height": 32,
+          "top": 6,
+          "right": 136,
+          "bottom": 38,
+          "left": 56
+        },
+        "inner_text": "首页"
+      },
+      "ancestors": [
+        {
+          "tag": "div",
+          "id": "slick-list-fixed",
+          "class": null,
+          "text": "首页",
+          "role": null,
+          "aria_label": null,
+          "depth": 2,
+          "is_stable_anchor": true
+        },
+        {
+          "tag": "div",
+          "id": "app",
+          "class": null,
+          "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+          "role": null,
+          "aria_label": null,
+          "depth": 7,
+          "is_stable_anchor": true
+        }
+      ]
+    },
+    {
+      "time": "2026-06-09T10:03:51.207Z",
+      "step_name": "首页",
+      "page_url": "https://huizhixin.lingxing.com/erp/home",
+      "page_title": "领星ERP - 跨境电商管理系统",
+      "selectors": {
+        "tag": "span",
+        "id": null,
+        "class": null,
+        "text": "广告",
+        "placeholder": null,
+        "type": null,
+        "name": null,
+        "data-*": {
+          "data-v-9d3272d0": ""
+        },
+        "css_selector": "#app > div.contain > div.sideBar.collapse-side-bar:nth-child(1) > div.sideBar-container:nth-child(1) > ul > li.is_active:nth-child(2) > a > span",
+        "xpath_short": "///*[@id=\"app\"]/div/div[1]/div[1]/ul/li[2]/a/span",
+        "xpath_full": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]/span[1]",
+        "playwright_selector": "page.getByText(\"广告\", { exact: true })",
+        "rect": {
+          "x": 14,
+          "y": 152,
+          "width": 28,
+          "height": 20,
+          "top": 152,
+          "right": 42,
+          "bottom": 172,
+          "left": 14
+        },
+        "inner_text": "广告"
+      },
+      "ancestors": [
+        {
+          "tag": "li",
+          "id": null,
+          "class": "el-menu-item is_active",
+          "text": "广告",
+          "role": "menuitem",
+          "aria_label": null,
+          "depth": 2,
+          "is_stable_anchor": null
+        },
+        {
+          "tag": "ul",
+          "id": null,
+          "class": "el-menu",
+          "text": "销售广告客服工具设置",
+          "role": "menubar",
+          "aria_label": null,
+          "depth": 3,
+          "is_stable_anchor": null
+        },
+        {
+          "tag": "div",
+          "id": "app",
+          "class": null,
+          "text": "销售广告客服工具设置 首页 刷新当前页面固定当前页面关闭当前页面关闭其他页面AI助手亚马逊新功能 帮",
+          "role": null,
+          "aria_label": null,
+          "depth": 7,
+          "is_stable_anchor": true
+        }
+      ]
+    }
+  ]
+}

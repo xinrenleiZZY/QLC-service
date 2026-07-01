@@ -1,0 +1,190 @@
+[
+  {
+    "time": "2026-07-01T01:45:59.235Z",
+    "step_name": "词库首页",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": null,
+      "class": "tabs-container",
+      "text": "仪表盘词库",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": {
+        "data-v-8401a1a8": ""
+      },
+      "css_selector": "#app > div.yy-layout.yy-layout-small > div.yy-layout-main:nth-child(2) > div.top:nth-child(1) > div.page-tabs:nth-child(1) > div.tabs-container",
+      "xpath_short": "///*[@id=\"app\"]/div/div[2]/div[1]/div[1]/div",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]",
+      "playwright_selector": "page.getByText(\"仪表盘词库\", { exact: true })",
+      "rect": {
+        "x": 56,
+        "y": 6,
+        "width": 817.25,
+        "height": 32,
+        "top": 6,
+        "right": 873.25,
+        "bottom": 38,
+        "left": 56
+      },
+      "inner_text": "仪表盘\n词库"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘词库美西：2026-06-30 18:45虾掌柜返回词词库词库管",
+        "role": null,
+        "aria_label": null,
+        "depth": 5,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "text",
+            "value": "仪表盘词库"
+          },
+          "description": "id=app 内 text=仪表盘词库"
+        },
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.tabs-container"
+          },
+          "description": "id=app 内 css=div.tabs-container"
+        },
+        {
+          "type": "text",
+          "value": "仪表盘词库"
+        },
+        {
+          "type": "css",
+          "value": "div.tabs-container"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "text",
+          "value": "仪表盘词库"
+        },
+        "description": "id=app 内 text=仪表盘词库"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "app"
+      ]
+    }
+  },
+  {
+    "time": "2026-07-01T01:46:05.340Z",
+    "step_name": "词库首页",
+    "page_url": "https://ads.lingxing.com/amazon/word-stock",
+    "page_title": "词库 - 领星ERP广告",
+    "selectors": {
+      "tag": "div",
+      "id": "yy-layout-content",
+      "class": "yy-layout-content",
+      "text": "词词库词库管理新建词库国家按词库名称包含查询的词库(37) ASIN 产品名-美国关键词（5）核心关键词（3）12（1）32（1）否定词（0）投放ASIN（0）否定ASIN（0）柠檬围裙-美国(创建人",
+      "placeholder": null,
+      "type": null,
+      "name": null,
+      "data-*": null,
+      "css_selector": "#yy-layout-content",
+      "xpath_short": "//*[@id=\"yy-layout-content\"]",
+      "xpath_full": "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]",
+      "playwright_selector": "page.locator(\"#yy-layout-content\")",
+      "rect": {
+        "x": 56,
+        "y": 0,
+        "width": 1373,
+        "height": 855.59375,
+        "top": 0,
+        "right": 1429,
+        "bottom": 855.59375,
+        "left": 56
+      },
+      "inner_text": "词\n词库\n词库管理\n新建词库\n国家\n按词库名称\n\nASIN 产品名-美国\n\n关键词\n\n（5）\n\n核心关键词\n\n（3）\n\n12\n\n（1）\n\n32\n\n（1）\n\n否定"
+    },
+    "ancestors": [
+      {
+        "tag": "div",
+        "id": "app",
+        "class": null,
+        "text": "店铺广告词工具分析结构实时设置仪表盘词库美西：2026-06-30 18:46虾掌柜返回词词库词库管",
+        "role": null,
+        "aria_label": null,
+        "depth": 3,
+        "is_stable_anchor": true
+      }
+    ],
+    "cleaned": {
+      "strategies": [
+        {
+          "type": "anchored",
+          "anchor": {
+            "type": "id",
+            "value": "app"
+          },
+          "target": {
+            "type": "css",
+            "value": "div.yy-layout-content"
+          },
+          "description": "id=app 内 css=div.yy-layout-content"
+        },
+        {
+          "type": "id",
+          "value": "yy-layout-content"
+        },
+        {
+          "type": "css",
+          "value": "div.yy-layout-content"
+        }
+      ],
+      "best_strategy": {
+        "type": "anchored",
+        "anchor": {
+          "type": "id",
+          "value": "app"
+        },
+        "target": {
+          "type": "css",
+          "value": "div.yy-layout-content"
+        },
+        "description": "id=app 内 css=div.yy-layout-content"
+      },
+      "reliability": "high",
+      "filtered_out": {
+        "id": null,
+        "classes": []
+      },
+      "anchors_available": [
+        "app"
+      ]
+    }
+  }
+]

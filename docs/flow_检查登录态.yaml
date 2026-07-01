@@ -1,0 +1,16 @@
+name: 检查登录态
+modules:
+  - name: lingxing_elements_V10_检测是否处于登录态
+    json: lingxing_elements_V10_检测是否处于登录态_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_检测是否处于登录态.yaml
+    # 检测失败（未登录）→ 跳转到登录模块
+    # 检测成功（已登录）→ 继续执行（退出登录清理会话）
+    on_failure:
+      action: goto
+      target: lingxing_elements_V10_登录
+  - name: lingxing_elements_V10_退出登录
+    json: lingxing_elements_V10_退出登录_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_退出登录.yaml
+  - name: lingxing_elements_V10_登录
+    json: lingxing_elements_V10_登录_cleaned.json
+    yaml: actions_config_lingxing_elements_V10_登录.yaml

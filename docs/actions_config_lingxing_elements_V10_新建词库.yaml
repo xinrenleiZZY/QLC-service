@@ -1,0 +1,34 @@
+# ============================================================
+# 动作配置文件 — 由 YAML 编辑器生成
+# 生成时间: 2026/6/10 11:52:42
+# 来源: lingxing_elements_V10_新建词库_cleaned.json
+# ============================================================
+
+page_url: "https://ads.lingxing.com/amazon/word-stock"
+close_browser: true
+actions:
+  - index: 0
+    step_name: "新建词库父元素"
+    action:
+      type: check_visible
+      on_not_found: skip
+      wait_for_element: false
+
+  - index: 1
+    step_name: "词库名称"
+    action:
+      type: fill
+      on_not_found: fail
+      wait_for_element: false
+      value: "${INPUT_VALUE}"
+      clear_first: true
+      wait_before: 0.5
+      wait_after: 0.5
+      wait_strategy: timeout
+
+  - index: 2
+    step_name: "词库名称"
+    action:
+      type: check_visible
+      on_not_found: skip
+      wait_for_element: false
